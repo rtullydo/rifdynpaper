@@ -191,53 +191,52 @@
 
         <p>This structural result makes examples of rational inner functions particularly easy to construct - all one requires is a polynomial with no zeros in the bidisk. The following such examples can be fruitfully analyzed using elementary means.</p> 
         <example xml:id="ex-fave">
+        <sbsgroup>
         <sidebyside>
-        <figure> <caption>Vertical lines before mapping</caption>
+        <figure xml:id="faveplots"> <caption>Vertical lines before mapping</caption>
             <image source="images/vertparacurves.svg"/>
         </figure>
         <figure> <caption><m>\Phi^n</m> for <m>n=1</m></caption>
             <image source="images/vfave1iter.svg"/>
         </figure>
         </sidebyside>
+        <sidebyside>
+        <figure> <caption><m>\Phi^n</m> for <m>n=2</m></caption>
+            <image source="images/vfave2iter.svg"/>
+        </figure>
+        <figure> <caption><m>\Phi^n</m> for <m>n=3</m></caption>
+            <image source="images/vfave3iter.svg"/>
+        </figure>
+        </sidebyside>
+        <sidebyside>
+        <figure> <caption><m>\Phi^n</m> for <m>n=4</m></caption>
+            <image source="images/vfave4iter.svg"/>
+        </figure>
+        <figure> <caption><m>\Phi^n</m> for <m>n=5</m></caption>
+            <image source="images/vfave5iter.svg"/>
+        </figure>
+        </sidebyside>
+        </sbsgroup>
+
+        <p>Consider the RISP
+                <me>\Phi(z_1,z_2)=\left(-\frac{2z_1z_2-z_1-z_2}{2-z_1-z_2},z_2\right).</me>
+                The first component <m>\phi=-\frac{\tilde{p}}{p}</m> is a degree <m>(1,1)</m> RIF having a single singularity at <m>(1,1)</m>. A computation reveals that the boundary value <m>\phi^{*}(1,1)=1</m>, and so <m>(1,1)</m> is a fixed point of 
+                <m>\Phi</m>. In fact, we have <m>\Phi(z_1,1)=(1,1)</m>, so the entire line <m>\{z_2=1\}</m> is mapped to <m>(1,1)</m>. 
+                 Next, we note that <m>\phi^*(1,z_2)=1</m> and <m>\phi^*(z_2,z_2)=z_2</m> meaning that both the line <m>\{z_1=1\}</m> and the diagonal are comprised of fixed points of <m>\Phi</m>. Solving 
+                <m>\phi^{*}(z)=z_1</m>, or more precisely, the equation
+                <me>\tilde{p}(z)-z_1p(z)=0,</me>
+                confirms that these are all the fixed points of <m>\Phi</m>. </p>
+
+        <p>We now iterate <m>\Phi</m>. We visualize the action of the iterates by viewing the <m>2</m>-torus as <m>[-\pi, \pi]^2</m> and applying <m>\Phi^n</m> to vertical lines of the form <m>\{(a\pi, t_2)\}</m> for several choices of <m>-1\lt a\t 1</m>. Figure \ref{faveplots} suggests that the iterates converge as <m>n</m> grows. 
+                Using induction, one can show that, for <m>n=1,2,\ldots</m>,
+                <me>\Phi^n(z_1,z_2)=\left(-\frac{2^nz_1z_2-z_1-(2^{n}-1)z_2}{2^n-(2^{n}-1)z_1-z_2}, z_2\right).</me>
+                Hence, for all <m>(z_1,z_2)\in \overline{\mathbb{D}^2}\setminus \{z_1=1\}</m>, we have
+                <me>\Phi^n(z_1,z_2)\to (z_2,z_2)  \quad \textrm{as} \quad n\to \infty.</me>
+                This means that each point on the diagonal is attractive on its corresponding horizontal fiber, while points on <m>\{z_1=1\}</m> are repelling fixed points. The special fiber <m>\{z_2=1\}</m> is immediately collapsed into <m>(1,1)</m> by <m>\Phi</m>, explaining the pinched appearance of the images.</p>
+
+       <p> The special role the lines <m>\{z_1=1\}</m> and <m>\{z_2=1\}</m> play here is related to the fact that they are the level sets of <m>\phi</m> corresponding to the non-tangential value <m>\lambda=1</m>, which is attained at the singularity of <m>\phi</m> at <m>(1,1)</m> (see <xref ref="BPS18"/>). This will be discussed in detail below.</p>
         </example>
 <!--
-            \subfigure[<m>\Phi^n</m> for <m>n=1</m>.]
-              {\includegraphics[width=0.4 \textwidth]{vfave1iter.pdf}}
-          %\caption{\textsl{Iteration of the RISP <m>\Phi=(-\frac{2z_1z_2-z_1-z_2}{2-z_1-z_2},z_2)</m> on <m>\mathbb{T}^2</m>}.}
-              \subfigure[<m>\Phi^n</m> for <m>n=2</m>]
-              {\includegraphics[width=0.4 \textwidth]{vfave2iter.pdf}}
-            \hfill
-            \subfigure[<m>\Phi^n</m> for <m>n=3</m>.]
-              {\includegraphics[width=0.4 \textwidth]{vfave3iter.pdf}}
-          %\caption{\textsl{Iteration of the RISP <m>\Phi=(-\frac{2z_1z_2-z_1-z_2}{2-z_1-z_2},z_2)</m> on <m>\mathbb{T}^2</m>.}}
-              \subfigure[<m>\Phi^n</m> for <m>n=4</m>]
-              {\includegraphics[width=0.4 \textwidth]{vfave4iter.pdf}}
-            \hfill
-            \subfigure[<m>\Phi^n</m> for <m>n=5</m>.]
-              {\includegraphics[width=0.4 \textwidth]{vfave5iter.pdf}}
-          \caption{\textsl{Iteration of <m>\Phi=(-\frac{2z_1z_2-z_1-z_2}{2-z_1-z_2},z_2)</m> on <m>\mathbb{T}^2</m>.}}
-          \label{faveplots}
-          
-        \end{figure}
-        Consider the RISP
-        <me>\Phi(z_1,z_2)=\left(-\frac{2z_1z_2-z_1-z_2}{2-z_1-z_2},z_2\right).</me>
-        The first component <m>\phi=-\frac{\tilde{p}}{p}</m> is a degree <m>(1,1)</m> RIF having a single singularity at <m>(1,1)</m>. A computation reveals that the boundary value <m>\phi^{*}(1,1)=1</m>, and so <m>(1,1)</m> is a fixed point of 
-        <m>\Phi</m>. In fact, we have <m>\Phi(z_1,1)=(1,1)</m>, so the entire line <m>\{z_2=1\}</m> is mapped to <m>(1,1)</m>. 
-         Next, we note that <m>\phi^*(1,z_2)=1</m> and <m>\phi^*(z_2,z_2)=z_2</m> meaning that both the line <m>\{z_1=1\}</m> and the diagonal are comprised of fixed points of <m>\Phi</m>. Solving 
-        <m>\phi^{*}(z)=z_1</m>, or more precisely, the equation
-        <me>\tilde{p}(z)-z_1p(z)=0,</me>
-        confirms that these are all the fixed points of <m>\Phi</m>. 
-
-        We now iterate <m>\Phi</m>. We visualize the action of the iterates by viewing the <m>2</m>-torus as <m>[-\pi, \pi]^2</m> and applying <m>\Phi^n</m> to vertical lines of the form <m>\{(a\pi, t_2)\}</m> for several choices of <m>-1<a<1</m>. Figure \ref{faveplots} suggests that the iterates converge as <m>n</m> grows. 
-        Using induction, one can show that, for <m>n=1,2,\ldots</m>,
-        <me>\Phi^n(z_1,z_2)=\left(-\frac{2^nz_1z_2-z_1-(2^{n}-1)z_2}{2^n-(2^{n}-1)z_1-z_2}, z_2\right).</me>
-        Hence, for all <m>(z_1,z_2)\in \overline{\mathbb{D}^2}\setminus \{z_1=1\}</m>, we have
-        <me>\Phi^n(z_1,z_2)\to (z_2,z_2)  \quad \textrm{as} \quad n\to \infty.</me>
-        This means that each point on the diagonal is attractive on its corresponding horizontal fiber, while points on <m>\{z_1=1\}</m> are repelling fixed points. The special fiber <m>\{z_2=1\}</m> is immediately collapsed into <m>(1,1)</m> by <m>\Phi</m>, explaining the pinched appearance of the images.
-
-        The special role the lines <m>\{z_1=1\}</m> and <m>\{z_2=1\}</m> play here is related to the fact that they are the level sets of <m>\phi</m> corresponding to the non-tangential value <m>\lambda=1</m>, which is attained at the singularity of <m>\phi</m> at <m>(1,1)</m> (see \cite{BPS18}). This will be discussed in detail below.
-        </example>
-
         \begin{ex}\label{ex:para}
         \begin{figure}[h!]
             \subfigure[Vertical lines.]
