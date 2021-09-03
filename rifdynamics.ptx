@@ -191,7 +191,7 @@
 
         <p>This structural result makes examples of rational inner functions particularly easy to construct - all one requires is a polynomial with no zeros in the bidisk. The following such examples can be fruitfully analyzed using elementary means.</p> 
         <example xml:id="ex-fave">
-        <figure>
+        <figure caption="Vertical lines before mapping">
             <image source="images/vertparacurves.pdf"/>
         </figure>
         </example><!--Vertical lines before mapping.]
