@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*       on 2021-09-03T12:33:13-07:00       *-->
+<!--*   A recent stable commit (2020-08-09):   *-->
+<!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<html lang="en-US">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Introduction and overview</title>
+<meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    tex2jax: {
+        inlineMath: [['\\(','\\)']]
+    },
+    asciimath2jax: {
+        ignoreClass: ".*",
+        processClass: "has_am"
+    },
+    jax: ["input/AsciiMath"],
+    extensions: ["asciimath2jax.js"],
+    TeX: {
+        extensions: ["extpfeil.js", "autobold.js", "https://pretextbook.org/js/lib/mathjaxknowl.js", "AMScd.js", ],
+        // scrolling to fragment identifiers is controlled by other Javascript
+        positionToHash: false,
+        equationNumbers: { autoNumber: "none", useLabelIds: true, },
+        TagSide: "right",
+        TagIndent: ".8em",
+    },
+    // HTML-CSS output Jax to be dropped for MathJax 3.0
+    "HTML-CSS": {
+        scale: 88,
+        mtextFontInherit: true,
+    },
+    CommonHTML: {
+        scale: 88,
+        mtextFontInherit: true,
+    },
+});
+</script><script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS_CHTML-full"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/lib/jquery.min.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/lib/jquery.sticky.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/lib/jquery.espy.min.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/0.13/pretext.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/0.13/pretext_add_on.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script xmlns:svg="http://www.w3.org/2000/svg">sagecellEvalName='Evaluate (Sage)';
+</script><link xmlns:svg="http://www.w3.org/2000/svg" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://fonts.googleapis.com/css?family=Inconsolata:400,700&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/pretext.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/pretext_add_on.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/banner_default.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/toc_default.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/knowls_default.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/style_default.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/colors_default.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/setcolors.css" rel="stylesheet" type="text/css">
+<!-- 2019-10-12: Temporary - CSS file for experiments with styling --><link xmlns:svg="http://www.w3.org/2000/svg" href="developer.css" rel="stylesheet" type="text/css">
+</head>
+<body class="mathbook-article has-toc has-sidebar-left">
+<a class="assistive" href="#content">Skip to main content</a><div xmlns:svg="http://www.w3.org/2000/svg" class="hidden-content" style="display:none">\(\DeclareMathOperator{\RE}{Re}
+  \DeclareMathOperator{\IM}{Im}
+  \DeclareMathOperator{\ess}{ess}
+  \DeclareMathOperator{\intr}{int}
+  \DeclareMathOperator{\dist}{dist}
+  \DeclareMathOperator{\dom}{dom}
+  \DeclareMathOperator{\diag}{diag}
+  \DeclareMathOperator{\span}{span}
+  \DeclareMathOperator{\null}{null}
+  \DeclareMathOperator{\rank}{rank}
+  \DeclareMathOperator{\col}{col}
+  \DeclareMathOperator{\row}{row}
+  \DeclareMathOperator{\proj}{proj}
+  \DeclareMathOperator\re{\mathrm {Re~}}
+  \DeclareMathOperator\im{\mathrm {Im~}}
+  
+  \newcommand\dd{\mathrm d}
+  \newcommand{\eps}{\varepsilon}
+  \newcommand{\To}{\longrightarrow}
+  \newcommand{\hilbert}{\mathcal{H}}
+  \newcommand{\s}{\mathcal{S}_2}
+  \newcommand{\A}{\mathcal{A}}
+  \newcommand\h{\mathcal{H}}
+  \newcommand{\J}{\mathcal{J}}
+  \newcommand{\M}{\mathcal{M}}
+  \newcommand{\F}{\mathbb{F}}
+  \newcommand{\N}{\mathcal{N}}
+  \newcommand{\T}{\mathbb{T}}
+  \newcommand{\W}{\mathcal{W}}
+  \newcommand{\X}{\mathcal{X}}
+  \newcommand{\D}{\mathbb{D}}
+  \newcommand{\C}{\mathbb{C}}
+  \newcommand{\BOP}{\mathbf{B}}
+  \newcommand{\Z}{\mathbb{Z}}
+  \newcommand{\BH}{\mathbf{B}(\mathcal{H})}
+  \newcommand{\KH}{\mathcal{K}(\mathcal{H})}
+  \newcommand{\pick}{\mathcal{P}_2}
+  \newcommand{\schur}{\mathcal{S}_2}
+  \newcommand{\R}{\mathbb{R}}
+  \newcommand{\Complex}{\mathbb{C}}
+  \newcommand{\Field}{\mathbb{F}}
+  \newcommand{\RPlus}{\Real^{+}}
+  \newcommand{\Polar}{\mathcal{P}_{\s}}
+  \newcommand{\Poly}{\mathcal{P}(E)}
+  \newcommand{\EssD}{\mathcal{D}}
+  \newcommand{\Lop}{\mathcal{L}}
+  \newcommand{\cc}[1]{\overline{#1}}
+  \newcommand{\abs}[1]{\left\vert#1\right\vert}
+  \newcommand{\set}[1]{\left\{#1\right\}}
+  \newcommand{\seq}[1]{\left\lt#1\right&gt;}
+  \newcommand{\norm}[1]{\left\Vert#1\right\Vert}
+  \newcommand{\essnorm}[1]{\norm{#1}_{\ess}}
+  \newcommand{\tr}{\operatorname{tr}}
+  \newcommand{\ran}[1]{\operatorname{ran}#1}
+  \newcommand{\nt}{\stackrel{\mathrm {nt}}{\to}}
+  \newcommand{\pnt}{\xrightarrow{pnt}}
+  \newcommand{\ip}[2]{\left\langle #1, #2 \right\rangle}
+  \newcommand{\ad}{^\ast}
+  \newcommand{\inv}{^{-1}}
+  \newcommand{\adinv}{^{\ast -1}}
+  \newcommand{\invad}{^{-1 \ast}}
+  \newcommand\Pick{\mathcal P}
+  \newcommand\Ha{\mathbb{H}}
+  \newcommand{\HH}{\Ha\times\Ha}
+  \newcommand\Htau{\mathbb{H}(\tau)}
+  \newcommand{\vp}{\varphi}
+  \newcommand{\ph}{\varphi}
+  \newcommand\al{\alpha}
+  \newcommand\ga{\gamma}
+  \newcommand\de{\delta}
+  \newcommand\ep{\varepsilon}
+  \newcommand\la{\lambda}
+  \newcommand\up{\upsilon}
+  \newcommand\si{\sigma}
+  \newcommand\beq{\begin{equation}}
+  \newcommand\ds{\displaystyle}
+  \newcommand\eeq{\end{equation}}
+  \newcommand\df{\stackrel{\rm def}{=}}
+  \newcommand\ii{\mathrm i}
+  \newcommand{\vectwo}[2]
+  {
+     \begin{pmatrix} #1 \\ #2 \end{pmatrix}
+  }
+  \newcommand{\vecthree}[3]
+  {
+     \begin{pmatrix} #1 \\ #2 \\ #3 \end{pmatrix}
+  }
+  \newcommand\blue{\color{blue}}
+  \newcommand\black{\color{black}}
+  \newcommand\red{\color{red}}
+  
+  \newcommand\nn{\nonumber}
+  \newcommand\bbm{\begin{bmatrix}}
+  \newcommand\ebm{\end{bmatrix}}
+  \newcommand\bpm{\begin{pmatrix}}
+  \newcommand\epm{\end{pmatrix}}
+  \numberwithin{equation}{section}
+  \newcommand\nin{\noindent}
+  \newcommand{\nCr}[2]{\,_{#1}C_{#2}} 
+  \newcommand{\vec}[1]{{\bf #1}}
+  \newcommand{\ps}{\displaystyle \sum_{n=0}^\infty a_n x^n}
+  \newcommand{\psg}{\displaystyle \sum_{n=0}^\infty b_n x^n}
+  \newcommand{\hz}{\,\mathrm{Hz}}
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\)</div>
+<header id="masthead" class="smallbuttons"><div class="banner"><div class="container">
+<a id="logo-link" href=""></a><div class="title-container">
+<h1 class="heading"><a href="linanal.html"><span class="title">Iteration of low-degree rational inner skew-products on \(\mathbb{T}^2\)</span></a></h1>
+<p class="byline">Alan Sola, Ryan Tully-Doyle</p>
+</div>
+</div></div>
+<nav xmlns:svg="http://www.w3.org/2000/svg" id="primary-navbar" class="navbar"><div class="container">
+<div class="navbar-top-buttons">
+<button class="sidebar-left-toggle-button button active" aria-label="Show or hide table of contents sidebar">Contents</button><div class="tree-nav toolbar toolbar-divisor-3"><span class="threebuttons"><a id="previousbutton" class="previous-button toolbar-item button" href="frontmatter-1.html" title="Previous">Prev</a><a id="upbutton" class="up-button button toolbar-item" href="linanal.html" title="Up">Up</a><span id="nextbutton" class="next-button button toolbar-item disabled">Next</span></span></div>
+</div>
+<div class="navbar-bottom-buttons toolbar toolbar-divisor-4">
+<button class="sidebar-left-toggle-button button toolbar-item active">Contents</button><a class="previous-button toolbar-item button" href="frontmatter-1.html" title="Previous">Prev</a><a class="up-button button toolbar-item" href="linanal.html" title="Up">Up</a><span class="next-button button toolbar-item disabled">Next</span>
+</div>
+</div></nav></header><div class="page">
+<div xmlns:svg="http://www.w3.org/2000/svg" id="sidebar-left" class="sidebar" role="navigation"><div class="sidebar-content">
+<nav id="toc"><ul>
+<li class="link frontmatter"><a href="frontmatter-1.html" data-scroll="frontmatter-1"><span class="title">Front Matter</span></a></li>
+<li class="link active"><a href="sec:Intro.html" data-scroll="sec:Intro"><span class="codenumber">1</span> <span class="title">Introduction and overview</span></a></li>
+</ul></nav><div class="extras"><nav><a class="mathbook-link" href="https://pretextbook.org">Authored in PreTeXt</a><a href="https://www.mathjax.org"><img title="Powered by MathJax" src="https://www.mathjax.org/badge/badge.gif" alt="Powered by MathJax"></a></nav></div>
+</div></div>
+<main class="main"><div id="content" class="pretext-content"><section xmlns:svg="http://www.w3.org/2000/svg" class="section" id="sec:Intro"><h2 class="heading hide-type">
+<span class="type">Section</span> <span class="codenumber">1</span> <span class="title">Introduction and overview</span>
+</h2>
+<p id="p-2">Iteration of a rational function \(R(z)=\frac{q(z)}{p(z)}\) on the Riemann sphere, that is, the study</p>
+<div class="displaymath">
+\begin{equation*}
+z\mapsto R^n(z)=(R\circ R \circ \cdots \circ R)(z) \quad (n=1,2,\ldots)
+\end{equation*}
+</div>
+<p data-braille="continuation">on \(\mathbb{C}_{\infty}=\mathbb{C}\cup\{\infty\}\text{,}\) is a well-known topic in mathematics, discussed in many textbooks (e.g. \cite{BearBook, CGBook, MilBook}) and illustrated in beautiful computer images. The theory is quite mature, but important new results are still being discovered. The higher-dimensional theory, addressing iteration of polynomial or rational mappings \(R\colon \mathbb{C}^n\to \mathbb{C}^n\) is of later date and perhaps less complete. See, for instance, \cite{ForSurv,SibSurv, MilBook}, and the references therein, for basic overviews of dynamics in several complex variables.</p>
+<p id="p-3">In a different direction, considering self-maps of special bounded domains in \(\mathbb{C}^n\) (the unit disk in the complex plane, the unit \(n\)-ball) allows for the study of iteration of functions that are not necessarily defined throughout \(\mathbb{C}^n\text{,}\) and leads to interesting boundary phenomena not observed in the unbounded setting. An important example in this latter direction is the classical Denjoy-Wolff theorem \cite{CGBook} concerning fixed points of analytic self-maps of the unit disk; there are many subsequent extensions of the original result to different settings.</p>
+<p id="p-4">Our investigation concerns the study of the dynamics certain self-maps of the unit bidisk</p>
+<div class="displaymath">
+\begin{equation*}
+\mathbb{D}^2=\{(z_1,z_2)\in \mathbb{C}^2\colon |z_j|\lt1, j=1,2\}
+\end{equation*}
+</div>
+<p data-braille="continuation">and seeks to establish some basic facts about their iteration theory. There are many works addressing iteration of analytic self-maps of the bidisk and higher-dimensional polydisks (see, for instance, the papers \cite{Aba98, AG16,C32, F05, H54} and the thesis \cite{NThesis} for some background). Our focus is on obtaining detailed results for a restricted class of rational mappings by using elementary means.</p>
+<p id="p-5">We say that a mapping of the form</p>
+<div class="displaymath">
+\begin{equation*}
+\Phi\colon \mathbb{D}^2\to \mathbb{D}^2
+\end{equation*}
+</div>
+<div class="displaymath">
+\begin{equation*}
+(z_1,z_2)\mapsto (\phi_1(z_1,z_2), \phi_2(z_1,z_2))
+\end{equation*}
+</div>
+<p data-braille="continuation">is a {\it rational inner mapping} (RIM) if each component \(\phi_j\) is a {\it rational inner function} on \(\mathbb{D}^2\text{.}\) A rational inner function in turn is an analytic function of the form</p>
+<div class="displaymath">
+\begin{equation*}
+\psi(z_1,z_2)=\frac{q(z_1,z_2)}{p(z_1,z_2)},
+\end{equation*}
+</div>
+<p data-braille="continuation">with \(q,p\in \mathbb{C}[z_1,z_2]\) and \(p(z)\neq 0\) in \(\mathbb{D}^2\text{,}\) which is bounded in \(\mathbb{D}^2\) and has unimodular non-tangential boundary values at almost every point \(\zeta \in \mathbb{T}^2=\{(\zeta_1, \zeta_2)\in \mathbb{C}^2\colon |\zeta_j|=1, j=1,2\}\text{.}\) We recall the basic fact that \(\mathbb{T}^2\) is the {\it distinguished boundary} of the bidisk, the subset of the boundary \(\partial \mathbb{D}^2\) where most interesting function-theoretic phenomena on \(\mathbb{D}^2\) are observed and the maximum modulus principle is supported. By a theorem of Knese \cite{Kne15}, if \(\phi_j\) is rational inner then the boundary values \(\phi_j^*(\zeta)\) exist as unimodular numbers at {\it every} point of \(\mathbb{T}^2\text{,}\) and so we can view a rational inner mapping \(\Phi\) as inducing a map \(\Phi\colon \overline{\mathbb{D}^2}\to \overline{\mathbb{D}^2}\text{,}\) with \(\Phi\) sending \(\mathbb{T}^2\) to \(\mathbb{T}^2\text{.}\) In the same way, the \(n\)th iterate of \(\Phi\)</p>
+<div class="displaymath">
+\begin{equation*}
+\Phi^n(z_1,z_2)=(\Phi\circ \Phi\circ\cdots  \circ\Phi)(z_1,z_2)
+\end{equation*}
+</div>
+<p data-braille="continuation">can be viewed as a mapping of the closure of the bidisk into itself that fixes the distinguished boundary.</p>
+<p id="p-6">Iteration of certain classes of rational inner functions on the bidisk and on \(\mathbb{T}^2\) has been considered in several papers, for instance in \cite{PS08,PR10}; see also \cite{SBJ17} for some applications. In those works, the component maps \(\phi_j\) are assumed to be of the special type</p>
+<div class="displaymath">
+\begin{equation*}
+\psi_j(z_1,z_2)=B_{j,1}(z_1)\cdot B_{j,2}(z_2)
+\end{equation*}
+</div>
+<p data-braille="continuation">where \(B_{j,k}\) are one-variable {\it finite Blaschke products}. Recall that these are functions \(B\colon \mathbb{D}\to\mathbb{D}\) of the form</p>
+<div class="displaymath">
+\begin{equation*}
+B(z)=e^{i\alpha}z^m\prod_{k=1}^n\frac{z-a_k}{1-\overline{a}_kz},
+\end{equation*}
+</div>
+<p data-braille="continuation">where \(\{a_1,\ldots, a_n\}\subset \mathbb{D}\text{,}\) \(\alpha\in \mathbb{R}\text{,}\) and \(m,n\in \mathbb{N}\text{.}\) It is apparent that a finite Blaschke product extends continuously to the unit circle \(\mathbb{T}\text{,}\) but the dynamics of one-variable Blaschke products nevertheless exhibit complicated features; see for instance \cite[Chapter 15]{MilBook}. Similarly, the works \cite{PS08,PR10} uncover a rich dynamical structure associated with two-dimensional Blaschke products.</p>
+<p id="p-7">In contrast with one-variable Blaschke products, a general rational inner function \(\psi=q/p\) in \(\mathbb{D}^2\) can have boundary singularities: these occur at points \(\tau=(\tau_1,\tau_2)\in \mathbb{T}^2\) where \(q(\tau_1,\tau_2)=p(\tau_1,\tau_2)=0\text{,}\) and represent a genuinely new higher-dimensional phenomenon. The function \(\psi\) is in general discontinuous at \(\tau \in \mathbb{T}^2\text{,}\) even though \(\psi^{*}(\tau)\) always exists, meaning that a RISP \(\Phi\) need not be a continuous self-map of \(\overline{\mathbb{D}^2}\text{.}\)  This fact will be the source of several interesting phenomena that we observe in this paper.</p>
+<p id="p-8">Apart from some preliminary observations concerning RIMs, we mostly restrict our attention to {\it rational inner skew-products} (RISPs). These are rational inner mappings of the special form</p>
+<div class="displaymath">
+\begin{equation*}
+\Phi(z_1,z_2)=(\phi_1(z_1,z_2), \phi_2(z_2)),
+\end{equation*}
+</div>
+<p data-braille="continuation">with \(\phi_1\) rational inner in \(\mathbb{D}^2\text{,}\) and \(\phi_2\) a rational inner function in one variable, viewed as a function on \(\mathbb{D}^2\) in the obvious way. Skew-products have been studied extensively in the polynomial setting, see e.g. \cite{J99, PR19} and the references therein. In fact, we focus on the very simplest case of skew-mappings \​begin{equation} (z_1,z_2)\mapsto (\phi(z_1,z_2), z_2), \label{eq:RISPdef} \end{equation} where \(\phi\) is a rational inner function in \(\mathbb{D}^2\) having {\it bidegree} \((1,n)\text{,}\) that is, degree \(1\) in \(z_1\) and degree \(n\in \mathbb{N}\) in \(z_2\text{.}\)  (We drop the subscript in the first component to lighten notation.) Skew-products of the form \eqref{eq:RISPdef} fix horizontal lines so that the main dynamics take place along one-dimensional sets, but even this apparently very simple case gives rise to interesting behavior, as is suggested in the images below. The advantage in working with such low-degree RISPs is that the extremely simple classification of fiber dynamics (discussed below) allows us to focus in detail on the global features of iteration on \(\mathbb{T}^2\text{.}\)</p>
+<p id="p-9">We proceed to describe the contents of our paper. We begin by examining three elementary examples of RISPs in Section \ref{sec:Ex}. These examples serve as guides for our general investigations and illustrate most of the features we uncover in a more general setting. In Section \ref{sec:Prelim} we introduce basic definitions for RIMs and RISPs, record some facts about RIFs and their numerator and denominator polynomials, and discuss iteration of M\"obius transformations in the unit disk. Section \ref{sec:main} contains the main results of our paper. After some preliminary remarks about general RIMs and certain associated essentially \(\mathbb{T}^2\)-symmetric polynomials, we focus on degree \((1,n)\) RISPs. We then introduce and study rotation belts associated with a RISP, strips on which the dynamical actions on fibers are conjugate to rotations, and give an estimate on their number. We investigate how different components of the fixed point set of a RISPs can come together at a singular fixed point, and give criteria for different configurations to be present. The main tool we use is a one-variable polynomial \(Q_{\alpha}\) built from the numerator and denominator polynomials of the first-component map \(\phi\text{.}\) We conclude in \ref{sec:morex} by exhibiting further examples of RISPs having more intricate dynamical behavior, and serving as illustrations of our main results.</p></section></div></main>
+</div>
+</body>
+</html>

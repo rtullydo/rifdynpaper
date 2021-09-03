@@ -1,0 +1,369 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<pretext xmlns:xi="http://www.w3.org/2001/XInclude">
+
+    <docinfo>
+        <macros>
+        \DeclareMathOperator{\RE}{Re}
+          \DeclareMathOperator{\IM}{Im}
+          \DeclareMathOperator{\ess}{ess}
+          \DeclareMathOperator{\intr}{int}
+          \DeclareMathOperator{\dist}{dist}
+          \DeclareMathOperator{\dom}{dom}
+          \DeclareMathOperator{\diag}{diag}
+          \DeclareMathOperator{\span}{span}
+          \DeclareMathOperator{\null}{null}
+          \DeclareMathOperator{\rank}{rank}
+          \DeclareMathOperator{\col}{col}
+          \DeclareMathOperator{\row}{row}
+          \DeclareMathOperator{\proj}{proj}
+          \DeclareMathOperator\re{\mathrm {Re~}}
+          \DeclareMathOperator\im{\mathrm {Im~}}
+          %\newcommand\half{\tfrac 12}
+          \newcommand\dd{\mathrm d}
+          \newcommand{\eps}{\varepsilon}
+          \newcommand{\To}{\longrightarrow}
+          \newcommand{\hilbert}{\mathcal{H}}
+          \newcommand{\s}{\mathcal{S}_2}
+          \newcommand{\A}{\mathcal{A}}
+          \newcommand\h{\mathcal{H}}
+          \newcommand{\J}{\mathcal{J}}
+          \newcommand{\M}{\mathcal{M}}
+          \newcommand{\F}{\mathbb{F}}
+          \newcommand{\N}{\mathcal{N}}
+          \newcommand{\T}{\mathbb{T}}
+          \newcommand{\W}{\mathcal{W}}
+          \newcommand{\X}{\mathcal{X}}
+          \newcommand{\D}{\mathbb{D}}
+          \newcommand{\C}{\mathbb{C}}
+          \newcommand{\BOP}{\mathbf{B}}
+          \newcommand{\Z}{\mathbb{Z}}
+          \newcommand{\BH}{\mathbf{B}(\mathcal{H})}
+          \newcommand{\KH}{\mathcal{K}(\mathcal{H})}
+          \newcommand{\pick}{\mathcal{P}_2}
+          \newcommand{\schur}{\mathcal{S}_2}
+          \newcommand{\R}{\mathbb{R}}
+          \newcommand{\Complex}{\mathbb{C}}
+          \newcommand{\Field}{\mathbb{F}}
+          \newcommand{\RPlus}{\Real^{+}}
+          \newcommand{\Polar}{\mathcal{P}_{\s}}
+          \newcommand{\Poly}{\mathcal{P}(E)}
+          \newcommand{\EssD}{\mathcal{D}}
+          \newcommand{\Lop}{\mathcal{L}}
+          \newcommand{\cc}[1]{\overline{#1}}
+          \newcommand{\abs}[1]{\left\vert#1\right\vert}
+          \newcommand{\set}[1]{\left\{#1\right\}}
+          \newcommand{\seq}[1]{\left\lt#1\right>}
+          \newcommand{\norm}[1]{\left\Vert#1\right\Vert}
+          \newcommand{\essnorm}[1]{\norm{#1}_{\ess}}
+          \newcommand{\tr}{\operatorname{tr}}
+          \newcommand{\ran}[1]{\operatorname{ran}#1}
+          \newcommand{\nt}{\stackrel{\mathrm {nt}}{\to}}
+          \newcommand{\pnt}{\xrightarrow{pnt}}
+          \newcommand{\ip}[2]{\left\langle #1, #2 \right\rangle}
+          \newcommand{\ad}{^\ast}
+          \newcommand{\inv}{^{-1}}
+          \newcommand{\adinv}{^{\ast -1}}
+          \newcommand{\invad}{^{-1 \ast}}
+          \newcommand\Pick{\mathcal P}
+          \newcommand\Ha{\mathbb{H}}
+          \newcommand{\HH}{\Ha\times\Ha}
+          \newcommand\Htau{\mathbb{H}(\tau)}
+          \newcommand{\vp}{\varphi}
+          \newcommand{\ph}{\varphi}
+          \newcommand\al{\alpha}
+          \newcommand\ga{\gamma}
+          \newcommand\de{\delta}
+          \newcommand\ep{\varepsilon}
+          \newcommand\la{\lambda}
+          \newcommand\up{\upsilon}
+          \newcommand\si{\sigma}
+          \newcommand\beq{\begin{equation}}
+          \newcommand\ds{\displaystyle}
+          \newcommand\eeq{\end{equation}}
+          \newcommand\df{\stackrel{\rm def}{=}}
+          \newcommand\ii{\mathrm i}
+          \newcommand{\vectwo}[2]
+          {
+             \begin{pmatrix} #1 \\ #2 \end{pmatrix}
+          }
+          \newcommand{\vecthree}[3]
+          {
+             \begin{pmatrix} #1 \\ #2 \\ #3 \end{pmatrix}
+          }
+          \newcommand\blue{\color{blue}}
+          \newcommand\black{\color{black}}
+          \newcommand\red{\color{red}}
+          %\newcommand\red{\color{black}}
+          \newcommand\nn{\nonumber}
+          \newcommand\bbm{\begin{bmatrix}}
+          \newcommand\ebm{\end{bmatrix}}
+          \newcommand\bpm{\begin{pmatrix}}
+          \newcommand\epm{\end{pmatrix}}
+          \numberwithin{equation}{section}
+          \newcommand\nin{\noindent}
+          \newcommand{\nCr}[2]{\,_{#1}C_{#2}} % nCr
+          \newcommand{\vec}[1]{{\bf #1}}
+          \newcommand{\ps}{\displaystyle \sum_{n=0}^\infty a_n x^n}
+          \newcommand{\psg}{\displaystyle \sum_{n=0}^\infty b_n x^n}
+          \newcommand{\hz}{\,\mathrm{Hz}}
+        </macros>
+    </docinfo>
+
+<article xml:id="linanal">
+    <title>Iteration of low-degree rational inner skew-products on <m>\mathbb{T}^2</m></title>
+    <frontmatter>
+
+        <titlepage>
+            <author>
+              <personname>Alan Sola</personname>
+              <institution>Stockholm University</institution>
+            </author>
+            <author>
+              <personname>Ryan Tully-Doyle</personname>
+              <institution>Cal Poly, SLO</institution>
+            </author>
+
+            <date><today /></date>
+        </titlepage>
+
+        <abstract>
+                <p>We examine iteration of certain skew-products on the bidisk whose components are rational inner functions, with emphasis on simple maps of the form <m>\Phi(z_1,z_2) = (\phi(z_1,z_2), z_2)</m>. If <m>\phi</m> has degree <m>1</m> in the first variable, the dynamics on each horizontal fiber can be described in terms of Möbius transformations but the global dynamics on the <m>2</m>-torus exhibit some complexity, encoded in terms of certain <m>\mathbb{T}^2</m>-symmetric polynomials. We describe the dynamical behavior of such mappings <m>\Phi</m> and give criteria for different configurations of fixed point curves and rotation belts in terms of zeros of a related one-variable polynomial.</p>
+            </abstract>
+    </frontmatter>
+
+    <section xml:id="sec-Intro"><title>Introduction and overview</title>
+   <p> Iteration of a rational function <m>R(z)=\frac{q(z)}{p(z)}</m> on the Riemann sphere, that is, the study 
+       <me>z\mapsto R^n(z)=(R\circ R \circ \cdots \circ R)(z) \quad (n=1,2,\ldots)</me> 
+       on <m>\mathbb{C}_{\infty}=\mathbb{C}\cup\{\infty\}</m>,
+       is a well-known topic in mathematics, discussed in many textbooks (e.g. <xref ref="BearBook, CGBook, MilBook"/>) and illustrated in beautiful computer images. The theory is quite mature, but important new results are still being discovered. The higher-dimensional theory, addressing iteration of polynomial or rational mappings <m>R\colon \mathbb{C}^n\to \mathbb{C}^n</m> is of later date and perhaps less complete. See, for instance, <xref ref="ForSurv,SibSurv, MilBook"/>, and the references therein, for basic overviews of dynamics in several complex variables.</p>
+
+    <p>In a different direction, considering self-maps of special bounded domains in <m>\mathbb{C}^n</m> (the unit disk in the complex plane, the unit <m>n</m>-ball) allows for the study of iteration of functions that are not necessarily defined throughout <m>\mathbb{C}^n</m>, and leads to interesting boundary phenomena not observed in the unbounded setting. An important example in this latter direction is the classical Denjoy-Wolff theorem <xref ref="CGBook"/> concerning fixed points of analytic self-maps of the unit disk; there are many subsequent extensions of the original result to different settings.</p>
+
+    <p>Our investigation concerns the study of the dynamics certain self-maps of the unit bidisk
+        <me>\mathbb{D}^2=\{(z_1,z_2)\in \mathbb{C}^2\colon |z_j|\lt 1, j=1,2\}</me>
+        and seeks to establish some basic facts about their iteration theory. There are many works addressing iteration of analytic self-maps of the bidisk and higher-dimensional polydisks (see, for instance, the papers <xref ref="Aba98, AG16,C32, F05, H54"/> and the thesis <xref ref="NThesis"/> for some background). Our focus is on obtaining detailed results for a restricted class of rational mappings by using elementary means.</p>
+
+    <p>We say that a mapping of the form
+        <me>\Phi\colon \mathbb{D}^2\to \mathbb{D}^2</me>
+        <me>(z_1,z_2)\mapsto (\phi_1(z_1,z_2), \phi_2(z_1,z_2))</me>
+        is a <term>rational inner mapping</term> (RIM) if each component <m>\phi_j</m> is a <term>rational inner function</term> on <m>\mathbb{D}^2</m>. A rational inner function in turn is an analytic function of the form
+        <me>\psi(z_1,z_2)=\frac{q(z_1,z_2)}{p(z_1,z_2)},</me>
+        with <m>q,p\in \mathbb{C}[z_1,z_2]</m> and <m>p(z)\neq 0</m> in <m>\mathbb{D}^2</m>, which is bounded in <m>\mathbb{D}^2</m> and has unimodular non-tangential boundary values at almost every point <m>\zeta \in \mathbb{T}^2=\{(\zeta_1, \zeta_2)\in \mathbb{C}^2\colon |\zeta_j|=1, j=1,2\}</m>. We recall the basic fact that <m>\mathbb{T}^2</m> is the <term>distinguished boundary</term> of the bidisk, the subset of the boundary <m>\partial \mathbb{D}^2</m> where most interesting function-theoretic phenomena on <m>\mathbb{D}^2</m> are observed and the maximum modulus principle is supported. By a theorem of Knese <xref ref="Kne15"/>, if <m>\phi_j</m> is rational inner then the boundary values <m>\phi_j^*(\zeta)</m> exist as unimodular numbers at <em>every</em> point of <m>\mathbb{T}^2</m>, and so we can view a rational inner mapping <m>\Phi</m> as inducing a map <m>\Phi\colon \overline{\mathbb{D}^2}\to \overline{\mathbb{D}^2}</m>, with <m>\Phi</m> sending <m>\mathbb{T}^2</m> to <m>\mathbb{T}^2</m>. In the same way, the <m>n</m>th iterate of <m>\Phi</m>
+        <me>\Phi^n(z_1,z_2)=(\Phi\circ \Phi\circ\cdots  \circ\Phi)(z_1,z_2)</me>
+        can be viewed as a mapping of the closure of the bidisk into itself that fixes the distinguished boundary.</p>
+
+    <p>Iteration of certain classes of rational inner functions on the bidisk and on <m>\mathbb{T}^2</m> has been considered in several papers, for instance in <xref ref="PS08,PR10"/>; see also <xref ref="SBJ17"/> for some applications. In those works, the component maps <m>\phi_j</m> are assumed to be of the special type
+        <me>\psi_j(z_1,z_2)=B_{j,1}(z_1)\cdot B_{j,2}(z_2)</me>
+        where <m>B_{j,k}</m> are one-variable <term>finite Blaschke products</term>. Recall that these are functions <m>B\colon \mathbb{D}\to\mathbb{D}</m> of the form
+        <me>B(z)=e^{i\alpha}z^m\prod_{k=1}^n\frac{z-a_k}{1-\overline{a}_kz},</me>
+        where <m>\{a_1,\ldots, a_n\}\subset \mathbb{D}</m>, <m>\alpha\in \mathbb{R}</m>, and <m>m,n\in \mathbb{N}</m>. It is apparent that a finite Blaschke product extends continuously to the unit circle <m>\mathbb{T}</m>, but the dynamics of one-variable Blaschke products nevertheless exhibit complicated features; see for instance <xref ref="MilBook"/> Chapter 15. Similarly, the works <xref ref="PS08,PR10"/> uncover a rich dynamical structure associated with two-dimensional Blaschke products.</p>
+
+   <p> In contrast with one-variable Blaschke products, a general rational inner function <m>\psi=q/p</m> in <m>\mathbb{D}^2</m> can have boundary singularities: these occur at points <m>\tau=(\tau_1,\tau_2)\in \mathbb{T}^2</m> where <m>q(\tau_1,\tau_2)=p(\tau_1,\tau_2)=0</m>, and represent a genuinely new higher-dimensional phenomenon. The function <m>\psi</m> is in general discontinuous at <m>\tau \in \mathbb{T}^2</m>, even though <m>\psi^{*}(\tau)</m> always exists, meaning that a RISP <m>\Phi</m> need not be a continuous self-map of <m>\overline{\mathbb{D}^2}</m>.  This fact will be the source of several interesting phenomena that we observe in this paper.
+   </p>
+
+    <p>Apart from some preliminary observations concerning RIMs, we mostly restrict our attention to <term> rational inner skew-products</term> (RISPs). These are rational inner mappings of the special form
+        <me>\Phi(z_1,z_2)=(\phi_1(z_1,z_2), \phi_2(z_2)),</me>
+        with <m>\phi_1</m> rational inner in <m>\mathbb{D}^2</m>, and <m>\phi_2</m> a rational inner function in one variable, viewed as a function on <m>\mathbb{D}^2</m> in the obvious way. Skew-products have been studied extensively in the polynomial setting, see e.g. <xref ref="J99, PR19"/> and the references therein. In fact, we focus on the very simplest case of skew-mappings
+        <men xml:id="eq-RISPdef">
+        (z_1,z_2)\mapsto (\phi(z_1,z_2), z_2),
+        </men>
+        where <m>\phi</m> is a rational inner function in <m>\mathbb{D}^2</m> having <term> bidegree</term> <m>(1,n)</m>, that is, degree <m>1</m> in <m>z_1</m> and degree <m>n\in \mathbb{N}</m> in <m>z_2</m>.  (We drop the subscript in the first component to lighten notation.) Skew-products of the form <xref ref="eq-RISPdef"/> fix horizontal lines so that the main dynamics take place along one-dimensional sets, but even this apparently very simple case gives rise to interesting behavior, as is suggested in the images below. The advantage in working with such low-degree RISPs is that the extremely simple classification of fiber dynamics (discussed below) allows us to focus in detail on the global features of iteration on <m>\mathbb{T}^2</m>. </p>
+
+       <p> We proceed to describe the contents of our paper. We begin by examining three elementary examples of RISPs in Section <xref provisional="sec-Ex"/>. These examples serve as guides for our general investigations and illustrate most of the features we uncover in a more general setting. In Section <xref provisional="sec-Prelim"/> we introduce basic definitions for RIMs and RISPs, record some facts about RIFs and their numerator and denominator polynomials, and discuss iteration of Möbius transformations in the unit disk. Section <xref provisional="se-:main"/> contains the main results of our paper. After some preliminary remarks about general RIMs and certain associated essentially <m>\mathbb{T}^2</m>-symmetric polynomials, we focus on degree <m>(1,n)</m> RISPs. We then introduce and study rotation belts associated with a RISP, strips on which the dynamical actions on fibers are conjugate to rotations, and give an estimate on their number. We investigate how different components of the fixed point set of a RISPs can come together at a singular fixed point, and give criteria for different configurations to be present. The main tool we use is a one-variable polynomial <m>Q_{\alpha}</m> built from the numerator and denominator polynomials of the first-component map <m>\phi</m>. We conclude in <xref provisional="sec:morex"/> by exhibiting further examples of RISPs having more intricate dynamical behavior, and serving as illustrations of our main results. 
+       </p>
+    </section>
+
+    <section xml:id="sec-Ex"><title>Three examples</title>
+
+
+        <p> A fundamental result due to Rudin and Stout (see \cite[Chapter 5]{Rud69}) asserts that any RIF on <m>\mathbb{D}^2</m> can be written as
+                <men xml:id="eq-rudin">
+                \phi(z)=e^{i\alpha}z_1^{\beta_1}z_ 2^{\beta_2}\frac{\tilde{p}(z)}{p(z)},
+                </men>
+                where <m>\alpha\in \mathbb{R}</m>, <m>\beta_1,\beta_2 \in \mathbb{N}</m>, the <m>p\in\mathbb{C}[z_1,z_2]</m> has no zeros in <m>\mathbb{D}^2</m>, and <m>\tilde{p}</m> is the
+                 <term>reflection</term> of  <m>p</m>, defined as
+                <men xml:id="eq-preflection">
+                \tilde{p}(z_1,z_2)=z_1^mz_2^n\overline{p\left(\frac{1}{\bar{z}_1},\frac{1}{\bar{z}_2}\right)}.
+                </men></p>
+
+        <p>Here the pair <m>(m,n)</m> is the bidegree of <m>p</m>, that is <m>p</m> has degree <m>m</m> in <m>z_1</m> and degree <m>n</m> in <m>z_2</m>. </p>
+
+        <p>This structural result makes examples of rational inner functions particularly easy to construct - all one requires is a polynomial with no zeros in the bidisk. The following such examples can be fruitfully analyzed using elementary means.</p> 
+        <example xml:id="ex-fave">
+        <figure>
+            <image source="/images/vertparacurves.pdf"/>
+        </figure>
+        </example><!--Vertical lines before mapping.]
+              {\includegraphics[width=0.4 \textwidth]{vertparacurves.pdf}}
+            \hfill
+            \subfigure[<m>\Phi^n</m> for <m>n=1</m>.]
+              {\includegraphics[width=0.4 \textwidth]{vfave1iter.pdf}}
+          %\caption{\textsl{Iteration of the RISP <m>\Phi=(-\frac{2z_1z_2-z_1-z_2}{2-z_1-z_2},z_2)</m> on <m>\mathbb{T}^2</m>}.}
+              \subfigure[<m>\Phi^n</m> for <m>n=2</m>]
+              {\includegraphics[width=0.4 \textwidth]{vfave2iter.pdf}}
+            \hfill
+            \subfigure[<m>\Phi^n</m> for <m>n=3</m>.]
+              {\includegraphics[width=0.4 \textwidth]{vfave3iter.pdf}}
+          %\caption{\textsl{Iteration of the RISP <m>\Phi=(-\frac{2z_1z_2-z_1-z_2}{2-z_1-z_2},z_2)</m> on <m>\mathbb{T}^2</m>.}}
+              \subfigure[<m>\Phi^n</m> for <m>n=4</m>]
+              {\includegraphics[width=0.4 \textwidth]{vfave4iter.pdf}}
+            \hfill
+            \subfigure[<m>\Phi^n</m> for <m>n=5</m>.]
+              {\includegraphics[width=0.4 \textwidth]{vfave5iter.pdf}}
+          \caption{\textsl{Iteration of <m>\Phi=(-\frac{2z_1z_2-z_1-z_2}{2-z_1-z_2},z_2)</m> on <m>\mathbb{T}^2</m>.}}
+          \label{faveplots}
+          
+        \end{figure}
+        Consider the RISP
+        <me>\Phi(z_1,z_2)=\left(-\frac{2z_1z_2-z_1-z_2}{2-z_1-z_2},z_2\right).</me>
+        The first component <m>\phi=-\frac{\tilde{p}}{p}</m> is a degree <m>(1,1)</m> RIF having a single singularity at <m>(1,1)</m>. A computation reveals that the boundary value <m>\phi^{*}(1,1)=1</m>, and so <m>(1,1)</m> is a fixed point of 
+        <m>\Phi</m>. In fact, we have <m>\Phi(z_1,1)=(1,1)</m>, so the entire line <m>\{z_2=1\}</m> is mapped to <m>(1,1)</m>. 
+         Next, we note that <m>\phi^*(1,z_2)=1</m> and <m>\phi^*(z_2,z_2)=z_2</m> meaning that both the line <m>\{z_1=1\}</m> and the diagonal are comprised of fixed points of <m>\Phi</m>. Solving 
+        <m>\phi^{*}(z)=z_1</m>, or more precisely, the equation
+        <me>\tilde{p}(z)-z_1p(z)=0,</me>
+        confirms that these are all the fixed points of <m>\Phi</m>. 
+
+        We now iterate <m>\Phi</m>. We visualize the action of the iterates by viewing the <m>2</m>-torus as <m>[-\pi, \pi]^2</m> and applying <m>\Phi^n</m> to vertical lines of the form <m>\{(a\pi, t_2)\}</m> for several choices of <m>-1<a<1</m>. Figure \ref{faveplots} suggests that the iterates converge as <m>n</m> grows. 
+        Using induction, one can show that, for <m>n=1,2,\ldots</m>,
+        <me>\Phi^n(z_1,z_2)=\left(-\frac{2^nz_1z_2-z_1-(2^{n}-1)z_2}{2^n-(2^{n}-1)z_1-z_2}, z_2\right).</me>
+        Hence, for all <m>(z_1,z_2)\in \overline{\mathbb{D}^2}\setminus \{z_1=1\}</m>, we have
+        <me>\Phi^n(z_1,z_2)\to (z_2,z_2)  \quad \textrm{as} \quad n\to \infty.</me>
+        This means that each point on the diagonal is attractive on its corresponding horizontal fiber, while points on <m>\{z_1=1\}</m> are repelling fixed points. The special fiber <m>\{z_2=1\}</m> is immediately collapsed into <m>(1,1)</m> by <m>\Phi</m>, explaining the pinched appearance of the images.
+
+        The special role the lines <m>\{z_1=1\}</m> and <m>\{z_2=1\}</m> play here is related to the fact that they are the level sets of <m>\phi</m> corresponding to the non-tangential value <m>\lambda=1</m>, which is attained at the singularity of <m>\phi</m> at <m>(1,1)</m> (see \cite{BPS18}). This will be discussed in detail below.
+        </example>
+
+        \begin{ex}\label{ex:para}
+        \begin{figure}[h!]
+            \subfigure[Vertical lines.]
+              {\includegraphics[width=0.35 \textwidth]{vertparacurves.pdf}}
+        \hfill
+            \subfigure[<m>\Phi^n</m> for <m>n=1</m>.]
+              {\includegraphics[width=0.35 \textwidth]{3zwparaviter1.pdf}}
+          %\caption{\textsl{Iteration of the RISP <m>\Phi=(-\frac{2z_1z_2-z_1-z_2}{2-z_1-z_2},z_2)</m> on <m>\mathbb{T}^2</m>}.}
+              \subfigure[<m>\Phi^n</m> for <m>n=2</m>]
+              {\includegraphics[width=0.35 \textwidth]{3zwparaviter2.pdf}}
+            \hfill
+            \subfigure[<m>\Phi^n</m> for <m>n=3</m>.]
+              {\includegraphics[width=0.35 \textwidth]{3zwparaviter3.pdf}}
+          %\caption{\textsl{Iteration of the RISP <m>\Phi=(-\frac{2z_1z_2-z_1-z_2}{2-z_1-z_2},z_2)</m> on <m>\mathbb{T}^2</m>.}}
+              \subfigure[<m>\Phi^n</m> for <m>n=4</m>]
+              {\includegraphics[width=0.35 \textwidth]{3zwparaviter4.pdf}}
+            \hfill
+            \subfigure[<m>\Phi^n</m> for <m>n=5</m>.]
+              {\includegraphics[width=0.35 \textwidth]{3zwparaviter5.pdf}}
+          \caption{\textsl{Iteration of <m>\Phi=(-\frac{3z_1z_2-z_1-z_2-1}{3-z_1-z_2-z_1z_2},z_2)</m> on <m>\mathbb{T}^2</m>.}}
+          \label{parabplots}
+        \end{figure}
+        Our next example is
+        <me>\Phi(z_1,z_2)=\left(-\frac{3z_1z_2-z_1-z_2-1}{3-z_1-z_2-z_1z_2},z_2\right).</me>
+        The first component map <m>\phi=-\frac{\tilde{p}}{p}</m> again has a unique singularity on <m>\mathbb{T}^2</m> at the point <m>(1,1)</m>, with <m>\phi^*(1,1)=1</m>, and since <m>\Phi(z_1,1)=(1,1)</m>, the fiber <m>\{z_2=1\}</m> collapses.  The fixed points of <m>\Phi</m> on the <m>2</m>-torus are determined by <m>\tilde{p}-z_1p=0</m>, and since <m>\tilde{p}-z_1p=-(z_1-1)^2(z_2+1)</m>, the fixed point consists of 
+        <m>\{z_1=1\}\cup\{z_2=-1\}</m>, a union of two lines.
+
+
+        Since <m>\phi(z_1,-1)=z_1</m>, we obtain <m>\Phi(z_1,-1)=(z_1,-1)</m>, confirming that all the points on <m>\{z_2=-1\}</m> are fixed. By contrast, all other fibers contain a single fixed point at <m>(1,z_2)</m>. The dynamics of <m>\Phi</m> are shown in Figure 2: we see that when <m>t_2>0</m>, points are attracted to the <m>t_2</m>-axis from the right, and when <m>t_2<0</m>, the fibers are attracted to the axis from the left.  A concrete formula for <m>\lim_{n\to \infty}\Phi</m> is not readily apparent, but a computation shows that
+        <me>\frac{\partial \phi}{\partial z_1}(z_1,z_2)=4\frac{(z_2-1)^2}{(3-z_1-z_2-z_1z_2)^2},</me>
+        hence <m>\frac{\partial \phi}{\partial z_1}(1,z_2)=1</m>. As we will see later, this confirms that the fixed points on <m>\{(1,\zeta_2)\}</m> are neither attractive nor repelling in this example: they are so-called parabolic fixed points.
+        \end{ex}
+        These two examples give an indication of the features (the presence of a collapsing fiber, fixed point curves being smooth, convergence to fixed points) present the general <m>(1,n)</m> RISP setting. However, other phenomena do arise, and mixed behavior is possible, as the next example shows.
+
+        \begin{ex}\label{ex:rot}
+        The bidegree <m>(1,1)</m> RISP
+        <me>\Phi(z_1,z_2)=\left(\frac{3z_1z_2-z_1-z_2}{3-z_1-z_2},z_2\right)</me>
+        has <m>\Phi(1,1)=(1,1)</m> so that <m>(1,1)</m> is again a fixed point, but in this example,
+        <me>\phi_1(z_1) = \phi(z_1,1)=\frac{2z_1-1}{2-z_1},</me>
+        which is non-constant, meaning that <m>\{z_2=1\}</m> does not collapse into a point under <m>\Phi</m>. In fact, the component <m>\phi</m> does not have a singularity at <m>(1,1)</m> or, indeed, at any point of <m>\mathbb{T}^2</m>. Instead, the points <m>(1,1)</m> and <m>(-1,1)</m> are fixed by <m>\Phi</m>, and since 
+        <m>\phi_1'(1)=3</m> and <m>\phi_1'(-1)=\frac{1}{3}</m>, the fixed point <m>(1,1)</m> is repelling while <m>(-1,1)</m> is attracting. 
+
+        We can determine all the fixed points of <m>\Phi</m> on <m>\mathbb{T}^2</m> by solving <m>\tilde{p}(z)-z_1p(z)=0</m> for <m>z_2</m>. We obtain
+        <me>z_2=\psi(z_1)=z_1\frac{4-z_1}{4z_1-1},</me>
+        and we note that the right-hand side is unimodular for unimodular <m>z_1</m>, so that we again get a curve of fixed points in <m>\mathbb{T}^2</m>. However, <m>\psi</m> is not surjective on <m>\mathbb{T}</m>, meaning that there are <m>z_2</m>-fibers without fixed points; see Figure \ref{rotaplots}(f). For instance, <m>-1</m> is not in the range of <m>\psi</m> on <m>\mathbb{T}</m>, and a computation reveals that <m>\phi(z_1,-1)=-\frac{4z_1-1}{4-z_1}</m> satisfies <m>\phi^2=\mathrm{id}</m>. Thus, the fiber dynamics associated with <m>\Phi^n</m> on <m>\{z_2=-1\}</m> are those of a rational rotation of order <m>2</m>. This is clearly visible when looking at the top of the images in Figure \ref{rotaplots}. Other fibers that do not intersect the fixed point curve experience rotations of different orders.
+
+        \begin{figure}[h!]
+            \subfigure[<m>\Phi^n</m> for <m>n=1</m>.]
+              {\includegraphics[width=0.35 \textwidth]{threefaveviter1.pdf}}
+          %\caption{\textsl{Iteration of the RISP <m>\Phi=(-\frac{2z_1z_2-z_1-z_2}{2-z_1-z_2},z_2)</m> on <m>\mathbb{T}^2</m>}.}
+              \subfigure[<m>\Phi^n</m> for <m>n=2</m>]
+              {\includegraphics[width=0.35 \textwidth]{threefaveviter2.pdf}}
+            \hfill
+            \subfigure[<m>\Phi^n</m> for <m>n=3</m>.]
+              {\includegraphics[width=0.35 \textwidth]{threefaveviter3.pdf}}
+          %\caption{\textsl{Iteration of the RISP <m>\Phi=(-\frac{2z_1z_2-z_1-z_2}{2-z_1-z_2},z_2)</m> on <m>\mathbb{T}^2</m>.}}
+              \subfigure[<m>\Phi^n</m> for <m>n=4</m>]
+              {\includegraphics[width=0.35 \textwidth]{threefaveviter4.pdf}}
+            \hfill
+            \subfigure[<m>\Phi^n</m> for <m>n=5</m>.]
+              {\includegraphics[width=0.35 \textwidth]{threefaveviter5.pdf}}
+            \subfigure[Invariant curve.]
+              {\includegraphics[width=0.35 \textwidth]{rotinvacurve.pdf}}
+          \caption{\textsl{Iteration of <m>\Phi=(\frac{3z_1z_2-z_1-z_2}{3-z_1-z_2},z_2)</m> on <m>\mathbb{T}^2</m>.}}
+          \label{rotaplots}
+        \end{figure}
+        \end{ex}
+
+        This third example has some features in common with the first two, but the dynamics varies in nature across fibers. Together, our examples illustrate the three possible dynamical behaviors of a bidegree <m>(1,n)</m> RISP - attracting/repelling fixed points, so-called parabolic fixed points, and rotations on a <m>z_2</m>-fiber. In the investigation below, we explore how the actions on individual fibers fit together in a global picture of the dynamical behavior of a bidegree <m>(1,n)</m> RISP on <m>\mathbb{T}^2</m>.--> 
+        </section>
+
+    <backmatter>
+        <references><title>References</title>
+            <biblio type="raw" xml:id="Aba98">M. Abate, The Julia-Wolff-Carathéodory theorem in polydisks, <em>J. Anal. Math.</em> <b>74</b> (1998), 275-306.</biblio>
+
+            <biblio type="raw" xml:id="AMS06">J. Agler, J.E. M\McC Carthy, and M. Stankus, Toral algebraic sets and function theory on polydisks, <em>J. Geom. Anal.</em> <b>16</b> (2006), 551-562.</biblio>
+
+            <biblio type="raw" xml:id="AMY12"> J. Agler, J.E. M\McC Carthy, and N.J. Young, A Carathéodory theorem for the bidisk via Hilbert space methods, <em>Math. Ann.</em> <b>352</b> (2012), 581-624.</biblio>
+
+            <biblio type="raw" xml:id="AG16">L. Arosio and P. Gumenyuk, Valiron and Abel equations for holomorphic self-maps of the polydisc, <em>Internat. J. Math.</em> <b>27</b> (2016), 1650034.</biblio>
+
+            <biblio type="raw" xml:id="BearBook">A. Beardon, <em>Iteration of rational functions.</em> Graduate Texts in Mathematics 132, Springer-Verlag, New York. 1991.</biblio>
+
+            <biblio type="raw" xml:id="BCSprep">K. Bickel, J.A. Cima, and A.A. Sola, Clark measures for rational inner functions, preprint, available at <url href="https://arxiv.org/abs/2101.00508"/></biblio>
+
+            <biblio type="raw" xml:id="BKPSprep">K. Bickel, G. Knese, J.E. Pascoe, and A. Sola, Local theory of stable polynomials and bounded rational functions of several variables, preprint 2021.</biblio>
+
+            <biblio type="raw" xml:id="BPS18">K. Bickel, J.E. Pascoe, and A. Sola, Derivatives of rational inner functions: geometry of singularities and integrability at the boundary, <em>Proc. London Math. Soc.</em> <b>116</b> (2018), 281-329.</biblio>
+
+            <biblio type="raw" xml:id="BPS20">K. Bickel, J. E. Pascoe, and A. Sola, Level curve portraits of rational inner functions, <em>Ann. Sc. Norm. Sup. Pisa Cl. Sc.</em> <b> XXI</b> (2020), 451-494.</biblio>
+
+            <biblio type="raw" xml:id="BPSajm">K. Bickel, J. E. Pascoe, and A. Sola, Singularities of rational inner functions in higher dimensions, <em>Amer. J. Math.</em>, to appear.</biblio>
+
+            <biblio type="raw" xml:id="CGBook">L. Carleson and T.W.  Gamelin, <em> Complex dynamics</em>, Universitext: Tracts in Mathematics, Springer-Verlag, New York, 1993.</biblio>
+
+            <biblio type="raw" xml:id="C32">H. Cartan, Les fonctions de deux variables complexes. L'itération des transformations intérieures d'un domaine borné (French), Math. Z. <b>35</b> (1932), 760-773.</biblio>
+
+            <biblio type="raw" xml:id="ForSurv">J.E. Fornaess, <em>Dynamics in several complex variables</em>. CBMS Regional Conference Series in Mathematics, 87. Providence, RI, 1996.</biblio>
+
+            <biblio type="raw" xml:id="F05">C. Frosini, Dynamics on bounded domains, in: <em> The <m>p</m>-harmonic equation and recent advances in analysis</em>, 99-117, Contemp. Math. <b>370</b> Amer. Math. Soc., Providence, RI, 2005.</biblio>
+
+            <biblio type="raw" xml:id="H54">M. Hervé, Sur l'itération des transformations analytiques dans le bicercle unité, <em>Ann. Sci. Ecole Norm. Sup.</em> (3) <b> 71</b> (1954), 1-28.</biblio>
+
+            <biblio type="raw" xml:id="J99">M. Jonsson, Dynamics of polynomials skew-products on <m>\mathbb{C}^2</m>, <em>Math. Ann.</em> <b>314</b> (1999), 403-447.</biblio>
+
+            <biblio type="raw" xml:id="Kne10">G. Knese, Polynomials defining distinguished varieties, <em>Trans. Amer. Math. Soc.</em> <b> 362</b> (2010), 5635-5655.</biblio>
+
+            <biblio type="raw" xml:id="Kne15">G. Knese, Integrability and regularity of rational functions, <em>Proc. London. Math. Soc.</em> <b> 111</b> (2015), 1261-1306.</biblio>
+
+            <biblio type="raw" xml:id="MilBook">J. Milnor, <em> Dynamics in one complex variable</em>. Annals of Mathematics Studies 160, Princeton Univ. Press, Princeton, NJ, 2006. </biblio>
+
+            <biblio type="raw" xml:id="NThesis">J. Nowell, Denjoy-Wolff sets for analytic maps on the polydisk, PhD Thesis, University of Florida, 2019.</biblio>
+
+            <biblio type="raw" xml:id="PR19">H. Peters and J. Raissy, Fatou components of elliptic polynomial skew-products, <em>Ergodic Theory Dynam. Systems</em> <b> 39</b> (2019), 2235-2247.</biblio>
+
+            <biblio type="raw" xml:id="PR10">E.R. Pujals and R.K.W. Roeder, Two-dimensional Blaschke products: degree growth and ergodic consequences, <em>Indiana Univ. Math. J.</em> <b> 59</b> (2010), 301-325.</biblio>
+
+            <biblio type="raw" xml:id="PS08">E.R. Pujals and M. Shub, Dynamics of two-dimensional Blaschke products, <em> Ergodic Theory Dynam. Systems</em> <b> 28</b> (2008), 575-585.</biblio>
+
+            <biblio type="raw" xml:id="Rud69"> W. Rudin, <em>Function Theory in polydisks</em>,
+            W. A. Benjamin, Inc., New York-Amsterdam, 1969.</biblio>
+
+            <biblio type="raw" xml:id="SibSurv">N. Sibony, Dynamique des applications rationelles de <m>\mathbf{P}^k</m>. (French) <em> Dynamique et géométrie complexes (Lyon, 1997)</em>, Panor. Synthéses <b> 8</b>, Soc. Math. France, Paris, 1999.</biblio>
+
+            <biblio type="raw" xml:id="SBJ17">J. Slipantschuk, O.F. Bandtlow, and W. Just, Complete spectral data for analytic Anosov maps of the torus, <em>Nonlinearity</em> <b> 30</b> (2017), 2667-2686.</biblio>
+
+            <biblio type="raw xml:id=TD17">R. Tully-Doyle, Analytic functions on the bidisk at boundary singularities via Hilbert space methods, <em>Oper. Matrices</em> <b> 11</b> (2017), 55-70.</biblio>
+
+             <biblio type="raw" xml:id="TDpage">R. Tully-Doyle, Personal webpage <url href="https://github.com/rtullydo/RISP-dynamics"/> </biblio>
+        </references>
+    </backmatter>
+</article>
+</pretext>
