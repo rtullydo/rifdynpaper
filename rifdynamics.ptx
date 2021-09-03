@@ -227,7 +227,7 @@
                 <me>\tilde{p}(z)-z_1p(z)=0,</me>
                 confirms that these are all the fixed points of <m>\Phi</m>. </p>
 
-        <p>We now iterate <m>\Phi</m>. We visualize the action of the iterates by viewing the <m>2</m>-torus as <m>[-\pi, \pi]^2</m> and applying <m>\Phi^n</m> to vertical lines of the form <m>\{(a\pi, t_2)\}</m> for several choices of <m>-1\lt a\t 1</m>. Figure \ref{faveplots} suggests that the iterates converge as <m>n</m> grows. 
+        <p>We now iterate <m>\Phi</m>. We visualize the action of the iterates by viewing the <m>2</m>-torus as <m>[-\pi, \pi]^2</m> and applying <m>\Phi^n</m> to vertical lines of the form <m>\{(a\pi, t_2)\}</m> for several choices of <m>-1\lt a\lt 1</m>. Figure <xref ref="faveplots"/> suggests that the iterates converge as <m>n</m> grows. 
                 Using induction, one can show that, for <m>n=1,2,\ldots</m>,
                 <me>\Phi^n(z_1,z_2)=\left(-\frac{2^nz_1z_2-z_1-(2^{n}-1)z_2}{2^n-(2^{n}-1)z_1-z_2}, z_2\right).</me>
                 Hence, for all <m>(z_1,z_2)\in \overline{\mathbb{D}^2}\setminus \{z_1=1\}</m>, we have
