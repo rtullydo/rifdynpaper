@@ -259,45 +259,23 @@
         <figure> <caption><m>\Phi^n</m> for <m>n=4</m></caption>
             <image source="images/3zwparaviter4.svg"/>
         </figure>
-        <figure> <caption><m>\Phi^n</m> for <m>n=5</m></caption>
+        <figure xml:id="para5"> <caption><m>\Phi^n</m> for <m>n=5</m></caption>
             <image source="images/3zwparaviter5.svg"/>
         </figure>
         </sidebyside>
-        </sbsgroup></example><!--
-        \begin{ex}\label{ex:para}
-        \begin{figure}[h!]
-            \subfigure[Vertical lines.]
-              {\includegraphics[width=0.35 \textwidth]{vertparacurves.pdf}}
-        \hfill
-            \subfigure[<m>\Phi^n</m> for <m>n=1</m>.]
-              {\includegraphics[width=0.35 \textwidth]{3zwparaviter1.pdf}}
-          %\caption{\textsl{Iteration of the RISP <m>\Phi=(-\frac{2z_1z_2-z_1-z_2}{2-z_1-z_2},z_2)</m> on <m>\mathbb{T}^2</m>}.}
-              \subfigure[<m>\Phi^n</m> for <m>n=2</m>]
-              {\includegraphics[width=0.35 \textwidth]{3zwparaviter2.pdf}}
-            \hfill
-            \subfigure[<m>\Phi^n</m> for <m>n=3</m>.]
-              {\includegraphics[width=0.35 \textwidth]{3zwparaviter3.pdf}}
-          %\caption{\textsl{Iteration of the RISP <m>\Phi=(-\frac{2z_1z_2-z_1-z_2}{2-z_1-z_2},z_2)</m> on <m>\mathbb{T}^2</m>.}}
-              \subfigure[<m>\Phi^n</m> for <m>n=4</m>]
-              {\includegraphics[width=0.35 \textwidth]{3zwparaviter4.pdf}}
-            \hfill
-            \subfigure[<m>\Phi^n</m> for <m>n=5</m>.]
-              {\includegraphics[width=0.35 \textwidth]{3zwparaviter5.pdf}}
-          \caption{\textsl{Iteration of <m>\Phi=(-\frac{3z_1z_2-z_1-z_2-1}{3-z_1-z_2-z_1z_2},z_2)</m> on <m>\mathbb{T}^2</m>.}}
-          \label{parabplots}
-        \end{figure}
-        Our next example is
-        <me>\Phi(z_1,z_2)=\left(-\frac{3z_1z_2-z_1-z_2-1}{3-z_1-z_2-z_1z_2},z_2\right).</me>
-        The first component map <m>\phi=-\frac{\tilde{p}}{p}</m> again has a unique singularity on <m>\mathbb{T}^2</m> at the point <m>(1,1)</m>, with <m>\phi^*(1,1)=1</m>, and since <m>\Phi(z_1,1)=(1,1)</m>, the fiber <m>\{z_2=1\}</m> collapses.  The fixed points of <m>\Phi</m> on the <m>2</m>-torus are determined by <m>\tilde{p}-z_1p=0</m>, and since <m>\tilde{p}-z_1p=-(z_1-1)^2(z_2+1)</m>, the fixed point consists of 
-        <m>\{z_1=1\}\cup\{z_2=-1\}</m>, a union of two lines.
+        </sbsgroup>
+        <p>Our next example is
+                <me>\Phi(z_1,z_2)=\left(-\frac{3z_1z_2-z_1-z_2-1}{3-z_1-z_2-z_1z_2},z_2\right).</me>
+                The first component map <m>\phi=-\frac{\tilde{p}}{p}</m> again has a unique singularity on <m>\mathbb{T}^2</m> at the point <m>(1,1)</m>, with <m>\phi^*(1,1)=1</m>, and since <m>\Phi(z_1,1)=(1,1)</m>, the fiber <m>\{z_2=1\}</m> collapses.  The fixed points of <m>\Phi</m> on the <m>2</m>-torus are determined by <m>\tilde{p}-z_1p=0</m>, and since <m>\tilde{p}-z_1p=-(z_1-1)^2(z_2+1)</m>, the fixed point consists of 
+                <m>\{z_1=1\}\cup\{z_2=-1\}</m>, a union of two lines.
+        </p>
 
-
-        Since <m>\phi(z_1,-1)=z_1</m>, we obtain <m>\Phi(z_1,-1)=(z_1,-1)</m>, confirming that all the points on <m>\{z_2=-1\}</m> are fixed. By contrast, all other fibers contain a single fixed point at <m>(1,z_2)</m>. The dynamics of <m>\Phi</m> are shown in Figure 2: we see that when <m>t_2>0</m>, points are attracted to the <m>t_2</m>-axis from the right, and when <m>t_2<0</m>, the fibers are attracted to the axis from the left.  A concrete formula for <m>\lim_{n\to \infty}\Phi</m> is not readily apparent, but a computation shows that
-        <me>\frac{\partial \phi}{\partial z_1}(z_1,z_2)=4\frac{(z_2-1)^2}{(3-z_1-z_2-z_1z_2)^2},</me>
-        hence <m>\frac{\partial \phi}{\partial z_1}(1,z_2)=1</m>. As we will see later, this confirms that the fixed points on <m>\{(1,\zeta_2)\}</m> are neither attractive nor repelling in this example: they are so-called parabolic fixed points.
-        \end{ex}
-        These two examples give an indication of the features (the presence of a collapsing fiber, fixed point curves being smooth, convergence to fixed points) present the general <m>(1,n)</m> RISP setting. However, other phenomena do arise, and mixed behavior is possible, as the next example shows.
-
+        <p>Since <m>\phi(z_1,-1)=z_1</m>, we obtain <m>\Phi(z_1,-1)=(z_1,-1)</m>, confirming that all the points on <m>\{z_2=-1\}</m> are fixed. By contrast, all other fibers contain a single fixed point at <m>(1,z_2)</m>. The dynamics of <m>\Phi</m> are shown in Figure 2: we see that when <m>t_2>0</m>, points are attracted to the <m>t_2</m>-axis from the right, and when <m>t_2\lt 0</m>, the fibers are attracted to the axis from the left.  A concrete formula for <m>\lim_{n\to \infty}\Phi</m> is not readily apparent, but a computation shows that
+                <me>\frac{\partial \phi}{\partial z_1}(z_1,z_2)=4\frac{(z_2-1)^2}{(3-z_1-z_2-z_1z_2)^2},</me>
+                hence <m>\frac{\partial \phi}{\partial z_1}(1,z_2)=1</m>. As we will see later, this confirms that the fixed points on <m>\{(1,\zeta_2)\}</m> are neither attractive nor repelling in this example: they are so-called parabolic fixed points.</p>
+        </example>
+        <p>These two examples give an indication of the features (the presence of a collapsing fiber, fixed point curves being smooth, convergence to fixed points) present the general <m>(1,n)</m> RISP setting. However, other phenomena do arise, and mixed behavior is possible, as the next example shows.</p>
+<!--
         \begin{ex}\label{ex:rot}
         The bidegree <m>(1,1)</m> RISP
         <me>\Phi(z_1,z_2)=\left(\frac{3z_1z_2-z_1-z_2}{3-z_1-z_2},z_2\right)</me>
