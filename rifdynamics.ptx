@@ -227,7 +227,7 @@
                 <me>\tilde{p}(z)-z_1p(z)=0,</me>
                 confirms that these are all the fixed points of <m>\Phi</m>. </p>
 
-        <p>We now iterate <m>\Phi</m>. We visualize the action of the iterates by viewing the <m>2</m>-torus as <m>[-\pi, \pi]^2</m> and applying <m>\Phi^n</m> to vertical lines of the form <m>\{(a\pi, t_2)\}</m> for several choices of <m>-1\lt a\lt 1</m>. Figure <xref ref="faveplots"/> suggests that the iterates converge as <m>n</m> grows. 
+        <p>We now iterate <m>\Phi</m>. We visualize the action of the iterates by viewing the <m>2</m>-torus as <m>[-\pi, \pi]^2</m> and applying <m>\Phi^n</m> to vertical lines of the form <m>\{(a\pi, t_2)\}</m> for several choices of <m>-1\lt a\lt 1</m>. <xref ref="faveplots"/> suggests that the iterates converge as <m>n</m> grows. 
                 Using induction, one can show that, for <m>n=1,2,\ldots</m>,
                 <me>\Phi^n(z_1,z_2)=\left(-\frac{2^nz_1z_2-z_1-(2^{n}-1)z_2}{2^n-(2^{n}-1)z_1-z_2}, z_2\right).</me>
                 Hence, for all <m>(z_1,z_2)\in \overline{\mathbb{D}^2}\setminus \{z_1=1\}</m>, we have
@@ -236,7 +236,34 @@
 
        <p> The special role the lines <m>\{z_1=1\}</m> and <m>\{z_2=1\}</m> play here is related to the fact that they are the level sets of <m>\phi</m> corresponding to the non-tangential value <m>\lambda=1</m>, which is attained at the singularity of <m>\phi</m> at <m>(1,1)</m> (see <xref ref="BPS18"/>). This will be discussed in detail below.</p>
         </example>
-<!--
+
+        <example xml:id="para">
+        <sbsgroup>
+        <sidebyside>
+        <figure xml:id="parabplots"> <caption>Vertical lines before mapping</caption>
+            <image source="images/vertparacurves.svg"/>
+        </figure>
+        <figure> <caption><m>\Phi^n</m> for <m>n=1</m></caption>
+            <image source="images/3zwparaviter1.svg"/>
+        </figure>
+        </sidebyside>
+        <sidebyside>
+        <figure> <caption><m>\Phi^n</m> for <m>n=2</m></caption>
+            <image source="images/3zwparaviter2.svg"/>
+        </figure>
+        <figure> <caption><m>\Phi^n</m> for <m>n=3</m></caption>
+            <image source="images/3zwparaviter3.svg"/>
+        </figure>
+        </sidebyside>
+        <sidebyside>
+        <figure> <caption><m>\Phi^n</m> for <m>n=4</m></caption>
+            <image source="images/3zwparaviter4.svg"/>
+        </figure>
+        <figure> <caption><m>\Phi^n</m> for <m>n=5</m></caption>
+            <image source="images/3zwparaviter5.svg"/>
+        </figure>
+        </sidebyside>
+        </sbsgroup></example><!--
         \begin{ex}\label{ex:para}
         \begin{figure}[h!]
             \subfigure[Vertical lines.]
