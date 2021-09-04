@@ -337,7 +337,7 @@
            </me> In what follows, we shall frequently assume that our RIFs are normalized. We take this to mean <m>\beta_1=\beta_2=0</m>, meaning that <me>\phi=e^{i\alpha}\frac{\tilde{p}}{p}</me> for some polynomial <m>p</m> with no zeros in <m>\mathbb{D}^2</m>. We also assume that <m>p</m> is <term> atoral</term> in the sense of <xref ref="AMS06"/>, meaning that <m>p</m> and <m>\tilde{p}</m> have no common factors. (If <m>p</m> is not initially atoral, then any toral factors can be canceled with the corresponding toral factors in <m>\tilde{p}</m>.)
        </p>
 
-        <p>Let us review some basic facts concerning rational inner functions on the bidisk. By the definition of the reflection operation, any <m>\tau \in\mathbb{T}^2</m> that is a zero of <m>p</m> is a zero of <m>\tilde{p}</m>. We say that <m>\tau\in\mathbb{T}^2</m> is a {\it singular point} of <m>\phi</m> if <m>p(\tau)=0</m> 
+        <p>Let us review some basic facts concerning rational inner functions on the bidisk. By the definition of the reflection operation, any <m>\tau \in\mathbb{T}^2</m> that is a zero of <m>p</m> is a zero of <m>\tilde{p}</m>. We say that <m>\tau\in\mathbb{T}^2</m> is a <term> singular point</term> of <m>\phi</m> if <m>p(\tau)=0</m> 
         (and hence also <m>\tilde{p}(\tau)=0</m>). Next, let us recall <term> Bézout's theorem </term> for <m>\mathbb{C}_{\infty}\times \mathbb{C}_{\infty}</m>, as discussed in <xref ref="Kne15"/>(Section 12). Namely, if <m>P, Q\in \mathbb{C}[z_1,z_2]</m> are polynomials with no common factors and with <m>\operatorname{deg}P=(M_1,N_1)</m> and <m>\operatorname{deg} Q=(M_2,N_2)</m>, then <m>P</m> and <m>Q</m> have <m>M_1N_2+M_2N_1</m> common zeros in <m>\mathbb{C}_{\infty}\times \mathbb{C}_{\infty}</m>. Applying this result to <m>P=p</m> and <m>Q=\tilde{p}</m> shows that any two-variable rational inner function has at most finitely many singularities on <m>\mathbb{T}^2</m>.</p>
 
         <p>Since <m>\phi</m> is a bounded analytic function, Fatou's theorem for polydisks guarantees the existence of non-tangential limits of <m>\phi</m>: that is,
@@ -346,11 +346,11 @@
         Knese proved  <xref ref="Kne15"/>(Corollary 14.6) that if <m>\phi</m> is rational inner function, then the non-tangential limit <m>\phi^*(\zeta)</m> exists and is unimodular at <em> every</em> point <m>\zeta \in \T^2</m>. However, if a normalized <m>\phi</m> has singular points, then  <m>\phi^*(\zeta)</m> is not typically continuous on <m>\mathbb{T}^2</m>. See <xref ref="AMY12,TD17, BPS18, BPS20"/> for more background material on RIFs.</p>
 
        <definition>
-      <p>  Let <m>\Phi=(\phi_1, \phi_2)\colon \mathbb{D}^2\to \mathbb{D}^2</m> be a non-constant normalized RIM. We say that <m>\tau\in \mathbb{T}^2</m> is a {\it singular fixed point} (SF-point) of 
+      <p>  Let <m>\Phi=(\phi_1, \phi_2)\colon \mathbb{D}^2\to \mathbb{D}^2</m> be a non-constant normalized RIM. We say that <m>\tau\in \mathbb{T}^2</m> is a <term> singular fixed point}</term> (SF-point) of 
                   <m>\Phi</m> if 
                   <ul>
                   <li><m>\tau \in\mathbb{T}^2</m> is a singular point of at least one of <m>\phi_1</m> and <m>\phi_2</m>;</li>
-                  <li> <m>\tau</m> is a {\it fixed point}: <m>\Phi^*(\tau)=\tau</m>.</li>
+                  <li> <m>\tau</m> is a <em> fixed point</em>: <m>\Phi^*(\tau)=\tau</m>.</li>
                   </ul></p>
         </definition>
             
@@ -437,7 +437,7 @@
         <p>It is easy to give examples of Möbius transformations with these properties. The rotation <m>\mathfrak{m}(z)=e^{i\alpha}z</m> has a rationally or irrationally indifferent fixed point at <m>t=0</m> according to whether <m>\alpha</m> is rational or irrational. The map <m>\mathfrak{m}(z)=\frac{(2+i)z+i}{2-i-iz}</m> has a single fixed point at <m>t=-1</m>, and is parabolic.
         Finally, the hyperbolic map <m>\mathfrak{m}(z)=\frac{7z_1-1}{7-z_1}</m> has one attracting fixed point at <m>t_1=-1</m> and one attracting fixed point at <m>t_2=1</m>.</p>
 
-        <p>The dynamics of a Möbius transformation can be described depending on its type in the above list. Recall that two analytic functions <m>f,g\colon \mathbb{D}\to \mathbb{D}</m> are {\it conformally conjugate} if there exists a conformal map <m>\mathfrak{n}\colon \mathbb{D}\to \mathbb{D}</m> such that <me>g=\mathfrak{n}\circ f\circ \mathfrak{n}^{-1}.</me>
+        <p>The dynamics of a Möbius transformation can be described depending on its type in the above list. Recall that two analytic functions <m>f,g\colon \mathbb{D}\to \mathbb{D}</m> are <term> conformally conjugate</term> if there exists a conformal map <m>\mathfrak{n}\colon \mathbb{D}\to \mathbb{D}</m> such that <me>g=\mathfrak{n}\circ f\circ \mathfrak{n}^{-1}.</me>
         See <xref ref="BearBook"/>[Chapter 2] or <xref ref="MilBook"/>[Chapters 8-9] for general background.
         Note that conjugation preserves the multiplier of a Möbius transformation at a fixed point, leading to the following classification.</p>
 
