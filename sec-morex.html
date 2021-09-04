@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*       on 2021-09-03T21:41:51-07:00       *-->
+<!--*   A recent stable commit (2020-08-09):   *-->
+<!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<html lang="en-US">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Further examples</title>
+<meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    tex2jax: {
+        inlineMath: [['\\(','\\)']]
+    },
+    asciimath2jax: {
+        ignoreClass: ".*",
+        processClass: "has_am"
+    },
+    jax: ["input/AsciiMath"],
+    extensions: ["asciimath2jax.js"],
+    TeX: {
+        extensions: ["extpfeil.js", "autobold.js", "https://pretextbook.org/js/lib/mathjaxknowl.js", "AMScd.js", ],
+        // scrolling to fragment identifiers is controlled by other Javascript
+        positionToHash: false,
+        equationNumbers: { autoNumber: "none", useLabelIds: true, },
+        TagSide: "right",
+        TagIndent: ".8em",
+    },
+    // HTML-CSS output Jax to be dropped for MathJax 3.0
+    "HTML-CSS": {
+        scale: 88,
+        mtextFontInherit: true,
+    },
+    CommonHTML: {
+        scale: 88,
+        mtextFontInherit: true,
+    },
+});
+</script><script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS_CHTML-full"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/lib/jquery.min.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/lib/jquery.sticky.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/lib/jquery.espy.min.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/0.13/pretext.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/0.13/pretext_add_on.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script xmlns:svg="http://www.w3.org/2000/svg">sagecellEvalName='Evaluate (Sage)';
+</script><link xmlns:svg="http://www.w3.org/2000/svg" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://fonts.googleapis.com/css?family=Inconsolata:400,700&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/pretext.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/pretext_add_on.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/banner_default.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/toc_default.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/knowls_default.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/style_default.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/colors_default.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/setcolors.css" rel="stylesheet" type="text/css">
+<!-- 2019-10-12: Temporary - CSS file for experiments with styling --><link xmlns:svg="http://www.w3.org/2000/svg" href="developer.css" rel="stylesheet" type="text/css">
+</head>
+<body class="mathbook-article has-toc has-sidebar-left">
+<a class="assistive" href="#content">Skip to main content</a><div xmlns:svg="http://www.w3.org/2000/svg" class="hidden-content" style="display:none">\(\DeclareMathOperator{\RE}{Re}
+  \DeclareMathOperator{\IM}{Im}
+  \DeclareMathOperator{\ess}{ess}
+  \DeclareMathOperator{\intr}{int}
+  \DeclareMathOperator{\dist}{dist}
+  \DeclareMathOperator{\dom}{dom}
+  \DeclareMathOperator{\diag}{diag}
+  \DeclareMathOperator{\span}{span}
+  \DeclareMathOperator{\null}{null}
+  \DeclareMathOperator{\rank}{rank}
+  \DeclareMathOperator{\col}{col}
+  \DeclareMathOperator{\row}{row}
+  \DeclareMathOperator{\proj}{proj}
+  \DeclareMathOperator\re{\mathrm {Re~}}
+  \DeclareMathOperator\im{\mathrm {Im~}}
+  
+  \newcommand\dd{\mathrm d}
+  \newcommand{\eps}{\varepsilon}
+  \newcommand{\To}{\longrightarrow}
+  \newcommand{\hilbert}{\mathcal{H}}
+  \newcommand{\s}{\mathcal{S}_2}
+  \newcommand{\A}{\mathcal{A}}
+  \newcommand\h{\mathcal{H}}
+  \newcommand{\J}{\mathcal{J}}
+  \newcommand{\M}{\mathcal{M}}
+  \newcommand{\F}{\mathbb{F}}
+  \newcommand{\N}{\mathcal{N}}
+  \newcommand{\T}{\mathbb{T}}
+  \newcommand{\W}{\mathcal{W}}
+  \newcommand{\X}{\mathcal{X}}
+  \newcommand{\D}{\mathbb{D}}
+  \newcommand{\C}{\mathbb{C}}
+  \newcommand{\BOP}{\mathbf{B}}
+  \newcommand{\Z}{\mathbb{Z}}
+  \newcommand{\BH}{\mathbf{B}(\mathcal{H})}
+  \newcommand{\KH}{\mathcal{K}(\mathcal{H})}
+  \newcommand{\pick}{\mathcal{P}_2}
+  \newcommand{\schur}{\mathcal{S}_2}
+  \newcommand{\R}{\mathbb{R}}
+  \newcommand{\Complex}{\mathbb{C}}
+  \newcommand{\Field}{\mathbb{F}}
+  \newcommand{\RPlus}{\Real^{+}}
+  \newcommand{\Polar}{\mathcal{P}_{\s}}
+  \newcommand{\Poly}{\mathcal{P}(E)}
+  \newcommand{\EssD}{\mathcal{D}}
+  \newcommand{\Lop}{\mathcal{L}}
+  \newcommand{\cc}[1]{\overline{#1}}
+  \newcommand{\abs}[1]{\left\vert#1\right\vert}
+  \newcommand{\set}[1]{\left\{#1\right\}}
+  \newcommand{\seq}[1]{\left\lt#1\right&gt;}
+  \newcommand{\norm}[1]{\left\Vert#1\right\Vert}
+  \newcommand{\essnorm}[1]{\norm{#1}_{\ess}}
+  \newcommand{\tr}{\operatorname{tr}}
+  \newcommand{\ran}[1]{\operatorname{ran}#1}
+  \newcommand{\nt}{\stackrel{\mathrm {nt}}{\to}}
+  \newcommand{\pnt}{\xrightarrow{pnt}}
+  \newcommand{\ip}[2]{\left\langle #1, #2 \right\rangle}
+  \newcommand{\ad}{^\ast}
+  \newcommand{\inv}{^{-1}}
+  \newcommand{\adinv}{^{\ast -1}}
+  \newcommand{\invad}{^{-1 \ast}}
+  \newcommand\Pick{\mathcal P}
+  \newcommand\Ha{\mathbb{H}}
+  \newcommand{\HH}{\Ha\times\Ha}
+  \newcommand\Htau{\mathbb{H}(\tau)}
+  \newcommand{\vp}{\varphi}
+  \newcommand{\ph}{\varphi}
+  \newcommand\al{\alpha}
+  \newcommand\ga{\gamma}
+  \newcommand\de{\delta}
+  \newcommand\ep{\varepsilon}
+  \newcommand\la{\lambda}
+  \newcommand\up{\upsilon}
+  \newcommand\si{\sigma}
+  \newcommand\beq{\begin{equation}}
+  \newcommand\ds{\displaystyle}
+  \newcommand\eeq{\end{equation}}
+  \newcommand\df{\stackrel{\rm def}{=}}
+  \newcommand\ii{\mathrm i}
+  \newcommand{\vectwo}[2]
+  {
+     \begin{pmatrix} #1 \\ #2 \end{pmatrix}
+  }
+  \newcommand{\vecthree}[3]
+  {
+     \begin{pmatrix} #1 \\ #2 \\ #3 \end{pmatrix}
+  }
+  \newcommand\blue{\color{blue}}
+  \newcommand\black{\color{black}}
+  \newcommand\red{\color{red}}
+  
+  \newcommand\nn{\nonumber}
+  \newcommand\bbm{\begin{bmatrix}}
+  \newcommand\ebm{\end{bmatrix}}
+  \newcommand\bpm{\begin{pmatrix}}
+  \newcommand\epm{\end{pmatrix}}
+  \numberwithin{equation}{section}
+  \newcommand\nin{\noindent}
+  \newcommand{\nCr}[2]{\,_{#1}C_{#2}} 
+  \newcommand{\vec}[1]{{\bf #1}}
+  \newcommand{\ps}{\displaystyle \sum_{n=0}^\infty a_n x^n}
+  \newcommand{\psg}{\displaystyle \sum_{n=0}^\infty b_n x^n}
+  \newcommand{\hz}{\,\mathrm{Hz}}
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\)</div>
+<header id="masthead" class="smallbuttons"><div class="banner"><div class="container">
+<a id="logo-link" href=""></a><div class="title-container">
+<h1 class="heading"><a href="linanal.html"><span class="title">Iteration of low-degree rational inner skew-products on \(\mathbb{T}^2\)</span></a></h1>
+<p class="byline">Alan Sola, Ryan Tully-Doyle</p>
+</div>
+</div></div>
+<nav xmlns:svg="http://www.w3.org/2000/svg" id="primary-navbar" class="navbar"><div class="container">
+<div class="navbar-top-buttons">
+<button class="sidebar-left-toggle-button button active" aria-label="Show or hide table of contents sidebar">Contents</button><div class="tree-nav toolbar toolbar-divisor-3"><span class="threebuttons"><a id="previousbutton" class="previous-button toolbar-item button" href="sec-main.html" title="Previous">Prev</a><a id="upbutton" class="up-button button toolbar-item" href="linanal.html" title="Up">Up</a><a id="nextbutton" class="next-button button toolbar-item" href="backmatter-1.html" title="Next">Next</a></span></div>
+</div>
+<div class="navbar-bottom-buttons toolbar toolbar-divisor-4">
+<button class="sidebar-left-toggle-button button toolbar-item active">Contents</button><a class="previous-button toolbar-item button" href="sec-main.html" title="Previous">Prev</a><a class="up-button button toolbar-item" href="linanal.html" title="Up">Up</a><a class="next-button button toolbar-item" href="backmatter-1.html" title="Next">Next</a>
+</div>
+</div></nav></header><div class="page">
+<div xmlns:svg="http://www.w3.org/2000/svg" id="sidebar-left" class="sidebar" role="navigation"><div class="sidebar-content">
+<nav id="toc"><ul>
+<li class="link frontmatter"><a href="frontmatter-1.html" data-scroll="frontmatter-1"><span class="title">Front Matter</span></a></li>
+<li class="link"><a href="sec-Intro.html" data-scroll="sec-Intro"><span class="codenumber">1</span> <span class="title">Introduction and overview</span></a></li>
+<li class="link"><a href="sec-Ex.html" data-scroll="sec-Ex"><span class="codenumber">2</span> <span class="title">Three examples</span></a></li>
+<li class="link">
+<a href="sec-Prelim.html" data-scroll="sec-Prelim"><span class="codenumber">3</span> <span class="title">Preliminaries</span></a><ul>
+<li><a href="sec-Prelim.html#subsection-1" data-scroll="subsection-1">Rational inner functions on the bidisk</a></li>
+<li><a href="sec-Prelim.html#subsec-Mob" data-scroll="subsec-Mob">Dynamics of Möbius transformations</a></li>
+<li><a href="sec-Prelim.html#subsection-3" data-scroll="subsection-3">Basic notions from complex dynamics</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="sec-main.html" data-scroll="sec-main"><span class="codenumber">4</span> <span class="title">RISP dynamics on the boundary</span></a><ul>
+<li><a href="sec-main.html#subsection-4" data-scroll="subsection-4">General remarks on boundary fixed points</a></li>
+<li><a href="sec-main.html#subsection-5" data-scroll="subsection-5">Rotation belts and parabolic fixed points for simple RISPs</a></li>
+<li><a href="sec-main.html#subsection-6" data-scroll="subsection-6">Hyperbolic fixed points and SF-points for simple RISPs</a></li>
+</ul>
+</li>
+<li class="link active"><a href="sec-morex.html" data-scroll="sec-morex"><span class="codenumber">5</span> <span class="title">Further examples</span></a></li>
+<li class="link backmatter"><a href="backmatter-1.html" data-scroll="backmatter-1"><span class="title">Back Matter</span></a></li>
+<li class="link"><a href="references-1.html" data-scroll="references-1"><span class="title">References</span></a></li>
+</ul></nav><div class="extras"><nav><a class="mathbook-link" href="https://pretextbook.org">Authored in PreTeXt</a><a href="https://www.mathjax.org"><img title="Powered by MathJax" src="https://www.mathjax.org/badge/badge.gif" alt="Powered by MathJax"></a></nav></div>
+</div></div>
+<main class="main"><div id="content" class="pretext-content"><section xmlns:svg="http://www.w3.org/2000/svg" class="section" id="sec-morex"><h2 class="heading hide-type">
+<span class="type">Section</span> <span class="codenumber">5</span> <span class="title">Further examples</span>
+</h2>
+<p id="p-105">We conclude by examining two examples with more intricate singularities and dynamical behavior. Further examples and images can be found on the webpage <a class="xref" data-knowl="./knowl/TDpage.html" title="Bibliographic Entry 28">[28]</a>.</p>
+<article class="example example-like" id="ex-AMYex"><a data-knowl="" class="id-ref example-knowl original" data-refid="hk-ex-AMYex"><h6 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">5.1</span><span class="period">.</span>
+</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-ex-AMYex"><article class="example example-like"><figure class="figure figure-like" id="AMYplots"><div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;">
+<div class="sbspanel" style="width:50%;justify-content:flex-start;"><figure class="figure figure-like" id="figure-28"><img src="images/AMY1iter.svg" style="width: 100%; height: auto;" alt=""><figcaption><span class="codenumber">(a)</span><span class="space"> </span>\(\Phi^n\) for \(n=1\)</figcaption></figure></div>
+<div class="sbspanel" style="width:50%;justify-content:flex-start;"><figure class="figure figure-like" id="figure-29"><img src="images/AMY2iter.svg" style="width: 100%; height: auto;" alt=""><figcaption><span class="codenumber">(b)</span><span class="space"> </span>\(\Phi^n\) for \(n=2\)</figcaption></figure></div>
+</div></div>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;">
+<div class="sbspanel" style="width:50%;justify-content:flex-start;"><figure class="figure figure-like" id="figure-30"><img src="images/AMY5iter.svg" style="width: 100%; height: auto;" alt=""><figcaption><span class="codenumber">(c)</span><span class="space"> </span>\(\Phi^n\) for \(n=5\)</figcaption></figure></div>
+<div class="sbspanel" style="width:50%;justify-content:flex-start;"><figure class="figure figure-like" id="figure-31"><img src="images/AMYinvacurveswpara.svg" style="width: 100%; height: auto;" alt=""><figcaption><span class="codenumber">(d)</span><span class="space"> </span>\(\Gamma(\Phi)\cap\mathbb{T}^2\text{.}\) Parabolic fibers \(F_{\lambda_{2,3}}\) in pink.</figcaption></figure></div>
+</div></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">5.2<span class="period">.</span></span><span class="space"> </span>Iteration of \(\Phi\) given by <a class="xref" data-knowl="./knowl/AMYRIF.html" title="Equation 5.1">(5.1)</a> on \(\mathbb{T}^2\text{.}\) (Successive images of the vertical axis marked red)</figcaption></figure><p id="p-106">Consider the rational inner function</p>
+<div class="displaymath">
+\begin{equation}
+\phi(z_1,z_2)=-\frac{\tilde{p}(z)}{p(z)}=-\frac{4z_1z_2^2 - z_2^2 - 3z_1z_2 - z_2 + z_1}{4 - z_1 - 3z_2 - z_1z_2 + z_2^2},\label{AMYRIF}\tag{5.1}
+\end{equation}
+</div>
+<p data-braille="continuation">which features as an example in the paper <a class="xref" data-knowl="./knowl/AMY12.html" title="Bibliographic Entry 3">[3]</a>, and has been further studied in <a class="xref" data-knowl="./knowl/BPS20.html" title="Bibliographic Entry 9">[9]</a>[Section 1.3] and <a class="xref" data-knowl="./knowl/BCSprep.html" title="Bibliographic Entry 6">[6]</a>[Example 5.2] (without the minus sign in front). Since \(\phi\) has a single singularity at \((1,1)\) and \(\phi^*(1,1)=1\text{,}\) the corresponding RISP \(\Phi\) has a SF-point at \((1,1)\text{.}\) We further check that \(\phi(1,z_2)=1\text{,}\) confirming the presence of a collapsing fiber.</p>
+<p id="p-107">In this example, \(\alpha=\pi\text{,}\) and</p>
+<div class="displaymath">
+\begin{equation*}
+p(z)=p_1(z_2)+z_1p_2(z_2)
+\end{equation*}
+</div>
+<p data-braille="continuation">with</p>
+<div class="displaymath">
+\begin{equation*}
+p_1(z_2)=4-3z_2+z_2^2\quad \textrm{and}\quad p_2(z_2)=-(1+z_2).
+\end{equation*}
+</div>
+<p data-braille="continuation">We have \(p_2(-1)=0\text{,}\) and as expected \(\phi(z_1,-1)=-z_1\text{,}\) a rotation of order \(2\text{.}\) A short computation shows that the associated polynomial \(Q_{\alpha}\) is given by</p>
+<div class="displaymath">
+\begin{equation}
+Q_{\alpha}(z_2)=25(z_2-1)^2\left(z_2^2-\frac{14}{25}z_2+1\right).\label{AMYQ}\tag{5.2}
+\end{equation}
+</div>
+<p data-braille="continuation">Then \(Q_{\alpha}(z_2)\) has a double root at \(\lambda_1=1\text{,}\) and two roots at \(\lambda_{2,3}=\frac{1}{25}(7\pm 24i)\text{.}\)</p>
+<p id="p-108"><a class="xref" data-knowl="./knowl/AMYplots.html" title="Figure 5.2">Figure 5.2</a> displays the dynamics of \(\Phi\) on \(\mathbb{T}^2\text{.}\) We notice a single rotation belt bounded by \(F_{\lambda_2}\) and \(F_{\lambda_3}\text{,}\) one fewer than the maximum given the degree of \(Q_{\alpha}\text{.}\) Also visible are two curves containing hyperbolic fixed points with a normal crossing at \((1,1)\text{,}\) which is contained in the collapsing fiber.</p>
+<figure class="figure figure-like" id="AMYbranchpts"><div class="image-box" style="width: 30%; margin-left: 35%; margin-right: 35%;"><img src="AMYparabranches.svg" style="width: 100%; height: auto;" alt=""></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">5.3<span class="period">.</span></span><span class="space"> </span>Plot of \(|\psi^{1,2}(e^{it_2})|\) showing interior/exterior fixed points coming together at parabolic fixed points.</figcaption></figure><p id="p-109">The hyperbolic fixed points are visible on a pair of curves parametrized by</p>
+<div class="displaymath">
+\begin{equation*}
+\psi^{1,2}_{-1}(z_2)=\frac{1}{2(1+z_2)}\left(5 - 6 z_2 +5 z_2^2 \pm (-1 + z_2) \sqrt{25 - 14 z_2 + 25 z_2^2}\right).
+\end{equation*}
+</div>
+<p data-braille="continuation">These curves exhibit a normal crossing at \((1,1)\text{,}\) the singularity of the RIF, reflecting the double root of \(Q_{\alpha}\) at \((1,1)\text{.}\) The branch point nature of the parabolic fixed points at \(\lambda_2\) and \(\lambda_3\) can be observed in <a class="xref" data-knowl="./knowl/AMYbranchpts.html" title="Figure 5.3">Figure 5.3</a> which displays the absolute value of the functions \(\psi^{1,2}(e^{it_2})\text{.}\)</p></article></div>
+<article class="example example-like" id="ex-multisingex"><a data-knowl="" class="id-ref example-knowl original" data-refid="hk-ex-multisingex"><h6 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">5.4</span><span class="period">.</span>
+</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-ex-multisingex"><article class="example example-like"><figure class="figure figure-like" id="MultSingplots"><div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;">
+<div class="sbspanel" style="width:50%;justify-content:flex-start;"><figure class="figure figure-like" id="figure-34"><img src="images/multsing1iter.svg" style="width: 100%; height: auto;" alt=""><figcaption><span class="codenumber">(a)</span><span class="space"> </span>\(\Phi^n\) for \(n=1\)</figcaption></figure></div>
+<div class="sbspanel" style="width:50%;justify-content:flex-start;"><figure class="figure figure-like" id="figure-35"><img src="images/multsing2iter.svg" style="width: 100%; height: auto;" alt=""><figcaption><span class="codenumber">(b)</span><span class="space"> </span>\(\Phi^n\) for \(n=2\)</figcaption></figure></div>
+</div></div>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;">
+<div class="sbspanel" style="width:50%;justify-content:flex-start;"><figure class="figure figure-like" id="figure-36"><img src="images/multsing5iter.svg" style="width: 100%; height: auto;" alt=""><figcaption><span class="codenumber">(c)</span><span class="space"> </span>\(\Phi^n\) for \(n=5\)</figcaption></figure></div>
+<div class="sbspanel" style="width:50%;justify-content:flex-start;"><figure class="figure figure-like" id="figure-37"><img src="images/multsinginvacurveswpara.svg" style="width: 100%; height: auto;" alt=""><figcaption><span class="codenumber">(d)</span><span class="space"> </span>\(\Gamma(\Phi)\cap\mathbb{T}^2\text{.}\) Parabolic fibers \(F_{\lambda_{2,3}}\) in pink.</figcaption></figure></div>
+</div></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">5.5<span class="period">.</span></span><span class="space"> </span>Iteration of \(\Phi\) given by <a class="xref" data-knowl="./knowl/multp.html" title="Equation 5.3">(5.3)</a> on \(\mathbb{T}^2\text{.}\) (Successive images of the vertical axis marked red)</figcaption></figure><p id="p-110">We turn to a RIF with multiple singularities on \(\mathbb{T}^2\) and multiple rotation belts. Consider the RIF \(\phi=-\frac{\tilde{p}}{p}\) with</p>
+<div class="displaymath">
+\begin{equation}
+p(z)=4 - z_1 + z_1z_2 - 3z_1z_2^2 - z_1z_2^3 \quad \textrm{and}\quad \tilde{p}(z)=4z_1z_2^3 - z_2^3 +z_2^2 - 3z_2 - 1,\label{multp}\tag{5.3}
+\end{equation}
+</div>
+<p data-braille="continuation">a slightly modified form of  <a class="xref" data-knowl="./knowl/BPS20.html" title="Bibliographic Entry 9">[9]</a>[Example 7.4] (see also <a class="xref" data-knowl="./knowl/BCSprep.html" title="Bibliographic Entry 6">[6]</a>[Example 5.4]).</p>
+<p id="p-111">We have \(p(1,1)=0\) and \(p(-1,-1)=0\text{,}\) and a computation shows that \(\phi(z_1,1)=1\) and \(\phi(z_1,-1)=-1\text{,}\) confirming the presence of two collapsing fibers as guaranteed by <a class="xref" data-knowl="./knowl/lem-collapsefiberlem.html" title="Lemma 3.3">Lemma 3.3</a>, and so \(\phi\) has two SF-points on the \(2\)-torus.</p>
+<p id="p-112">We read off that</p>
+<div class="displaymath">
+\begin{equation*}
+p_1(z_2)=4 \quad  \textrm{and}\quad p_2(z_2)=z_2^3+3z_2^2-z_2+1
+\end{equation*}
+</div>
+<p data-braille="continuation">and</p>
+<div class="displaymath">
+\begin{equation*}
+\tilde{p}_1(z_2)=4z_2^3 \quad \textrm{and} \quad \tilde{p}_2(z_2)=z_2^3-z_2^2+3z_2+1,
+\end{equation*}
+</div>
+<p data-braille="continuation">and after some simplifications (using that \(\alpha=0\) here), we find that</p>
+<div class="displaymath">
+\begin{equation}
+Q_{\alpha}(z_2)=4(z_2+1)^2(z_2^2+1)(5z_2^2-8z_2+5).\label{multQ}\tag{5.4}
+\end{equation}
+</div>
+<p data-braille="continuation">The polynomial \(Q_{\alpha}\) has a double root at \(z_2=-1\) (the \(z_2\)-coordinate of the SF-point at \((-1,-1)\)), and simple roots at \(z_2=\pm i\) and \(z_2=\frac{1}{5}(4\pm3i)\text{.}\) On the other hand \(Q_{\alpha}(1)\neq 0\text{.}\) This is reflected in the images in <a class="xref" data-knowl="./knowl/MultSingplots.html" title="Figure 5.5">Figure 5.5</a>: \(\Gamma(\Phi)\) has two components coming together at \((-1,-1)\in \Lambda^{\flat}\) with a normal crossing, while \((1,1)\in \Lambda^{\flat}\) is a generic point, in the sense that \(\Gamma(\Phi)\) does not have a self-crossing. The simple zeros of \(Q_{\alpha}\) correspond to parabolic points bounding two distinct rotation belts, and these in turn lie between two arrangements of curves with hyperbolic fixed points.</p></article></div></section></div></main>
+</div>
+</body>
+</html>

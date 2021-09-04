@@ -138,13 +138,13 @@
        on <m>\mathbb{C}_{\infty}=\mathbb{C}\cup\{\infty\}</m>,
        is a well-known topic in mathematics, discussed in many textbooks (e.g. <xref ref="BearBook, CGBook, MilBook"/>) and illustrated in beautiful computer images. The theory is quite mature, but important new results are still being discovered. The higher-dimensional theory, addressing iteration of polynomial or rational mappings <m>R\colon \mathbb{C}^n\to \mathbb{C}^n</m> is of later date and perhaps less complete. See, for instance, <xref ref="ForSurv,SibSurv, MilBook"/>, and the references therein, for basic overviews of dynamics in several complex variables.</p>
 
-    <p>In a different direction, considering self-maps of special bounded domains in <m>\mathbb{C}^n</m> (the unit disk in the complex plane, the unit <m>n</m>-ball) allows for the study of iteration of functions that are not necessarily defined throughout <m>\mathbb{C}^n</m>, and leads to interesting boundary phenomena not observed in the unbounded setting. An important example in this latter direction is the classical Denjoy-Wolff theorem <xref ref="CGBook"/> concerning fixed points of analytic self-maps of the unit disk; there are many subsequent extensions of the original result to different settings.</p>
+        <p>In a different direction, considering self-maps of special bounded domains in <m>\mathbb{C}^n</m> (the unit disk in the complex plane, the unit <m>n</m>-ball) allows for the study of iteration of functions that are not necessarily defined throughout <m>\mathbb{C}^n</m>, and leads to interesting boundary phenomena not observed in the unbounded setting. An important example in this latter direction is the classical Denjoy-Wolff theorem <xref ref="CGBook"/> concerning fixed points of analytic self-maps of the unit disk; there are many subsequent extensions of the original result to different settings.</p>
 
-    <p>Our investigation concerns the study of the dynamics certain self-maps of the unit bidisk
+        <p>Our investigation concerns the study of the dynamics certain self-maps of the unit bidisk
         <me>\mathbb{D}^2=\{(z_1,z_2)\in \mathbb{C}^2\colon |z_j|\lt 1, j=1,2\}</me>
         and seeks to establish some basic facts about their iteration theory. There are many works addressing iteration of analytic self-maps of the bidisk and higher-dimensional polydisks (see, for instance, the papers <xref ref="Aba98, AG16,C32, F05, H54"/> and the thesis <xref ref="NThesis"/> for some background). Our focus is on obtaining detailed results for a restricted class of rational mappings by using elementary means.</p>
 
-    <p>We say that a mapping of the form
+        <p>We say that a mapping of the form
         <me>\Phi\colon \mathbb{D}^2\to \mathbb{D}^2</me>
         <me>(z_1,z_2)\mapsto (\phi_1(z_1,z_2), \phi_2(z_1,z_2))</me>
         is a <term>rational inner mapping</term> (RIM) if each component <m>\phi_j</m> is a <term>rational inner function</term> on <m>\mathbb{D}^2</m>. A rational inner function in turn is an analytic function of the form
@@ -153,16 +153,16 @@
         <me>\Phi^n(z_1,z_2)=(\Phi\circ \Phi\circ\cdots  \circ\Phi)(z_1,z_2)</me>
         can be viewed as a mapping of the closure of the bidisk into itself that fixes the distinguished boundary.</p>
 
-    <p>Iteration of certain classes of rational inner functions on the bidisk and on <m>\mathbb{T}^2</m> has been considered in several papers, for instance in <xref ref="PS08,PR10"/>; see also <xref ref="SBJ17"/> for some applications. In those works, the component maps <m>\phi_j</m> are assumed to be of the special type
+        <p>Iteration of certain classes of rational inner functions on the bidisk and on <m>\mathbb{T}^2</m> has been considered in several papers, for instance in <xref ref="PS08,PR10"/>; see also <xref ref="SBJ17"/> for some applications. In those works, the component maps <m>\phi_j</m> are assumed to be of the special type
         <me>\psi_j(z_1,z_2)=B_{j,1}(z_1)\cdot B_{j,2}(z_2)</me>
         where <m>B_{j,k}</m> are one-variable <term>finite Blaschke products</term>. Recall that these are functions <m>B\colon \mathbb{D}\to\mathbb{D}</m> of the form
         <me>B(z)=e^{i\alpha}z^m\prod_{k=1}^n\frac{z-a_k}{1-\overline{a}_kz},</me>
         where <m>\{a_1,\ldots, a_n\}\subset \mathbb{D}</m>, <m>\alpha\in \mathbb{R}</m>, and <m>m,n\in \mathbb{N}</m>. It is apparent that a finite Blaschke product extends continuously to the unit circle <m>\mathbb{T}</m>, but the dynamics of one-variable Blaschke products nevertheless exhibit complicated features; see for instance <xref ref="MilBook"/> Chapter 15. Similarly, the works <xref ref="PS08,PR10"/> uncover a rich dynamical structure associated with two-dimensional Blaschke products.</p>
 
-   <p> In contrast with one-variable Blaschke products, a general rational inner function <m>\psi=q/p</m> in <m>\mathbb{D}^2</m> can have boundary singularities: these occur at points <m>\tau=(\tau_1,\tau_2)\in \mathbb{T}^2</m> where <m>q(\tau_1,\tau_2)=p(\tau_1,\tau_2)=0</m>, and represent a genuinely new higher-dimensional phenomenon. The function <m>\psi</m> is in general discontinuous at <m>\tau \in \mathbb{T}^2</m>, even though <m>\psi^{*}(\tau)</m> always exists, meaning that a RISP <m>\Phi</m> need not be a continuous self-map of <m>\overline{\mathbb{D}^2}</m>.  This fact will be the source of several interesting phenomena that we observe in this paper.
-   </p>
+       <p> In contrast with one-variable Blaschke products, a general rational inner function <m>\psi=q/p</m> in <m>\mathbb{D}^2</m> can have boundary singularities: these occur at points <m>\tau=(\tau_1,\tau_2)\in \mathbb{T}^2</m> where <m>q(\tau_1,\tau_2)=p(\tau_1,\tau_2)=0</m>, and represent a genuinely new higher-dimensional phenomenon. The function <m>\psi</m> is in general discontinuous at <m>\tau \in \mathbb{T}^2</m>, even though <m>\psi^{*}(\tau)</m> always exists, meaning that a RISP <m>\Phi</m> need not be a continuous self-map of <m>\overline{\mathbb{D}^2}</m>.  This fact will be the source of several interesting phenomena that we observe in this paper.
+       </p>
 
-    <p>Apart from some preliminary observations concerning RIMs, we mostly restrict our attention to <term> rational inner skew-products</term> (RISPs). These are rational inner mappings of the special form
+        <p>Apart from some preliminary observations concerning RIMs, we mostly restrict our attention to <term> rational inner skew-products</term> (RISPs). These are rational inner mappings of the special form
         <me>\Phi(z_1,z_2)=(\phi_1(z_1,z_2), \phi_2(z_2)),</me>
         with <m>\phi_1</m> rational inner in <m>\mathbb{D}^2</m>, and <m>\phi_2</m> a rational inner function in one variable, viewed as a function on <m>\mathbb{D}^2</m> in the obvious way. Skew-products have been studied extensively in the polynomial setting, see e.g. <xref ref="J99, PR19"/> and the references therein. In fact, we focus on the very simplest case of skew-mappings
         <men xml:id="eq-RISPdef">
@@ -170,14 +170,14 @@
         </men>
         where <m>\phi</m> is a rational inner function in <m>\mathbb{D}^2</m> having <term> bidegree</term> <m>(1,n)</m>, that is, degree <m>1</m> in <m>z_1</m> and degree <m>n\in \mathbb{N}</m> in <m>z_2</m>.  (We drop the subscript in the first component to lighten notation.) Skew-products of the form <xref ref="eq-RISPdef"/> fix horizontal lines so that the main dynamics take place along one-dimensional sets, but even this apparently very simple case gives rise to interesting behavior, as is suggested in the images below. The advantage in working with such low-degree RISPs is that the extremely simple classification of fiber dynamics (discussed below) allows us to focus in detail on the global features of iteration on <m>\mathbb{T}^2</m>. </p>
 
-       <p> We proceed to describe the contents of our paper. We begin by examining three elementary examples of RISPs in Section <xref provisional="sec-Ex"/>. These examples serve as guides for our general investigations and illustrate most of the features we uncover in a more general setting. In Section <xref provisional="sec-Prelim"/> we introduce basic definitions for RIMs and RISPs, record some facts about RIFs and their numerator and denominator polynomials, and discuss iteration of Möbius transformations in the unit disk. Section <xref provisional="se-:main"/> contains the main results of our paper. After some preliminary remarks about general RIMs and certain associated essentially <m>\mathbb{T}^2</m>-symmetric polynomials, we focus on degree <m>(1,n)</m> RISPs. We then introduce and study rotation belts associated with a RISP, strips on which the dynamical actions on fibers are conjugate to rotations, and give an estimate on their number. We investigate how different components of the fixed point set of a RISPs can come together at a singular fixed point, and give criteria for different configurations to be present. The main tool we use is a one-variable polynomial <m>Q_{\alpha}</m> built from the numerator and denominator polynomials of the first-component map <m>\phi</m>. We conclude in <xref provisional="sec:morex"/> by exhibiting further examples of RISPs having more intricate dynamical behavior, and serving as illustrations of our main results. 
+        <p> We proceed to describe the contents of our paper. We begin by examining three elementary examples of RISPs in Section <xref ref="sec-Ex"/>. These examples serve as guides for our general investigations and illustrate most of the features we uncover in a more general setting. In Section <xref ref="sec-Prelim"/> we introduce basic definitions for RIMs and RISPs, record some facts about RIFs and their numerator and denominator polynomials, and discuss iteration of Möbius transformations in the unit disk. Section <xref ref="sec-main"/> contains the main results of our paper. After some preliminary remarks about general RIMs and certain associated essentially <m>\mathbb{T}^2</m>-symmetric polynomials, we focus on degree <m>(1,n)</m> RISPs. We then introduce and study rotation belts associated with a RISP, strips on which the dynamical actions on fibers are conjugate to rotations, and give an estimate on their number. We investigate how different components of the fixed point set of a RISPs can come together at a singular fixed point, and give criteria for different configurations to be present. The main tool we use is a one-variable polynomial <m>Q_{\alpha}</m> built from the numerator and denominator polynomials of the first-component map <m>\phi</m>. We conclude in <xref ref="sec-morex"/> by exhibiting further examples of RISPs having more intricate dynamical behavior, and serving as illustrations of our main results. 
        </p>
     </section>
 
     <section xml:id="sec-Ex"><title>Three examples</title>
 
 
-        <p> A fundamental result due to Rudin and Stout (see \cite[Chapter 5]{Rud69}) asserts that any RIF on <m>\mathbb{D}^2</m> can be written as
+        <p> A fundamental result due to Rudin and Stout (see Chapter 5 in <xref ref="Rud69"/>) asserts that any RIF on <m>\mathbb{D}^2</m> can be written as
                 <men xml:id="eq-rudin">
                 \phi(z)=e^{i\alpha}z_1^{\beta_1}z_ 2^{\beta_2}\frac{\tilde{p}(z)}{p(z)},
                 </men>
@@ -191,9 +191,10 @@
 
         <p>This structural result makes examples of rational inner functions particularly easy to construct - all one requires is a polynomial with no zeros in the bidisk. The following such examples can be fruitfully analyzed using elementary means.</p> 
         <example xml:id="ex-fave">
+        <figure xml:id = "faveplots">
         <sbsgroup>
         <sidebyside>
-        <figure xml:id="faveplots"> <caption>Vertical lines before mapping</caption>
+        <figure> <caption>Vertical lines before mapping</caption>
             <image source="images/vertparacurves.svg"/>
         </figure>
         <figure> <caption><m>\Phi^n</m> for <m>n=1</m></caption>
@@ -217,6 +218,8 @@
         </figure>
         </sidebyside>
         </sbsgroup>
+        <caption>Iteration of <m>\Phi=(-\frac{2z_1z_2-z_1-z_2}{2-z_1-z_2},z_2)</m></caption>
+        </figure>
 
         <p>Consider the RISP
                 <me>\Phi(z_1,z_2)=\left(-\frac{2z_1z_2-z_1-z_2}{2-z_1-z_2},z_2\right).</me>
@@ -228,19 +231,20 @@
                 confirms that these are all the fixed points of <m>\Phi</m>. </p>
 
         <p>We now iterate <m>\Phi</m>. We visualize the action of the iterates by viewing the <m>2</m>-torus as <m>[-\pi, \pi]^2</m> and applying <m>\Phi^n</m> to vertical lines of the form <m>\{(a\pi, t_2)\}</m> for several choices of <m>-1\lt a\lt 1</m>. <xref ref="faveplots"/> suggests that the iterates converge as <m>n</m> grows. 
-                Using induction, one can show that, for <m>n=1,2,\ldots</m>,
-                <me>\Phi^n(z_1,z_2)=\left(-\frac{2^nz_1z_2-z_1-(2^{n}-1)z_2}{2^n-(2^{n}-1)z_1-z_2}, z_2\right).</me>
-                Hence, for all <m>(z_1,z_2)\in \overline{\mathbb{D}^2}\setminus \{z_1=1\}</m>, we have
-                <me>\Phi^n(z_1,z_2)\to (z_2,z_2)  \quad \textrm{as} \quad n\to \infty.</me>
-                This means that each point on the diagonal is attractive on its corresponding horizontal fiber, while points on <m>\{z_1=1\}</m> are repelling fixed points. The special fiber <m>\{z_2=1\}</m> is immediately collapsed into <m>(1,1)</m> by <m>\Phi</m>, explaining the pinched appearance of the images.</p>
+        Using induction, one can show that, for <m>n=1,2,\ldots</m>,
+        <me>\Phi^n(z_1,z_2)=\left(-\frac{2^nz_1z_2-z_1-(2^{n}-1)z_2}{2^n-(2^{n}-1)z_1-z_2}, z_2\right).</me>
+        Hence, for all <m>(z_1,z_2)\in \overline{\mathbb{D}^2}\setminus \{z_1=1\}</m>, we have
+        <me>\Phi^n(z_1,z_2)\to (z_2,z_2)  \quad \textrm{as} \quad n\to \infty.</me>
+        This means that each point on the diagonal is attractive on its corresponding horizontal fiber, while points on <m>\{z_1=1\}</m> are repelling fixed points. The special fiber <m>\{z_2=1\}</m> is immediately collapsed into <m>(1,1)</m> by <m>\Phi</m>, explaining the pinched appearance of the images.</p>
 
-       <p> The special role the lines <m>\{z_1=1\}</m> and <m>\{z_2=1\}</m> play here is related to the fact that they are the level sets of <m>\phi</m> corresponding to the non-tangential value <m>\lambda=1</m>, which is attained at the singularity of <m>\phi</m> at <m>(1,1)</m> (see <xref ref="BPS18"/>). This will be discussed in detail below.</p>
+        <p> The special role the lines <m>\{z_1=1\}</m> and <m>\{z_2=1\}</m> play here is related to the fact that they are the level sets of <m>\phi</m> corresponding to the non-tangential value <m>\lambda=1</m>, which is attained at the singularity of <m>\phi</m> at <m>(1,1)</m> (see <xref ref="BPS18"/>). This will be discussed in detail below.</p>
         </example>
 
-        <example xml:id="para">
+        <example xml:id="ex-para">
+        <figure xml:id="parabplots">
         <sbsgroup>
         <sidebyside>
-        <figure xml:id="parabplots"> <caption>Vertical lines before mapping</caption>
+        <figure> <caption>Vertical lines before mapping</caption>
             <image source="images/vertparacurves.svg"/>
         </figure>
         <figure> <caption><m>\Phi^n</m> for <m>n=1</m></caption>
@@ -264,54 +268,566 @@
         </figure>
         </sidebyside>
         </sbsgroup>
+        <caption>Iteration of <m>\Phi=(-\frac{3z_1z_2-z_1-z_2-1}{3-z_1-z_2-z_1z_2},z_2)</m></caption>
+        </figure>
         <p>Our next example is
-                <me>\Phi(z_1,z_2)=\left(-\frac{3z_1z_2-z_1-z_2-1}{3-z_1-z_2-z_1z_2},z_2\right).</me>
-                The first component map <m>\phi=-\frac{\tilde{p}}{p}</m> again has a unique singularity on <m>\mathbb{T}^2</m> at the point <m>(1,1)</m>, with <m>\phi^*(1,1)=1</m>, and since <m>\Phi(z_1,1)=(1,1)</m>, the fiber <m>\{z_2=1\}</m> collapses.  The fixed points of <m>\Phi</m> on the <m>2</m>-torus are determined by <m>\tilde{p}-z_1p=0</m>, and since <m>\tilde{p}-z_1p=-(z_1-1)^2(z_2+1)</m>, the fixed point consists of 
-                <m>\{z_1=1\}\cup\{z_2=-1\}</m>, a union of two lines.
+        <me>\Phi(z_1,z_2)=\left(-\frac{3z_1z_2-z_1-z_2-1}{3-z_1-z_2-z_1z_2},z_2\right).</me>
+        The first component map <m>\phi=-\frac{\tilde{p}}{p}</m> again has a unique singularity on <m>\mathbb{T}^2</m> at the point <m>(1,1)</m>, with <m>\phi^*(1,1)=1</m>, and since <m>\Phi(z_1,1)=(1,1)</m>, the fiber <m>\{z_2=1\}</m> collapses.  The fixed points of <m>\Phi</m> on the <m>2</m>-torus are determined by <m>\tilde{p}-z_1p=0</m>, and since <m>\tilde{p}-z_1p=-(z_1-1)^2(z_2+1)</m>, the fixed point consists of 
+        <m>\{z_1=1\}\cup\{z_2=-1\}</m>, a union of two lines.
         </p>
 
-        <p>Since <m>\phi(z_1,-1)=z_1</m>, we obtain <m>\Phi(z_1,-1)=(z_1,-1)</m>, confirming that all the points on <m>\{z_2=-1\}</m> are fixed. By contrast, all other fibers contain a single fixed point at <m>(1,z_2)</m>. The dynamics of <m>\Phi</m> are shown in Figure 2: we see that when <m>t_2>0</m>, points are attracted to the <m>t_2</m>-axis from the right, and when <m>t_2\lt 0</m>, the fibers are attracted to the axis from the left.  A concrete formula for <m>\lim_{n\to \infty}\Phi</m> is not readily apparent, but a computation shows that
-                <me>\frac{\partial \phi}{\partial z_1}(z_1,z_2)=4\frac{(z_2-1)^2}{(3-z_1-z_2-z_1z_2)^2},</me>
-                hence <m>\frac{\partial \phi}{\partial z_1}(1,z_2)=1</m>. As we will see later, this confirms that the fixed points on <m>\{(1,\zeta_2)\}</m> are neither attractive nor repelling in this example: they are so-called parabolic fixed points.</p>
+        <p>Since <m>\phi(z_1,-1)=z_1</m>, we obtain <m>\Phi(z_1,-1)=(z_1,-1)</m>, confirming that all the points on <m>\{z_2=-1\}</m> are fixed. By contrast, all other fibers contain a single fixed point at <m>(1,z_2)</m>. The dynamics of <m>\Phi</m> are shown in <xref ref="parabplots"/>: we see that when <m>t_2>0</m>, points are attracted to the <m>t_2</m>-axis from the right, and when <m>t_2\lt 0</m>, the fibers are attracted to the axis from the left.  A concrete formula for <m>\lim_{n\to \infty}\Phi</m> is not readily apparent, but a computation shows that
+        <me>\frac{\partial \phi}{\partial z_1}(z_1,z_2)=4\frac{(z_2-1)^2}{(3-z_1-z_2-z_1z_2)^2},</me>
+        hence <m>\frac{\partial \phi}{\partial z_1}(1,z_2)=1</m>. As we will see later, this confirms that the fixed points on <m>\{(1,\zeta_2)\}</m> are neither attractive nor repelling in this example: they are so-called parabolic fixed points.</p>
         </example>
         <p>These two examples give an indication of the features (the presence of a collapsing fiber, fixed point curves being smooth, convergence to fixed points) present the general <m>(1,n)</m> RISP setting. However, other phenomena do arise, and mixed behavior is possible, as the next example shows.</p>
-<!--
-        \begin{ex}\label{ex:rot}
-        The bidegree <m>(1,1)</m> RISP
+
+        <example xml:id="ex-rot">
+        
+       <p> The bidegree <m>(1,1)</m> RISP
         <me>\Phi(z_1,z_2)=\left(\frac{3z_1z_2-z_1-z_2}{3-z_1-z_2},z_2\right)</me>
         has <m>\Phi(1,1)=(1,1)</m> so that <m>(1,1)</m> is again a fixed point, but in this example,
         <me>\phi_1(z_1) = \phi(z_1,1)=\frac{2z_1-1}{2-z_1},</me>
         which is non-constant, meaning that <m>\{z_2=1\}</m> does not collapse into a point under <m>\Phi</m>. In fact, the component <m>\phi</m> does not have a singularity at <m>(1,1)</m> or, indeed, at any point of <m>\mathbb{T}^2</m>. Instead, the points <m>(1,1)</m> and <m>(-1,1)</m> are fixed by <m>\Phi</m>, and since 
-        <m>\phi_1'(1)=3</m> and <m>\phi_1'(-1)=\frac{1}{3}</m>, the fixed point <m>(1,1)</m> is repelling while <m>(-1,1)</m> is attracting. 
+        <m>\phi_1'(1)=3</m> and <m>\phi_1'(-1)=\frac{1}{3}</m>, the fixed point <m>(1,1)</m> is repelling while <m>(-1,1)</m> is attracting.</p> 
 
-        We can determine all the fixed points of <m>\Phi</m> on <m>\mathbb{T}^2</m> by solving <m>\tilde{p}(z)-z_1p(z)=0</m> for <m>z_2</m>. We obtain
-        <me>z_2=\psi(z_1)=z_1\frac{4-z_1}{4z_1-1},</me>
-        and we note that the right-hand side is unimodular for unimodular <m>z_1</m>, so that we again get a curve of fixed points in <m>\mathbb{T}^2</m>. However, <m>\psi</m> is not surjective on <m>\mathbb{T}</m>, meaning that there are <m>z_2</m>-fibers without fixed points; see Figure \ref{rotaplots}(f). For instance, <m>-1</m> is not in the range of <m>\psi</m> on <m>\mathbb{T}</m>, and a computation reveals that <m>\phi(z_1,-1)=-\frac{4z_1-1}{4-z_1}</m> satisfies <m>\phi^2=\mathrm{id}</m>. Thus, the fiber dynamics associated with <m>\Phi^n</m> on <m>\{z_2=-1\}</m> are those of a rational rotation of order <m>2</m>. This is clearly visible when looking at the top of the images in Figure \ref{rotaplots}. Other fibers that do not intersect the fixed point curve experience rotations of different orders.
+       <p> We can determine all the fixed points of <m>\Phi</m> on <m>\mathbb{T}^2</m> by solving <m>\tilde{p}(z)-z_1p(z)=0</m> for <m>z_2</m>. We obtain
+       <me>z_2=\psi(z_1)=z_1\frac{4-z_1}{4z_1-1},</me>
+       and we note that the right-hand side is unimodular for unimodular <m>z_1</m>, so that we again get a curve of fixed points in <m>\mathbb{T}^2</m>. However, <m>\psi</m> is not surjective on <m>\mathbb{T}</m>, meaning that there are <m>z_2</m>-fibers without fixed points; see <xref ref="rotaf"/>. For instance, <m>-1</m> is not in the range of <m>\psi</m> on <m>\mathbb{T}</m>, and a computation reveals that <m>\phi(z_1,-1)=-\frac{4z_1-1}{4-z_1}</m> satisfies <m>\phi^2=\mathrm{id}</m>. Thus, the fiber dynamics associated with <m>\Phi^n</m> on <m>\{z_2=-1\}</m> are those of a rational rotation of order <m>2</m>. This is clearly visible when looking at the top of the images in <xref ref="rotaplots"/>. Other fibers that do not intersect the fixed point curve experience rotations of different orders.</p>
 
-        \begin{figure}[h!]
-            \subfigure[<m>\Phi^n</m> for <m>n=1</m>.]
-              {\includegraphics[width=0.35 \textwidth]{threefaveviter1.pdf}}
-          %\caption{\textsl{Iteration of the RISP <m>\Phi=(-\frac{2z_1z_2-z_1-z_2}{2-z_1-z_2},z_2)</m> on <m>\mathbb{T}^2</m>}.}
-              \subfigure[<m>\Phi^n</m> for <m>n=2</m>]
-              {\includegraphics[width=0.35 \textwidth]{threefaveviter2.pdf}}
-            \hfill
-            \subfigure[<m>\Phi^n</m> for <m>n=3</m>.]
-              {\includegraphics[width=0.35 \textwidth]{threefaveviter3.pdf}}
-          %\caption{\textsl{Iteration of the RISP <m>\Phi=(-\frac{2z_1z_2-z_1-z_2}{2-z_1-z_2},z_2)</m> on <m>\mathbb{T}^2</m>.}}
-              \subfigure[<m>\Phi^n</m> for <m>n=4</m>]
-              {\includegraphics[width=0.35 \textwidth]{threefaveviter4.pdf}}
-            \hfill
-            \subfigure[<m>\Phi^n</m> for <m>n=5</m>.]
-              {\includegraphics[width=0.35 \textwidth]{threefaveviter5.pdf}}
-            \subfigure[Invariant curve.]
-              {\includegraphics[width=0.35 \textwidth]{rotinvacurve.pdf}}
-          \caption{\textsl{Iteration of <m>\Phi=(\frac{3z_1z_2-z_1-z_2}{3-z_1-z_2},z_2)</m> on <m>\mathbb{T}^2</m>.}}
-          \label{rotaplots}
-        \end{figure}
-        \end{ex}
+        <figure xml:id="rotaplots"><caption>Iteration of the RISP <m>\Phi=(-\frac{2z_1z_2-z_1-z_2}{2-z_1-z_2},z_2)</m> on <m>\mathbb{T}^2</m></caption>
+        <sbsgroup> 
+        <sidebyside>
+        <figure> <caption>Vertical lines before mapping</caption>
+            <image source="images/vertparacurves.svg"/>
+        </figure>
+        <figure> <caption><m>\Phi^n</m> for <m>n=1</m></caption>
+            <image source="images/threefaveviter1.svg"/>
+        </figure>
+        </sidebyside>
+        <sidebyside>
+        <figure> <caption><m>\Phi^n</m> for <m>n=2</m></caption>
+            <image source="images/threefaveviter2.svg"/>
+        </figure>
+        <figure> <caption><m>\Phi^n</m> for <m>n=3</m></caption>
+            <image source="images/threefaveviter3.svg"/>
+        </figure>
+        </sidebyside>
+        <sidebyside>
+        <figure> <caption><m>\Phi^n</m> for <m>n=4</m></caption>
+            <image source="images/threefaveviter4.svg"/>
+        </figure>
+        <figure xml:id="rotaf"> <caption><m>\Phi^n</m> for <m>n=5</m></caption>
+            <image source="images/threefaveviter5.svg"/>
+        </figure>
+        </sidebyside>
+        </sbsgroup>
+        </figure>
+        </example>
 
-        This third example has some features in common with the first two, but the dynamics varies in nature across fibers. Together, our examples illustrate the three possible dynamical behaviors of a bidegree <m>(1,n)</m> RISP - attracting/repelling fixed points, so-called parabolic fixed points, and rotations on a <m>z_2</m>-fiber. In the investigation below, we explore how the actions on individual fibers fit together in a global picture of the dynamical behavior of a bidegree <m>(1,n)</m> RISP on <m>\mathbb{T}^2</m>.--> 
+        <p>This third example has some features in common with the first two, but the dynamics varies in nature across fibers. Together, our examples illustrate the three possible dynamical behaviors of a bidegree <m>(1,n)</m> RISP - attracting/repelling fixed points, so-called parabolic fixed points, and rotations on a <m>z_2</m>-fiber. In the investigation below, we explore how the actions on individual fibers fit together in a global picture of the dynamical behavior of a bidegree <m>(1,n)</m> RISP on <m>\mathbb{T}^2</m></p>.
         </section>
+
+    <section xml:id="sec-Prelim"><title>Preliminaries</title>
+        <subsection><title>Rational inner functions on the bidisk</title>
+
+       <p> Recall that a RIF is of the form
+           <me>
+           \phi(z)=e^{i\alpha}z_1^{\beta_1}z_ 2^{\beta_2}\frac{\tilde{p}(z)}{p(z)}.
+           </me> In what follows, we shall frequently assume that our RIFs are normalized. We take this to mean <m>\beta_1=\beta_2=0</m>, meaning that <me>\phi=e^{i\alpha}\frac{\tilde{p}}{p}</me> for some polynomial <m>p</m> with no zeros in <m>\mathbb{D}^2</m>. We also assume that <m>p</m> is <term> atoral</term> in the sense of <xref ref="AMS06"/>, meaning that <m>p</m> and <m>\tilde{p}</m> have no common factors. (If <m>p</m> is not initially atoral, then any toral factors can be canceled with the corresponding toral factors in <m>\tilde{p}</m>.)
+       </p>
+
+        <p>Let us review some basic facts concerning rational inner functions on the bidisk. By the definition of the reflection operation, any <m>\tau \in\mathbb{T}^2</m> that is a zero of <m>p</m> is a zero of <m>\tilde{p}</m>. We say that <m>\tau\in\mathbb{T}^2</m> is a {\it singular point} of <m>\phi</m> if <m>p(\tau)=0</m> 
+        (and hence also <m>\tilde{p}(\tau)=0</m>). Next, let us recall <term> Bézout's theorem </term> for <m>\mathbb{C}_{\infty}\times \mathbb{C}_{\infty}</m>, as discussed in <xref ref="Kne15"/>(Section 12). Namely, if <m>P, Q\in \mathbb{C}[z_1,z_2]</m> are polynomials with no common factors and with <m>\operatorname{deg}P=(M_1,N_1)</m> and <m>\operatorname{deg} Q=(M_2,N_2)</m>, then <m>P</m> and <m>Q</m> have <m>M_1N_2+M_2N_1</m> common zeros in <m>\mathbb{C}_{\infty}\times \mathbb{C}_{\infty}</m>. Applying this result to <m>P=p</m> and <m>Q=\tilde{p}</m> shows that any two-variable rational inner function has at most finitely many singularities on <m>\mathbb{T}^2</m>.</p>
+
+        <p>Since <m>\phi</m> is a bounded analytic function, Fatou's theorem for polydisks guarantees the existence of non-tangential limits of <m>\phi</m>: that is,
+        <me>\phi^*(\zeta_1,\zeta_2)=\angle\lim_{\mathbb{D}^2\ni (z_1,z_2)\to (\zeta_1,\zeta_2)}\phi(z_1,z_2)</me>
+        exists at almost every <m>\zeta \in \mathbb{T}^2</m>. Here, <m>\angle\lim_{z\to \zeta}f(z)</m> denotes letting <m>z</m> tend to <m>\zeta \in \mathbb{T}^2</m> with <m>|z_j-\zeta_j|\lt c(1-|z_j|)</m>, <m>j=1,2</m>, for some constant <m>c>1</m>.
+        Knese proved  <xref ref="Kne15"/>(Corollary 14.6) that if <m>\phi</m> is rational inner function, then the non-tangential limit <m>\phi^*(\zeta)</m> exists and is unimodular at <em> every</em> point <m>\zeta \in \T^2</m>. However, if a normalized <m>\phi</m> has singular points, then  <m>\phi^*(\zeta)</m> is not typically continuous on <m>\mathbb{T}^2</m>. See <xref ref="AMY12,TD17, BPS18, BPS20"/> for more background material on RIFs.</p>
+
+       <definition>
+      <p>  Let <m>\Phi=(\phi_1, \phi_2)\colon \mathbb{D}^2\to \mathbb{D}^2</m> be a non-constant normalized RIM. We say that <m>\tau\in \mathbb{T}^2</m> is a {\it singular fixed point} (SF-point) of 
+                  <m>\Phi</m> if 
+                  <ul>
+                  <li><m>\tau \in\mathbb{T}^2</m> is a singular point of at least one of <m>\phi_1</m> and <m>\phi_2</m>;</li>
+                  <li> <m>\tau</m> is a {\it fixed point}: <m>\Phi^*(\tau)=\tau</m>.</li>
+                  </ul></p>
+        </definition>
+            
+        <p>Note that, for each denominator <m>p</m>, we can make sure the corresponding component RIFs <m>\phi_j</m> satisfy the condition <m>\phi^*_j(\tau)=\tau_j</m> by a suitable choice of unimodular factor <m>e^{i\alpha_j}</m>. If <m>\phi_j</m> possesses multiple singularities then we cannot typically normalize all of them to be SF-points simultaneously.</p>
+
+        <p>We record a few further facts about rational inner functions. Suppose <m>\phi</m> is RIF of bidegree <m>(m,n)</m>. For a fixed <m>\zeta_2\in \mathbb{T}</m>, the function 
+        <me>\phi_{\zeta_2}\colon z_1\mapsto \phi(z_1,\zeta_2)</me> 
+        is a bounded rational function in the unit disk, attaining unimodular boundary values at every point of <m>\mathbb{T}</m>. Hence <m>\phi_{\zeta_2}</m> is constant, a monomial, or a finite Blaschke product of degree <m>1\leq d\leq n</m>. Returning to the setting of a RISP <m>\Phi=(\phi, z_2)</m>, we note that if <m>\lambda</m> is a constant, <m>\Phi</m> maps the set
+        <men xml:id="fiber">
+        F_{\lambda}=\{(z_1,z_2)\in \overline{\mathbb{D}^2}\colon  z_2=\lambda\}
+        </men>
+        into itself. The set <m>F_{\lambda}</m> is referred to as a <term>fiber</term>. On each <m>F_{\lambda}</m>, the first component <m>\phi_{\lambda}</m> is generically a finite Blaschke product of degree <m>n</m> but on certain fibers the degree may drop. The most extreme examples are the following.</p>
+        <definition>
+            <p>Let <m>\Phi=(\phi,z_2)</m> be a normalized RISP, and let <m>\lambda \in\mathbb{T}</m>. 
+            We say that <m>F_{\lambda}</m> is a <term>collapsing fiber</term> for <m>\Phi</m> if the one-variable function <m>\phi_{\lambda}</m> is constant. </p>
+        </definition>
+
+            
+        <p>We often specialize to bidegree <m>(1,n)</m> RIFs. In that case, we write <m>\phi=e^{i\alpha}\frac{\tilde{p}}{p}</m>, where
+        <men xml:id="def-p1p2polys">
+        p(z)=p_1(z_2)+z_1p_2(z_2), 
+        </men>
+        for some <m>p_1,p_2\in \mathbb{C}[z_2]</m>. Then as a consequence <m>\tilde{p}(z)=\tilde{p}_2(z_2)+z_1\tilde{p}_1(z_2)</m>, where each <m>\tilde{p}_j(z_2)=z_2^n\overline{p}(1/\bar{z}_2)</m>.  Note that <m>p_1(z_2)\neq 0</m>  for <m>z_2 \in \mathbb {D}</m> since <m>p</m> is assumed to have no zeros in the bidisk, and in fact <m>p_1(z_2)\neq 0</m> for <m>z\in \overline{\mathbb{D}}</m> by <xref ref="Kne15"/>[Lemma 10.1]. </p>
+        
+        <p>Finally, for <m>\alpha\in \mathbb{R}</m>, let us define the polynomial
+        <men xml:id="def-qapoly">
+        Q_{\alpha}(z_2)=(p_1(z_2)-e^{i\alpha}\tilde{p}_1(z_2))^2+4e^{i\alpha}p_2(z_2)\tilde{p}_2(z_2)
+        </men>
+        which we shall later use to analyze the fixed points of the corresponding RISP <m>(\phi, z_2)</m>.
+        Note that if <m>\phi</m> has bidegree <m>(1,n)</m>, then <m>Q_{\alpha}</m> has degree at most <m>2n</m>, and that <m>\tilde{Q}_{\alpha}(z_2)=e^{-2i\alpha}Q_{\alpha}(z_2)</m>. </p>
+
+        <p>When <m>\phi</m> is a degree <m>(1,n)</m> RIF and <m>\zeta_2\in \mathbb{T}</m>, the one-variable function <m>\phi_{\zeta_2}</m> has <m>\deg(\phi_{\zeta_2})=1</m>, or is a constant and thus has a collapsing fiber <m>F_{\zeta_2}</m>. In this case, we can characterize collapsing fibers using a result from <xref ref="BCSprep"/>: reversing the roles of <m>z_1</m> and <m>z_2</m>, <xref ref="BCSprep"/>[Theorem 3.3] yields the following.</p>
+
+        <lemma xml:id="lem-collapsefiberlem">
+        <p>Suppose <m>\Phi=(\phi,z_2)</m> is a normalized bidegree <m>(1,n)</m> RISP. Then <m>F_{\lambda}</m> is a collapsing fiber if and only if <m>(\tau_1, \lambda)\in \mathbb{T}^2</m> is a singularity of <m>\phi</m> for some choice of <m>\tau_1</m>. If this is the case, then <m>\phi^*(\tau_1, \lambda)=\tau_1</m> and <m>(\tau_1, \lambda)</m> is an SF-point of <m>\Phi</m>.</p> 
+        </lemma>
+
+        <p>In other words, <xref ref="lem-collapsefiberlem"/> relates collapsing fibers of a RISP to the level sets of its first component map <m>\phi</m>. In this regard, two-variable rational inner functions exhibit better behavior than rational inner functions in <m>\mathbb{D}^n</m> when <m>n\geq 3</m>. In <xref ref="BPS20"/>[Theorem 2.8], it is shown that for each fixed <m>\lambda\in \mathbb{T}</m>, the unimodular level set 
+        <men xml:id="eq-levelcurve">
+        \mathcal{C}_{\lambda}=\{(\zeta_1,\zeta_2)\in \mathbb{T}^2\colon \tilde{p}(\zeta_1,\zeta_2)-\lambda p(\zeta_1,\zeta_2)=0\}
+        </men>
+        consists of components that can be parametrized using analytic functions. By contrast, unimodular level sets in higher dimensions need not even be continuous <xref ref="BPSajm"/>.</p>
+
+        </subsection>
+        <subsection xml:id="subsec-Mob"><title>Dynamics of Möbius transformations</title>
+            
+        <p>Recall that the elements of the conformal automorphism group <m>\mathrm{Aut}(\mathbb{D})</m> of the unit disk are <em> Möbius transformations</em> of the form
+        <me>\mathfrak{m}(z)=e^{i\alpha}\frac{a-z}{1-\overline{a}z},</me>
+        where <m>\alpha \in \mathbb{T}</m> and <m>a\in \mathbb{D}</m>. Note that each Möbius transformation extends to the closed bidisk <m>\overline{\mathbb{D}}</m> and in particular furnishes a smooth diffeomorphism of the unit circle <m>\mathbb{T}</m>.</p>
+
+        <p>If <m>\phi</m> is a bidegree <m>(1,n)</m> rational inner function, then for each fixed <m>\lambda \in \mathbb{T}</m>, the analytic function <m>z_1\mapsto \phi(z_1,\lambda)</m> is bounded, satisfies <m>|\phi(z_1,\lambda)|=1</m>, and is of degree <m>0</m> or <m>1</m>. Then either <m>\phi(\cdot, \lambda)</m> is a Möbius transformation for some values of <m>\alpha(\lambda)</m> and <m>a(\lambda)</m>, or <m>\phi(\cdot, \lambda)</m> is constant. The latter possibility corresponds to a collapsing fiber, and by <xref ref="lem-collapsefiberlem"/>, this occurs if only if <m>(\zeta_1,\lambda)</m> is a singularity of <m>\phi</m> for some choice of <m>\zeta_1</m>.</p>
+
+        <p>In summary, for all but finitely many values 
+        <me>\Lambda^{\flat}=\{\lambda^{\flat}_1,\ldots, \lambda^{\flat}_N\} \subset \mathbb{T},</me> 
+        whose number is bounded by the degree of <m>\phi</m> in <m>z_2</m>, the fiber map
+        <me>z_1\mapsto \phi_{\lambda}(z_1)=\phi(z_1,\lambda)</me> 
+        is a Möbius transformation with parameters <m>\alpha(\lambda)</m> and <m>a(\lambda)</m>. The functions <m>\alpha(\lambda)</m> and <m>a(\lambda)</m> are continuous in any open set that does not intersect <m>\Lambda^{\flat}</m>. Associated with <m>\Lambda^{\flat}</m> is the set
+        <men xml:id="badfibers">
+        \iota(\Lambda^{\flat})=\bigcup_{\lambda \in \Lambda^{\flat}}F_{\lambda};
+        </men>
+        note that this is a finite union of horizontal lines in <m>\mathbb{T}^2</m>.</p>
+
+        <p>Let us recall the well-known classification of Möbius transformations depending on their fixed points. See <xref ref="BearBook"/>[Chapter 1] or <xref ref="MilBook"/>[Chapter 1] for a background discussion.</p>
+        <definition>
+        <p>Suppose <m>\mathfrak{m}\in \mathrm{Aut}(\mathbb{D})\setminus\{\mathrm{id}\}</m>. Then one of the following holds:
+            <ul>
+            <li><m>\mathfrak{m}</m> is <term>elliptic</term>: <m>\mathfrak{m}</m> has one fixed point in <m>\mathbb{D}</m>, and no fixed points on <m>\mathbb{T}</m></li>
+            <li><m>\mathfrak{m}</m> is  <term>parabolic</term>: <m>\mathfrak{m}</m> has no fixed points in <m>\mathbb{D}</m> and one fixed point on <m>\mathbb{T}</m></li>
+            <li><m>\mathfrak{m}</m> is <term>hyperbolic</term>: <m>\mathfrak{m}</m> has no fixed points in <m>\mathbb{D}</m> and two fixed points on <m>\mathbb{T}</m>. </li>
+            </ul></p>
+        </definition>
+        <p>Fixed points are classified according to the following scheme.</p>
+        
+        <definition>
+        <p>Suppose <m>t \in \overline{\mathbb{D}}</m> is a fixed point of a Möbius transformation <m>\mathfrak{m}</m> and define the <term>multiplier</term> <m>\mathfrak{p}=\mathfrak{m}&apos;(t) </m>. We say that 
+        <ul>
+        <li><m>t</m> is <term> attracting</term> if <m>0\lt |\mathfrak{p}|\lt 1</m></li>
+        <li><m>t</m> is <term> repelling</term> if <m>|\mathfrak{p}|>1</m></li>
+        <li><m>t</m> is <term>indifferent</term> if <m>|\mathfrak{p}|=1</m>.</li> 
+        </ul>
+        We further distinguish between <term> rationally indifferent fixed points </term> arising when <m>\mathfrak{p}</m> is a root of unity, and <term> irrationally indifferent fixed points </term> corresponding to <m>\mathfrak{p}</m> unimodular but not a root of unity.</p>
+        </definition>
+    
+        <p>It is easy to give examples of Möbius transformations with these properties. The rotation <m>\mathfrak{m}(z)=e^{i\alpha}z</m> has a rationally or irrationally indifferent fixed point at <m>t=0</m> according to whether <m>\alpha</m> is rational or irrational. The map <m>\mathfrak{m}(z)=\frac{(2+i)z+i}{2-i-iz}</m> has a single fixed point at <m>t=-1</m>, and is parabolic.
+        Finally, the hyperbolic map <m>\mathfrak{m}(z)=\frac{7z_1-1}{7-z_1}</m> has one attracting fixed point at <m>t_1=-1</m> and one attracting fixed point at <m>t_2=1</m>.</p>
+
+        <p>The dynamics of a Möbius transformation can be described depending on its type in the above list. Recall that two analytic functions <m>f,g\colon \mathbb{D}\to \mathbb{D}</m> are {\it conformally conjugate} if there exists a conformal map <m>\mathfrak{n}\colon \mathbb{D}\to \mathbb{D}</m> such that <me>g=\mathfrak{n}\circ f\circ \mathfrak{n}^{-1}.</me>
+        See <xref ref="BearBook"/>[Chapter 2] or <xref ref="MilBook"/>[Chapters 8-9] for general background.
+        Note that conjugation preserves the multiplier of a Möbius transformation at a fixed point, leading to the following classification.</p>
+
+        <proposition xml:id="prop-conjfixdescr">
+        <p>Let <m>\mathfrak{m} \in \mathrm{Aut}(\mathbb{D})\setminus\{\mathrm{id}\}</m>.  
+        Then the following holds:
+        <ul>
+        <li>If <m>\mathfrak{m}</m> is elliptic, then <m>\mathfrak{m}</m> is conjugate to a rotation <m>z\mapsto e^{ia}z</m> with angle <m>a=-i\log \mathfrak{p}</m>, where <m>\mathfrak{p}</m> is the multiplier at the unique fixed point <m>t\in \mathbb{D}</m>.</li>
+        <li>If <m>\mathfrak{m}</m> is parabolic then <m>\mathfrak{m}</m> has multiplier equal to <m>1</m> at its unique fixed point <m>t\in \mathbb{T}</m>.</li>
+        <li> If <m>\mathfrak{m}</m> hyperbolic then <m>\mathfrak{m}</m> has one attracting fixed point <m>t_1\in \mathbb{T}</m> with associated multiplier <m>\mathfrak{p}\in \mathbb{D}</m> and one repelling fixed point <m>t_2\in \mathbb{T}</m> with multiplier <m>\frac{1}{\mathfrak{p}}</m>.</li>
+        </ul></p>
+        </proposition>
+        <proof>
+        <p>See, for instance, <xref ref="BearBook"/>[Chapter 1] or <xref ref="MilBook"/>[Chapter 1].</p>
+        </proof>
+
+        <p><xref ref="prop-conjfixdescr"/> gives us a complete description of the possible dynamics of a bidegree <m>(1,n)</m> RISPs on each fiber <m>F_{\lambda}</m>. In the next sections, we investigate how these dynamical properties vary along fibers.</p>
+
+        </subsection>
+        
+        <subsection><title>Basic notions from complex dynamics</title>
+        <p>Our main results can be formulated in terms of the dynamics of Möbius transformations, as discussed in the preceding <xref ref="subsec-Mob"/>. We have included some comments referencing the <term> Julia set</term> of a rational map <m>R</m> on the Riemann sphere, as well as some related notions. As these comments should be viewed as short asides, we do not include full definitions, and refer the reader to <xref ref="BearBook,CGBook,MilBook"/> for background on rational iteration.</p>
+        </subsection>
+    </section>
+        
+    <section xml:id="sec-main"><title>RISP dynamics on the boundary</title>
+        <subsection><title>General remarks on boundary fixed points</title>
+        <p>Consider a bidegree <m>(n_1,n_2)</m> rational inner mapping <m>\Phi=(\phi_1, \phi_2)</m>, where <m>\phi_j=e^{i\alpha_j}\frac{\tilde{p}_j}{p_j}</m>, <m>j=1,2</m>, and where as usual each <m>p_j \in \mathbb{C}[z_1,z_2]</m> has no zeros in <m>\mathbb{D}</m>. The set of fixed points of <m>\Phi</m> in <m>\cc{\mathbb{D}^2}</m> consists of all <m>z \in \overline{\mathbb{D}^2}</m> such that
+        <me>\Phi(z_1,z_2)=(z_1,z_2);</me>
+        recall that <m>\Phi</m> is well-defined at each <m>\eta \in \mathbb{T}^2</m> <xref ref="Kne15"/>[Corollary 14.6]. </p>
+
+        <p>We first record some facts about fixed points in the general case. For <m>p_j</m> and <m>\tilde{p}_j</m> as above, we define the auxiliary polynomials
+        <men xml:id="eq-fppolydef">
+        P_j(z)=e^{i\alpha_j}\tilde{p}_j(z)-z_1p_j(z), \quad j=1,2,
+        </men>
+         and we set <m>\Gamma(\Phi)=\mathcal{Z}(P_1)\cap \mathcal{Z}(P_2)\cap \cc{\mathbb{D}^2}</m>.  Then <m>\Gamma(\Phi)</m> is comprised of the fixed points of <m>\Phi</m> along with all singular points of <m>\Phi</m>. As before, we adopt the convention that at least one of these is made into an SF-point by renormalizing the component maps <m>\phi_j</m>, <m>j=1,2</m>.  
+        Note that 
+        <me>\operatorname{deg} P_1=(n_{1}+1, n_{2}) \quad  \textrm{and} \quad \operatorname{deg} P_2=(n_1,n_2+1).</me> </p>
+
+        The polynomials <m>P_j</m> belong to a special class of polynomials that is often singled out in function theory in polydisks. We follow <xref ref="AMS06"/> and use the following definition.
+        <definition>
+        We say that <m>P\in \mathbb{C}[z_1,z_2]</m> is <term>essentially <m>\mathbb{T}^2</m>-symmetric</term> if <m>\tilde{P}=e^{i\beta}P</m> for some <m>\beta \in \mathbb{R}</m>.
+        </definition>
+        We then have the following.
+        <lemma>
+        <p>If <m>\Phi</m> is a normalized RIM, then the associated polynomials <m>P_1,P_2</m> defined in <xref ref="eq-fppolydef"/> are essentially <m>\mathbb{T}^2</m>-symmetric.</p>
+        </lemma>
+        <proof>
+        <p>This amounts to a computation. Applying the reflection operation <xref ref="eq-preflection"/> to the polynomial <m>P_1</m> and exploiting the fact that reflection is an involution, we obtain
+        <md>
+        <mrow>\tilde{P}_1(z_1,z_2)=z_1^{n_1+1}z_2^{n_2}e^{-i\alpha_1}\cc{\tilde{p}}_1\left(\frac{1}{\cc{z}_1}, \frac{1}{\cc{z}_2}\right)-z_1^{n_1+1}z_2^{n_2}\frac{1}{z_1}\cc{p}_1\left(\frac{1}{\cc{z}_1}, \frac{1}{\cc{z}_2}\right)</mrow>
+        <mrow>=e^{-i\alpha_1}z_1p_1(z_1,z_2)-\tilde{p}_1(z_1,z_2)=-e^{-i\alpha_1}(-z_1p_1(z_1,z_2)+e^{i\alpha_1}\tilde{p}_1(z_1,z_2))\\=-e^{-i\alpha_1}P_1.</mrow>
+        </md></p>
+
+        <p>A similar computation establishes the assertion for <m>P_2</m>.</p>
+        </proof>
+
+        <p>Essentially <m>\mathbb{T}^2</m>-symmetric polynomials have been studied extensively, see for instance <xref ref="AMS06,Kne10,BPS20"/> and the references therein. In particular, such polynomials are related to determinantal representations and so-called distinguished varieties. We caution that the focus is often on essentially <m>\mathbb{T}^2</m>-symmetric polynomials with no zeros in the bidisk, while the polynomials <m>P_j</m> that we encounter in this work typically <em> do</em> have some zeros in <m>\mathbb{D}^2</m>, namely at interior fixed points of <m>\Phi</m>. As a consequence, some of the known results from the literature (e.g. <xref ref="BKPSprep"/>) no longer apply.</p>
+
+        <p>In the pictures in <xref ref="sec-Ex"/>, we observed the presence of curves of fixed points in the <m>2</m>-torus. The fixed point set of a general RIM, however, typically consists of isolated points. This can be seen via a standard application of Bézout's theorem. (See <xref ref="SibSurv"/>[Section 1.3] for applications to counting the number of fixed and periodic points in the context of iteration of rational functions in <m>\mathbb{P}^k</m>.)</p>
+
+        <lemma xml:id="lem-finitefixpts">
+        <p>Suppose <m>\Phi=(\phi_1, \phi_2)</m> is a RIM such that the associated polynomials <m>P_1</m> and <m>P_2</m> have no common factors.
+        Then <m>\Gamma(\Phi)</m> is a finite set, with cardinality bounded by <m>2n_1n_2+n_1+n_2</m>.</p>
+        </lemma>
+
+        <proof>
+        <xref ref="lem-finitefixpts"/> follows directly from Bézout's theorem as discussed in <xref ref="sec-Prelim"/>. Namely, since <m>P_1</m> and <m>P_2</m> have no common zeros, we have
+        <me>\#(\mathcal{Z}(P_1)\cap \mathcal{Z}(P_2))=(n_1+1)\cdot(n_2+1) +n_2\cdot n_1=2n_1n_2+n_1+n_2.</me>
+        This is an upper bound on the number of elements of <m>\Gamma(\Phi)</m> since some common zeros could be located in <m>(\overline{\mathbb{D}^2})^c</m>.
+        </proof>
+
+        <p>Note that the assumption that <m>P_1</m> and <m>P_2</m> have no common factor is important: if we set  <m>\phi_1</m> and <m>\phi_2</m> both equal to the RIF in <xref ref="ex-fave"/>, then <m>P_1</m> and <m>P_2</m> are both divisible by <m>z_1-z_2</m>, and the diagonal <m>\{z_1=z_2\}</m> is fixed by the resulting mapping <m>\Phi</m>. </p>
+
+        <p>We now focus on fixed points of a RISP <m>\Phi=(\phi,z_2)</m>, where <m>\phi=\frac{\tilde{p}}{p}</m>, and <m>p</m> has no zeros in <m>\mathbb{D}^2</m>.  Note that for such functions, the polynomial <m>P_2</m> in <xref ref="eq-fppolydef"/> becomes identically 0, and so <xref ref="lem-finitefixpts"/> does not apply. Instead, in this case, we get that <m>z \in \mathbb{T}^2</m> satisfies the single condition 
+        <men xml:id="eq-singlefix">
+        q(z)-z_1p(z)=0,
+        </men>
+        and we can expect to see curves of fixed points in <m>\mathbb{T}^2</m>. Our goal is to investigate the nature of these fixed point curves.</p>
+
+        We begin with a simple consequence of work in <xref ref="BPS20"/>.
+        <proposition xml:id="prop-BPSconseq">
+        <p>Let <m>\Phi=(z_1\phi, z_2)</m>, where <m>\phi</m> is a normalized RIF. Then <m>\Gamma(\Phi)\cap \mathbb{T}^2</m> is a union of curves, and each component of <m>\Gamma(\Phi)\cap \mathbb{T}^2</m> can be parametrized by analytic functions.</p>
+        </proposition>
+
+        <p>The subtlety here is that <m>\Phi</m> may have singularities on <m>\mathbb{T}^2</m>, so that the implicit function theorem does not apply directly.</p>
+        <proof>
+            <p>By assumption, the first coordinate of <m>\Phi</m> can be written <me>z_1 \phi = z_1e^{i\alpha_1}\frac{\tilde{p}(z_1,z_2)}{p(z_1,z_2)}</me> for some real <m>\alpha_1</m> and some polynomial <m>p</m> with no zeros on <m>\mathbb{D}^2</m>. Then, the fixed point condition <xref ref="eq-singlefix"/> takes on the form
+            <me>0=\eta_1e^{i\alpha}\tilde{p}(\eta)-\eta_1p(\eta)=\eta_1(e^{i\alpha}\tilde{p}(\eta)-p(\eta)).</me>
+            Since <m>\eta_1\neq 0</m> for <m>\eta_1\in \mathbb{T}</m>, we get that <m>\eta\in \mathbb{T}^2</m> is a fixed point of <m>\Phi</m> if and only if <m>e^{i\alpha}\tilde{p}(\eta)-p(\eta)=0</m>. This latter condition  means that <m>\eta</m> belongs to some unimodular level set of the RIF <m>\phi</m>. Appealing to <xref ref="BPS20"/>[Theorem 2.8, we arrive at the desired conclusion.</p>
+        </proof>
+    
+       <p> In particular, <xref ref="prop-BPSconseq"/> implies that RISPs of the particular form <m>(z_1\phi, z_2)</m> exhibit an abundance of fixed points in the <m>2</m>-torus. On each fiber, the function <m>z_1\mapsto z_1\phi_{\lambda}(z_1)</m> is a Blaschke product of degree at least <m>1</m>, and for all but finitely many values of <m>\lambda</m>, the degree is at least <m>2</m>. This means that the dynamical behavior on a <m>\lambda</m>-fiber generically does not admit a description in elementary terms. </p>
+
+        <p>For instance, <m>z_1\phi_{\lambda}(z_1)</m> has a fixed point at <m>z_1=0</m> for each choice of <m>\lambda</m> and this fixed point is attracting whenever <m>z_1\phi_{\lambda}</m> has degree at least <m>2</m>. Moreover since for generic <m>\lambda\in \mathbb{T}</m>, the numerator of <m>z_1\phi_{\lambda}(z_1)</m> has higher degree than the denominator, the point at infinity of <m>\mathbb{C}_{\infty}</m> is also an attracting fixed point. This implies <xref ref="MilBook"/>[Chapter 7] that for generic <m>\lambda</m>, the Julia set of the rational map <m>z_1\phi_{\lambda}(z_1)\colon \mathbb{C}_{\infty}\to \mathbb{C}_{\infty}</m> is <m>\mathbb{T}</m>, the unit circle. We thus have complicated dynamical behavior on each fiber <m>F_{\lambda}</m> and (see <xref ref="BearBook"/>[Chapter 6] or <xref ref="MilBook"/>[Chapter 4]), and for all but finitely many values of <m>\lambda\in \mathbb{T}</m>, the points in <m>F_{\lambda}\cap \Gamma(\phi)</m> are repelling fixed points of the rational map <m>z_1\phi_{\lambda}(z_1)</m>. What <xref ref="prop-BPSconseq"/> asserts is that these repelling fixed points move in an analytic fashion in the fiber variable <m>\lambda</m>. </p>
+        
+ 
+
+        <p>The following example illustrates some of the facts listed above.</p>
+        <example>
+        <p>Consider the RISP
+         <me>\Phi(z)=\left(-z_1\frac{2z_1z_2-z_1-z_2}{2-z_1-z_2}, z_2\right).</me> 
+         As was noted above, the set <m>\{(0,z_2)\}\subset \cc{\mathbb{D}^2}</m> consists of fixed points of <m>\Phi</m>. On the fiber <m>z_2=1</m>, <m>\Phi</m> reduces to the identity, and on all other <m>F_{\lambda}</m>, the fiber map <m>z_1\phi_{\lambda}(z_1)</m> has degree <m>2</m> and has attracting fixed points at <m>0</m> and <m>\infty</m>.</p> 
+
+        <p>Solving <m>-(2z_1z_2-z_1-z_2)=2-z_1-z_2</m>, we find that <m>\{(1, \lambda)\colon \lambda \in \mathbb{T}\setminus \{1\}\}\subset \mathbb{T}^2</m> is fixed by <m>\Phi</m>, so that <m>1\in \mathbb{T}</m> is a fixed point on each <m>F_{\lambda}</m>. A direct computation shows that <m>\frac{d}{dz_1}(-z_1\phi_{\lambda})(1)=3</m> when <m>\lambda\neq 1</m>, confirming the presence of a repelling fixed point.</p>
+
+        <p>The dynamics of <m>\Phi</m> are visualized in <xref ref="fig-favejulia"/> and indeed have a more complicated appearance than the examples in <xref ref="sec-Ex"/>.</p>
+
+        <figure xml:id="fig-favejulia">
+            <sbsgroup>
+                <sidebyside>
+                    <figure> <caption>Vertical lines before mapping</caption>
+                        <image source="images/vertparacurves.svg"/>
+                    </figure>
+                    <figure> <caption><m>\Phi^n</m> for <m>n=1</m></caption>
+                        <image source="images/zfaveviter1.svg"/>
+                    </figure>
+                </sidebyside>
+                <sidebyside>
+                    <figure> <caption><m>\Phi^n</m> for <m>n=2</m></caption>
+                        <image source="images/zfaveviter2.svg"/>
+                    </figure>
+                    <figure> <caption><m>\Phi^n</m> for <m>n=5</m></caption>
+                        <image source="images/zfaveviter5.svg"/>
+                    </figure>
+                </sidebyside>
+          <caption>Iteration of <m>\Phi=(-z_1\frac{2z_1z_2-z_1-z_2}{2-z_1-z_2},z_2)</m> on <m>\mathbb{T}^2</m></caption>
+            </sbsgroup>
+        </figure>
+        </example></subsection>
+
+
+        <subsection><title>Rotation belts and parabolic fixed points for simple RISPs</title>
+       <p> We return our focus to the simple case where <m>\Phi=(\phi, z_2)</m> and <m>\phi</m> is a bidegree <m>(1,n)</m> normalized RIF, and where the fiber dynamics are completely described by <xref ref="prop-conjfixdescr"/>. In this case, since <m>p</m> and <m>\tilde{p}</m> are polynomials of degree <m>1</m> in the first variable, <xref ref="eq-singlefix"/> reduces to the quadratic equation
+       <me>P(z_1,z_2)=e^{i\alpha}\tilde{p}(z_1,z_2)-z_1p(z_1,z_2)=0.</me>
+       If <m>\Phi</m> has a SF-point in <m>\mathbb{T}^2</m> then <m>\mathcal{Z}(P)\cap \mathbb{T}^2\neq \emptyset</m> but it may well happen that <m>\mathcal{Z}(P)\cap (F_{\lambda}\cap \mathbb{T}^2)=\emptyset</m> for some values of <m>\lambda \in \mathbb{T}</m>. With this in mind, we make the following definition.</p>
+
+        <definition xml:id="def-rotbelt">
+        <p>Let <m>\lambda_1, \lambda_2\in [-\pi, \pi]</m> and suppose <m>\lambda_1\lt \lambda_2</m>. We say that the set
+        <me>B(\lambda_1, \lambda_2)=\mathbb{T}\times \{e^{it}\colon \lambda_1\lt t \lt \lambda_2 \}\subset \mathbb{T}^2</me>
+        is a <term>rotation belt</term> for <m>\Phi=(\phi, z_2)</m> if 
+        <ul>
+        <li>no point belonging to <m>B(\lambda_1,\lambda_2)</m> is a fixed point of <m>\Phi</m></li>
+        <li>each of the sets <m>F_{\lambda_1}\cap \mathbb{T}^2</m> and <m>F_{\lambda_2}\cap \mathbb{T}^2</m> contains at least one fixed point of <m>\Phi</m>.</li>
+        </ul></p>
+        </definition>
+        <p>The reason for our terminology here is that by <xref ref="prop-conjfixdescr"/>, each fiber map <m>\phi_{\lambda}</m> associated with fibers contained in <m>B(\lambda_1,\lambda_2)</m> is conjugate to a rotation. The second assumption is essentially a maximality condition. <xref ref="ex-fave, ex-para"/> illustrate that not all RISPs possess rotation belts. <xref ref="ex-rot"/> has a single rotation belt, but in general several rotation belts may be present. </p>
+
+        <p>We now give a criterion for a degree <m>(1,n)</m> RISP to possess parabolic fixed points in terms of the one-variable polynomial <m>Q_{\alpha}</m>. As in <xref ref="def-p1p2polys"/> in <xref ref="sec-Prelim"/>, we write <m>\phi=e^{i\alpha}\frac{\tilde{p}}{p}</m>, where
+        <me>p(z)=p_1(z_2)+z_1p_2(z_2), </me>
+        and <m>\tilde{p}(z)=\tilde{p}_2(z_2)+z_1\tilde{p}_1(z_2)</m> for a pair of one-variable polynomials <m>p_1,p_2</m>. Recall that <me>Q_{\alpha}=(p_1-e^{i\alpha}\tilde{p}_1)^2+4e^{i\alpha}p_2\tilde{p}_2.</me>
+        We shall need the auxiliary expressions
+        <men xml:id="psi1">
+        \psi^{1}_{\alpha}(z_2)=\frac{1}{2p_2(z_2)}\left(p_1(z_2)-e^{i\alpha}\tilde{p}_1(z_2)+\sqrt{Q_{\alpha}(z_2)}\right)
+        </men>
+        and 
+        <men xml:id="psi2">
+        \psi^{2}_{\alpha}(z_2)=\frac{1}{2p_2(z_2)}\left(p_1(z_2)-e^{i\alpha}\tilde{p}_1(z_2)-\sqrt{Q_{\alpha}(z_2)}\right).
+        </men>
+        The functions <m>\psi^j_{\alpha}</m> parametrize the roots of the polynomial 
+        <me>P_ {\alpha}(z)=e^{i\alpha}\tilde{p}-z_1p=e^{i\alpha}\tilde{p}_2+e^{i\alpha}z_1\tilde{p}_1-z_1p_1-z_1^2p_2</me>
+        away from the set <m>\Lambda^{\sharp}=\{z_2\in \mathbb{C}\colon p_2(z_2)=0\}</m>. Note that <m>\Lambda^{\flat}\cap \Lambda^{\sharp}=\emptyset</m> since <m>p_1(z_2)\neq 0</m> for <m>z_2\in \overline{\mathbb{D}}</m>.</p>
+
+       <p> First, let us examine what happens on the set <m>\Lambda^{\sharp}</m>.</p>
+
+        <lemma>
+        <p>Suppose <m>\lambda \in \mathcal{Z}(Q_{\alpha})\cap (\Lambda^{\sharp}\cap\mathbb{T})</m>. Then <m>\phi_{\lambda}(z_1)=e^{-i\alpha}z_1</m>.</p>
+        
+        <p>Conversely, if <m>\phi_{\lambda}(z_1)=e^{-i\alpha}z_1</m> for some <m>\lambda \in \mathbb{T}</m>, then <m>p_2(\lambda)=0</m> and 
+                <m>\lambda \in \mathcal{Z}(Q_{\alpha})</m>.</p>
+        </lemma>
+
+        <proof>
+        <p>By the definition of the reflection operation, <m>p_2(\lambda)=0</m> implies <m>\tilde{p}_2(\lambda)=0</m>. Next, if also <m>Q_{\alpha}(\lambda)=0</m> then <m>(p_1(\lambda)-e^{i\alpha}\tilde{p}_1(\lambda))^2=0</m> so that <m>p_1( \lambda)=e^{i\alpha}\tilde{p}_1(\lambda)</m>. 
+        But then
+        <me>\phi(z_1,\lambda)=\frac{z_1\tilde{p}_1(\lambda)+0}{p_1(\lambda)+0}=e^{-i\alpha}z_1.</me></p>
+
+        <p>Conversely, suppose
+        <me>e^{-i\alpha}z_1=\frac{z_1\tilde{p}_1(\lambda)+\tilde{p}_2(\lambda)}{p_1(\lambda)+p_2(\lambda)z_1}</me>
+        for some unimodular <m>\lambda</m>. Then, comparing coefficients, we get <m>p_2(\lambda)=0</m> and as a direct consequence that <m>\tilde{p}_2(\lambda)=0</m>. 
+        Finally, we read off that <m>e^{-i\alpha}=\frac{\tilde{p}_1(\lambda)}{p_1(\lambda)}</m> and hence <m>Q_{\alpha}(\lambda)=0</m>, as claimed.</p>
+        </proof>
+
+        <p>Having seen what happens on the set <m>\Lambda^{\sharp}</m>, we now examine the behavior of <m>Q_{\alpha}</m> on <m>\Lambda^{\flat}</m>.</p>
+
+        <lemma xml:id="lem-Qvanishing">
+       <p> Suppose <m>\lambda \in \Lambda^{\flat}</m>. Then 
+       <ol>
+       <li><m>Q_{\alpha}(\lambda)=0</m> if and only if <m>p_1(\lambda)+e^{i\alpha}\tilde{p}_1(\lambda)=0</m>;</li>
+       <li>if <m>Q_{\alpha}(\lambda)=0</m> then <m>Q_{\alpha}</m> vanishes to at least order <m>2</m> at <m>\lambda</m>.</li>
+       </ol></p>
+        </lemma>
+
+        <proof>
+        <p>We first prove (1). By completing the square, we can rewrite <m>Q_{\alpha}</m> as
+                <me>Q_{\alpha}(z_2)=(p_1(z_2)+e^{i\alpha}\tilde{p}_1(z_2))^2+4e^{i\alpha}(p_2(z_2)\tilde{p}_2(z_2)-p_1(z_2)\tilde{p}_1(z_2)).</me>
+                Since <m>\lambda \in \Lambda^{\flat}</m>, Lemma \ref{lem:collapsefiberlem} implies that <m>p(\tau_1,\lambda)=\tilde{p}(\tau_1,\lambda)=0</m> for some <m>\tau_1\in \mathbb{T}</m>. Solving for <m>\tau_1</m>, we deduce that <m>\frac{p_1(\lambda)}{p_2(\lambda)}=\frac{\tilde{p}_2(\lambda)}{\tilde{p}_1(\lambda)}</m> and then <m>p_1(\lambda)\tilde{p}_1(\lambda)-p_2(\lambda)\tilde{p}_2(\lambda)=0</m>.</p>
+
+        <p>Hence, <m>Q_{\alpha}(\lambda)=(p_1(\lambda)+e^{i\alpha}\tilde{p}_1(\lambda))^2</m> leading to the desired condition.</p>
+
+        <p>We turn to (2). Clearly, any zero of <m>(p_1+e^{i\alpha}\tilde{p}_1)^2</m> occurs with even multiplicity. Next, we note that <m>\left|\frac{p_2(z_2)}{p_1(z_2) }\right|^2\leq 1</m> for <m>z_2\in \mathbb{D}</m>, for otherwise <m>p</m> would have a zero in <m>\mathbb{D}^2</m>. Now, we note that
+                <me>p_2(e^{it_2})\tilde{p}_2(e^{it_2})-p_1(e^{it_2})\tilde{p}_1(e^{it_2})=e^{int_2}\left(|p_2(e^{it_2})|^2-|p_1(e^{it_2})|^2\right)</me>
+                and since the expression on the right is a non-positive trigonometric polynomial, the Fejér-Riesz theorem implies that it is equal to <m>-|r(e^{it_2})|^2</m> for some polynomial <m>r</m>, with a zero at <m>\lambda</m> by the proof of (1).</p>
+        </proof>
+
+        <p>We shall see later, in <xref ref="ex-multisingex"/>, that it may well happen that <m>Q_{\alpha}(\lambda)\neq 0</m> for certain <m>\lambda \in \Lambda^{\flat}</m>.</p>
+
+        <theorem xml:id="thm-paracrit">
+        <p>Suppose <m>Q_{\alpha}(\lambda)=0</m> for some <m>\lambda \in \mathbb{T}\setminus (\Lambda^{\flat}\cup \Lambda^{\sharp})</m>. Then <m>\psi^{1}(\lambda)</m> and <m>\psi^{2}(\lambda)</m> coincide as an element of <m>\mathbb{T}</m>, and <m>\phi_{\lambda}</m> has a parabolic fixed point at <m>\psi^1_{\alpha}(\lambda)</m>. </p>
+        </theorem>
+
+        <p>Note that <m>\psi^{j}_{\alpha}</m>, <m>j=1,2</m>, will in general exhibit branch points at points where <m>Q_{\alpha}</m> vanishes, and so <m>\Gamma(\Phi)</m> does not in general admit a description in terms of analytic functions near parabolic fixed points of <m>\Phi</m> in <m>\mathbb{T}^2</m>. This is in contrast to the results in <xref ref="BPS20"/> which state that level sets of RIFs can be parametrized in such a way at every point of <m>\mathbb{T}^2</m>. </p>
+
+        <proof>
+        <p>Because of our assumptions, for each <m>\lambda \in \mathbb{T} \setminus (\Lambda^{\flat}\cup \Lambda^{\sharp})</m>, the fiber map <m>\phi_{\lambda}</m> is a M\"obius transformation not of the form <m>e^{i\beta}z_1</m>. Then, by the discussion in <xref ref="sec-Prelim"/>, <m>\phi_{\lambda}</m> either has two hyperbolic fixed points on the unit circle, or a parabolic fixed point on <m>\mathbb{T}</m>, or else an elliptic fixed point in <m>\mathbb{D}</m> with another fixed point lying in <m>\overline{\mathbb{D}^c}</m>. But <m>Q_{\alpha}(\lambda)=0</m> with 
+        <m>\lambda \notin \Lambda^{\sharp}</m> implies that <m>\psi^{1}_{\alpha}(\lambda)=\psi^{2}_{\alpha}(\lambda)</m>. Since <m>\lambda\notin \Lambda^{\flat}</m>, we are in the parabolic case and then necessarily <m>\psi^{1}_{\alpha}(\lambda) \in \mathbb{T}</m>.</p>
+        </proof>
+
+        <example>
+       <p> Consider the polynomials <m>p</m> and <m>\tilde{p}</m> in appearing in the RIF <m>\phi</m> in <xref ref="ex-rot"/> in <xref ref="sec-Ex"/>. There, <m>p_1(z_2)=3-z_2</m> and <m>p_2(z_2)=-1</m>, while 
+       <m>\tilde{p}_1(z_2)=3z_2-1</m> and <m>\tilde{p}_2(z_2)=-z_2</m>. Then <m>Q_{\alpha}(z_2)=16z_2^2-28z_2+16</m>, and this polynomial has conjugate roots on <m>\lambda_{1,2}=\frac{1}{8}(7\pm \sqrt{15}i)\in\mathbb{T}</m>. The corresponding fibers <m>F_{\lambda_{1,2}}</m> bound the rotation belt of <m>\Phi</m>.</p>
+        </example>
+
+        <example>
+        <p>It may well happen that <m>Q_{\alpha}\equiv 0</m>, so that most fixed points are parabolic. This can be seen in <xref ref="ex-para"/> from <xref ref="sec-Ex"/>. 
+        In that case, we have <m>p_1(z_2)=3-z_2</m> and <m>p_2(z_2)=-(1+z_2)</m> as well as <m>\tilde{p}_1(z_2)=3z_2-1</m> and <m>\tilde{p}_2(z_2)=-(1+z_2)</m>, and if we insist on the normalized choice <m>\alpha=\pi</m>, then indeed <m>Q_{\alpha}</m> is the zero polynomial. As we saw before, the set <m>\{(1,e^{it_2})\colon t_2\neq 0,\pi\}</m> consists of parabolic fixed points of <m>\Phi</m>.</p>
+
+        <p>This example also illustrates the need to assume <m>\lambda \notin \Lambda^{\flat}\cup \Lambda^{\sharp}</m>. Namely, <m>\phi(z_1,1)=1</m> for <m>\lambda=1\in \Lambda^{\flat}</m> and <m>\phi(z_1,-1)=-z_1</m> for <m>\lambda=-1 \in \Lambda^{\sharp}</m>, and neither case leads to a parabolic fixed point.</p>
+        </example>
+
+        <theorem xml:id="thm-beltcount">
+        <p>Suppose <m>\Phi</m> is a degree <m>(1,n)</m> RISP with associated <m>Q_{\alpha}</m> not identically zero. Then the number of rotation belts for <m>\Phi</m> is less than or equal to
+        <me>\frac{1}{2}\#\left[(\mathcal{Z}(Q_{\alpha}) \setminus \Lambda^{\flat})\cap \mathbb{T}\right].</me></p>
+        </theorem>
+
+        <proof>
+        <p>Note that <m>\Gamma(\Phi)</m> is parametrized by the analytic functions <m>\psi^{1,2}_{\alpha}</m> away from the branch points, and that the fiber map derivative <m>\frac{d}{dz_1}\phi_{\lambda}</m> is continuous off <m>\iota(\Lambda^{\flat})</m>, see <xref ref="lem-contlemma"/> below. Thus, within a rotation belt <m>B(\lambda_1, \lambda_2)</m> the composite map <m>\lambda \mapsto \mathfrak{p}(\lambda) \in \mathbb{T}</m> is continuous. Now if a curve component of <m>\Gamma(\Phi)</m> containing elliptic fixed points were to meet <m>\mathbb{T}^2</m> in a hyperbolic fixed point having <m>|\mathfrak{p}(\lambda)|\neq 1</m>, this would force a discontinuity in the multiplier at <m>\lambda_1</m> or <m>\lambda_2</m>. Hence, the boundary fiber of a rotation belt contains a parabolic point, or is contained in <m>\iota(\Lambda^{\flat}\cup \Lambda^{\sharp})</m>. </p>
+
+        <p> Next, we observe that neither of the boundary fibers <m>F_{\lambda_1}, F_{\lambda_2}</m> can be collapsing. For if, say, <m>F_{\lambda_1}</m> was collapsing, then it could contain at most finitely many singularites <m>(\tau_1,\lambda_1), \ldots, (\tau_m, \lambda)</m> of <m>\phi</m> by <xref ref="lem-collapsefiberlem"/>. But the collapsing of <m>F_{\lambda_1}</m> would imply that <m>\Phi</m> had discontinuities as <m>\lambda \to \lambda_1</m> in <m>B(\lambda_1,\lambda_2)</m> along vertical lines <m>\{\tau\}\times \mathbb{T}\subset \mathbb{T}^2</m> for <m>\tau\neq \tau_1, \ldots, \tau_m</m>, which is impossible. Hence, by Theorem <xref ref="thm-paracrit"/>, this implies that the fibers <m>F_ {\lambda_1}</m> and <m>F_{\lambda_2}</m> associated with a rotation belt <m>B(\lambda_1,\lambda_2)</m> contain a parabolic fixed point, or, if <m>\lambda \in \mathcal{Z}(Q_{\alpha})\cap \Lambda^{\sharp}</m> and <m>\alpha=0</m>, have fiber map <m>\phi_{\lambda}=z_1</m>.</p>
+        </proof>
+
+        <p>Note that <m>\deg Q_{\alpha} \leq 2n</m>, so that <m>Q_{\alpha}</m> has at most <m>2n</m> zeros on <m>\mathbb{T}</m> counting multiplicities. It may well happen, however, that <m>\Phi</m> has fewer than <m>n</m> rotation belts if <m>Q_{\alpha}(\lambda_j)=0</m> for some <m>\lambda_j\in \Lambda^{\flat}</m>; see <xref ref="sec-morex"/> for an example with <m>n=2</m> and a single rotation belt. Similarly, examples show that the situation where a rotation belt is bounded by a fiber where the fiber map is equal to the identity can indeed arise.</p>
+
+        <lemma xml:id="lem-contlemma">
+        <p>Let <m>\mathfrak{p}(\lambda)</m> denote the multiplier of <m>\phi_{\lambda}</m> at a point <m>\lambda \in \overline{\mathbb{D}}</m>. Then <m>\lambda\mapsto \mathfrak{p}(\lambda)</m> is an analytic function on each component of <me>\Gamma(\phi)\setminus [\iota(\mathcal{Z}(Q_{\alpha}))\cap\iota(\Lambda^{\flat}\cup \Lambda^{\sharp})].</me></p>
+        </lemma>
+
+        <proof>
+        <p>Note that for each <m>\lambda \in \mathbb{T}\setminus (\Lambda^{\flat}\cup \Lambda^{\sharp})</m>, the Möbius map <m>\frac{d}{dz_1} \phi_ {\lambda}</m> is non-trivial and has no critical points. This implies that <m>\lambda  \mapsto \frac{d}{dz_1} \phi_ {\lambda}(\psi^{j}_{\alpha}(\lambda))</m> is analytic off <m>\mathcal{Z}(Q_{\alpha})</m> and <m>\Lambda^{\flat}\cup \Lambda^{\sharp}</m>.</p>
+        </proof>
+
+       <p><xref ref="lem-contlemma"/> has the following consequence for rotations belts.</p>
+        
+        <lemma>
+        <p>Suppose <m>B(\lambda_1, \lambda_2)</m> is a rotation belt for <m>\Phi=(\phi,z_2)</m> and that <m>\mathfrak{p}(\lambda)</m> is non-constant on <m>(\lambda_1, \lambda_2)</m>. Then uncountably many <m>\phi_{\lambda}</m> are conjugate to an irrational rotation.</p>
+        </lemma>
+        <proof>
+        <p>By assumption <m>-i\log(\mathfrak{p}(\lambda))</m> is a non-constant smooth function taking values in <m>[-\pi, \pi]</m>, and since moreover <m>-i\log(\mathfrak{p}(\lambda_{1,2}))=0</m>, the statement follows from the intermediate value theorem.</p>
+        </proof>
+        </subsection>
+
+        <subsection><title>Hyperbolic fixed points and SF-points for simple RISPs</title>
+        <p>We now examine the dynamical behavior of <m>\Phi</m> in the vicinity of an SF-point.</p> 
+
+       <p> All singularities of a RISP are points of <m>\mathbb{T}^2</m>, and lie in collapsing fibers by <xref ref="lem-collapsefiberlem"/>. </p>
+        
+        <lemma>
+        <p>Let <m>(\tau_1, \lambda_1), \ldots, (\tau_n, \lambda_m)</m> be SF-points of <m>\Phi</m>. Then <m>(\tau_j, \lambda_j) \in \Gamma(\Phi)\cap \mathbb{T}^2</m> for <m>j=1,\ldots, m</m>.</p>
+        </lemma>
+        <p>The proof of <xref ref="thm-beltcount"/> shows that a collapsing fiber cannot be contained in a rotation belt <m>B(\lambda_1, \lambda_2)</m>, nor can it coincide with one of the boundary fibers <m>F_{\lambda_1}</m> or <m>F_{\lambda_2}</m>. We have already seen that SF-points can be accessed in <m>\mathbb{T}^2</m> via a component of <m>\Gamma(\Phi) \cap \mathbb{T}^2</m> in different ways. An SF-point may belong to a component of <m>\Gamma(\Phi)\cap \mathbb{T}^2</m> consisting of parabolic points (Example \ref{ex:para}), or to one or more components of <m>\Gamma(\Phi) \cap \mathbb{T}^2</m> made up of hyperbolic fixed points (Example \ref{ex:fave}).</p>
+
+        <theorem>
+        <p>Let <m>(\tau, \lambda) \in \mathbb{T}^2</m> be an SF-point of a RISP <m>\Phi</m> with associated polynomial <m>Q_{\alpha}</m> not identically zero.
+        <ol>
+        <li>If <m>Q_{\alpha}(\lambda)\neq 0</m> then <m>(\tau, \lambda)</m> belongs to a single component of <m>\Gamma(\Phi) \cap \mathbb{T}^2</m>. Moreover, this component can be parametrized by an analytic function in some neighborhood of <m>(\tau, \lambda)</m>.</li>
+        <li>If <m>Q_{\alpha}(\lambda)=0</m>  then <m>(\tau, \lambda)</m> belongs to two components of <m>\Gamma(\Phi)\cap \mathbb{T}^2</m>. If <m>Q_{\alpha}</m> vanishes to even order, then each of these components can be parametrized by an analytic function in some neighborhood of <m>(\tau, \lambda)</m>.</li>
+        </ol></p>
+        </theorem>
+        <proof>
+        <p>Item (1) follows from the definition of <m>\psi^{j}</m>, <m>j=1,2</m>, in <xref ref="psi1"/> and <xref ref="psi2"/> together with the observation that points in <m>\Lambda^{\flat}</m> cannot be elements of <m>\Lambda^{\sharp}</m>.</p>
+
+       <p> Let us turn to item (2). <xref ref="lem-Qvanishing"/> asserts that <m>Q_{\alpha}</m> vanishes to order at least <m>2</m>. If <m>Q_{\alpha}</m> in fact vanishes to even order at <m>z_2=\lambda</m>, then the function <m>\sqrt{Q_{\alpha}(z_2)}</m> is analytic in a neighborhood of <m>\lambda</m>. Hence <m>\psi^{j}</m>, <m>j=1,2</m>, are analytic also.</p>
+        </proof>
+
+        <p>In other words, a pair of components of <m>\Gamma(\Phi)</m> coming together at an SF-point generically cross transversally. In fact, examination of a wide range of examples (see <xref ref="TDpage"/>) suggests that the compoments of <m>\Gamma(\Phi)</m> can always be parametrized by analytic functions in a neighborhood of an SF-point, but we have not been able to find an elementary proof. </p>
+
+        <p>As an example, the RISP in <xref ref="ex-multisingex"/> has two SF-points, with two hyperbolic fixed point curves meeting at one of them, and a single hyperbolic fixed point curve passing through the other.</p></subsection></section>
+
+
+        <section xml:id="sec-morex"><title>Further examples</title>
+
+        <p>We conclude by examining two examples with more intricate singularities and dynamical behavior. Further examples and images can be found on the webpage <xref ref="TDpage"/>.</p>
+        <example xml:id="ex-AMYex">
+        <figure xml:id="AMYplots">
+            <sbsgroup>
+                <sidebyside>
+                    <figure> <caption><m>\Phi^n</m> for <m>n=1</m></caption>
+                        <image source="images/AMY1iter.svg"/>
+                    </figure>
+                    <figure> <caption><m>\Phi^n</m> for <m>n=2</m></caption>
+                        <image source="images/AMY2iter.svg"/>
+                    </figure>
+                </sidebyside>
+                <sidebyside>
+                    <figure> <caption><m>\Phi^n</m> for <m>n=5</m></caption>
+                        <image source="images/AMY5iter.svg"/>
+                    </figure>
+                    <figure> <caption><m>\Gamma(\Phi)\cap\mathbb{T}^2</m>. Parabolic fibers <m>F_{\lambda_{2,3}}</m> in pink.</caption>
+                        <image source="images/AMYinvacurveswpara.svg"/>
+                    </figure>
+                </sidebyside>
+            </sbsgroup>
+             <caption>Iteration of <m>\Phi</m> given by <xref ref="AMYRIF"/> on <m>\mathbb{T}^2</m>. (Successive images of the vertical axis marked red)</caption>
+        </figure>
+
+        
+        <p>Consider the rational inner function
+        <men xml:id="AMYRIF">
+        \phi(z_1,z_2)=-\frac{\tilde{p}(z)}{p(z)}=-\frac{4z_1z_2^2 - z_2^2 - 3z_1z_2 - z_2 + z_1}{4 - z_1 - 3z_2 - z_1z_2 + z_2^2},
+        </men>
+        which features as an example in the paper <xref ref="AMY12"/>, and has been further studied in <xref ref="BPS20"/>[Section 1.3] and <xref ref="BCSprep"/>[Example 5.2] (without the minus sign in front). Since <m>\phi</m> has a single singularity at <m>(1,1)</m> and <m>\phi^*(1,1)=1</m>, the corresponding RISP <m>\Phi</m> has a SF-point at <m>(1,1)</m>. We further check that <m>\phi(1,z_2)=1</m>, confirming the presence of a collapsing fiber.</p>
+
+        <p>In this example, <m>\alpha=\pi</m>, and
+        <me>p(z)=p_1(z_2)+z_1p_2(z_2)</me>
+        with
+        <me>p_1(z_2)=4-3z_2+z_2^2\quad \textrm{and}\quad p_2(z_2)=-(1+z_2).</me>
+        We have <m>p_2(-1)=0</m>, and as expected <m>\phi(z_1,-1)=-z_1</m>, a rotation of order <m>2</m>.
+        A short computation shows that the associated polynomial <m>Q_{\alpha}</m> is given by
+        <men xml:id="AMYQ">
+        Q_{\alpha}(z_2)=25(z_2-1)^2\left(z_2^2-\frac{14}{25}z_2+1\right).
+        </men>
+        Then <m>Q_{\alpha}(z_2)</m> has a double root at <m>\lambda_1=1</m>, and two roots at <m>\lambda_{2,3}=\frac{1}{25}(7\pm 24i)</m>. </p>
+
+        <p><xref ref="AMYplots"/> displays the dynamics of <m>\Phi</m> on <m>\mathbb{T}^2</m>. We notice a single rotation belt bounded by <m>F_{\lambda_2}</m> and <m>F_{\lambda_3}</m>, one fewer than the maximum given the degree of <m>Q_{\alpha}</m>. Also visible are two curves containing hyperbolic fixed points with a normal crossing at <m>(1,1)</m>, which is contained in the collapsing fiber.</p>
+        
+        <figure xml:id="AMYbranchpts">
+        <image width="30%" source="AMYparabranches.svg"/>
+        <caption>Plot of <m>|\psi^{1,2}(e^{it_2})|</m> showing interior/exterior fixed points coming together at parabolic fixed points.</caption>
+        </figure>
+
+        <p>The hyperbolic fixed points are visible on a pair of curves parametrized by
+        <me>\psi^{1,2}_{-1}(z_2)=\frac{1}{2(1+z_2)}\left(5 - 6 z_2 +5 z_2^2 \pm (-1 + z_2) \sqrt{25 - 14 z_2 + 25 z_2^2}\right).</me>
+        These curves exhibit a normal crossing at <m>(1,1)</m>, the singularity of the RIF, reflecting the double root of <m>Q_{\alpha}</m> at <m>(1,1)</m>. The branch point nature of the parabolic fixed points at <m>\lambda_2</m> and <m>\lambda_3</m> can be observed in <xref ref="AMYbranchpts"/> which displays the absolute value of the functions <m>\psi^{1,2}(e^{it_2})</m>.</p>
+
+        </example>
+
+        <example xml:id="ex-multisingex">
+        <figure xml:id="MultSingplots">
+            <sbsgroup>
+                <sidebyside>
+                    <figure> <caption><m>\Phi^n</m> for <m>n=1</m></caption>
+                        <image source="images/multsing1iter.svg"/>
+                    </figure>
+                    <figure> <caption><m>\Phi^n</m> for <m>n=2</m></caption>
+                        <image source="images/multsing2iter.svg"/>
+                    </figure>
+                </sidebyside>
+                <sidebyside>
+                    <figure> <caption><m>\Phi^n</m> for <m>n=5</m></caption>
+                        <image source="images/multsing5iter.svg"/>
+                    </figure>
+                    <figure> <caption><m>\Gamma(\Phi)\cap\mathbb{T}^2</m>. Parabolic fibers <m>F_{\lambda_{2,3}}</m> in pink.</caption>
+                        <image source="images/multsinginvacurveswpara.svg"/>
+                    </figure>
+                </sidebyside>
+            </sbsgroup>
+             <caption>Iteration of <m>\Phi</m> given by <xref ref="multp"/> on <m>\mathbb{T}^2</m>. (Successive images of the vertical axis marked red)</caption>
+        </figure>
+        
+
+        <p>  We turn to a RIF with multiple singularities on <m>\mathbb{T}^2</m> and multiple rotation belts. Consider the RIF <m>\phi=-\frac{\tilde{p}}{p}</m> with
+        <men xml:id="multp">
+        p(z)=4 - z_1 + z_1z_2 - 3z_1z_2^2 - z_1z_2^3 \quad \textrm{and}\quad \tilde{p}(z)=4z_1z_2^3 - z_2^3 +z_2^2 - 3z_2 - 1,
+        </men>
+        a slightly modified form of  <xref ref="BPS20"/>[Example 7.4] (see also <xref ref="BCSprep"/>[Example 5.4]).</p>
+
+        <p>We have <m>p(1,1)=0</m> and <m>p(-1,-1)=0</m>, and a computation shows that <m>\phi(z_1,1)=1</m> and <m>\phi(z_1,-1)=-1</m>, confirming the presence of two collapsing fibers as guaranteed by <xref ref="lem-collapsefiberlem"/>, and so <m>\phi</m> has two SF-points on the <m>2</m>-torus.  
+        </p>
+
+        <p>We read off that
+        <me>p_1(z_2)=4 \quad  \textrm{and}\quad p_2(z_2)=z_2^3+3z_2^2-z_2+1</me>
+        and 
+        <me>\tilde{p}_1(z_2)=4z_2^3 \quad \textrm{and} \quad \tilde{p}_2(z_2)=z_2^3-z_2^2+3z_2+1,</me>
+        and after some simplifications (using that <m>\alpha=0</m> here), we find that
+        <men xml:id="multQ">
+        Q_{\alpha}(z_2)=4(z_2+1)^2(z_2^2+1)(5z_2^2-8z_2+5).
+        </men>
+        The polynomial <m>Q_{\alpha}</m> has a double root at <m>z_2=-1</m> (the <m>z_2</m>-coordinate of the SF-point at <m>(-1,-1)</m>), and simple roots at <m>z_2=\pm i</m> and <m>z_2=\frac{1}{5}(4\pm3i)</m>. On the other hand <m>Q_{\alpha}(1)\neq 0</m>. This is reflected in the images in <xref ref="MultSingplots"/>: <m>\Gamma(\Phi)</m> has two components coming together at <m>(-1,-1)\in \Lambda^{\flat}</m> with a normal crossing, while <m>(1,1)\in \Lambda^{\flat}</m> is a generic point, in the sense that <m>\Gamma(\Phi)</m> does not have a self-crossing. The simple zeros of <m>Q_{\alpha}</m> correspond to parabolic points bounding two distinct rotation belts, and these in turn lie between two arrangements of curves with hyperbolic fixed points.</p>
+       </example>
+   </section>
 
     <backmatter>
         <references><title>References</title>
@@ -368,7 +884,7 @@
 
             <biblio type="raw" xml:id="SBJ17">J. Slipantschuk, O.F. Bandtlow, and W. Just, Complete spectral data for analytic Anosov maps of the torus, <em>Nonlinearity</em> <b> 30</b> (2017), 2667-2686.</biblio>
 
-            <biblio type="raw xml:id=TD17">R. Tully-Doyle, Analytic functions on the bidisk at boundary singularities via Hilbert space methods, <em>Oper. Matrices</em> <b> 11</b> (2017), 55-70.</biblio>
+            <biblio type="raw" xml:id="TD17">R. Tully-Doyle, Analytic functions on the bidisk at boundary singularities via Hilbert space methods, <em>Oper. Matrices</em> <b> 11</b> (2017), 55-70.</biblio>
 
              <biblio type="raw" xml:id="TDpage">R. Tully-Doyle, Personal webpage <url href="https://github.com/rtullydo/RISP-dynamics"/> </biblio>
         </references>
