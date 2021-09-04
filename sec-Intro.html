@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
-<!--*       on 2021-09-03T21:47:51-07:00       *-->
+<!--*       on 2021-09-04T11:15:30-07:00       *-->
 <!--*   A recent stable commit (2020-08-09):   *-->
 <!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
 <!--*                                          *-->
@@ -166,112 +166,66 @@ MathJax.Hub.Config({
 \)</div>
 <header id="masthead" class="smallbuttons"><div class="banner"><div class="container">
 <a id="logo-link" href=""></a><div class="title-container">
-<h1 class="heading"><a href="rifdynamics.html"><span class="title">Iteration of low-degree rational inner skew-products on \(\mathbb{T}^2\)</span></a></h1>
+<h1 class="heading"><a href="rifdynamics.html"><span class="title">A library of examples: Iteration of rational inner maps on \(\mathbb{T}^2\)</span></a></h1>
 <p class="byline">Alan Sola, Ryan Tully-Doyle</p>
 </div>
 </div></div>
 <nav xmlns:svg="http://www.w3.org/2000/svg" id="primary-navbar" class="navbar"><div class="container">
 <div class="navbar-top-buttons">
-<button class="sidebar-left-toggle-button button active" aria-label="Show or hide table of contents sidebar">Contents</button><div class="tree-nav toolbar toolbar-divisor-3"><span class="threebuttons"><a id="previousbutton" class="previous-button toolbar-item button" href="frontmatter-1.html" title="Previous">Prev</a><a id="upbutton" class="up-button button toolbar-item" href="rifdynamics.html" title="Up">Up</a><a id="nextbutton" class="next-button button toolbar-item" href="sec-Ex.html" title="Next">Next</a></span></div>
+<button class="sidebar-left-toggle-button button active" aria-label="Show or hide table of contents sidebar">Contents</button><div class="tree-nav toolbar toolbar-divisor-3"><span class="threebuttons"><a id="previousbutton" class="previous-button toolbar-item button" href="frontmatter-1.html" title="Previous">Prev</a><a id="upbutton" class="up-button button toolbar-item" href="rifdynamics.html" title="Up">Up</a><span id="nextbutton" class="next-button button toolbar-item disabled">Next</span></span></div>
 </div>
 <div class="navbar-bottom-buttons toolbar toolbar-divisor-4">
-<button class="sidebar-left-toggle-button button toolbar-item active">Contents</button><a class="previous-button toolbar-item button" href="frontmatter-1.html" title="Previous">Prev</a><a class="up-button button toolbar-item" href="rifdynamics.html" title="Up">Up</a><a class="next-button button toolbar-item" href="sec-Ex.html" title="Next">Next</a>
+<button class="sidebar-left-toggle-button button toolbar-item active">Contents</button><a class="previous-button toolbar-item button" href="frontmatter-1.html" title="Previous">Prev</a><a class="up-button button toolbar-item" href="rifdynamics.html" title="Up">Up</a><span class="next-button button toolbar-item disabled">Next</span>
 </div>
 </div></nav></header><div class="page">
 <div xmlns:svg="http://www.w3.org/2000/svg" id="sidebar-left" class="sidebar" role="navigation"><div class="sidebar-content">
 <nav id="toc"><ul>
 <li class="link frontmatter"><a href="frontmatter-1.html" data-scroll="frontmatter-1"><span class="title">Front Matter</span></a></li>
 <li class="link active"><a href="sec-Intro.html" data-scroll="sec-Intro"><span class="codenumber">1</span> <span class="title">Introduction and overview</span></a></li>
-<li class="link"><a href="sec-Ex.html" data-scroll="sec-Ex"><span class="codenumber">2</span> <span class="title">Three examples</span></a></li>
-<li class="link">
-<a href="sec-Prelim.html" data-scroll="sec-Prelim"><span class="codenumber">3</span> <span class="title">Preliminaries</span></a><ul>
-<li><a href="sec-Prelim.html#subsection-1" data-scroll="subsection-1">Rational inner functions on the bidisk</a></li>
-<li><a href="sec-Prelim.html#subsec-Mob" data-scroll="subsec-Mob">Dynamics of Möbius transformations</a></li>
-<li><a href="sec-Prelim.html#subsection-3" data-scroll="subsection-3">Basic notions from complex dynamics</a></li>
-</ul>
-</li>
-<li class="link">
-<a href="sec-main.html" data-scroll="sec-main"><span class="codenumber">4</span> <span class="title">RISP dynamics on the boundary</span></a><ul>
-<li><a href="sec-main.html#subsection-4" data-scroll="subsection-4">General remarks on boundary fixed points</a></li>
-<li><a href="sec-main.html#subsection-5" data-scroll="subsection-5">Rotation belts and parabolic fixed points for simple RISPs</a></li>
-<li><a href="sec-main.html#subsection-6" data-scroll="subsection-6">Hyperbolic fixed points and SF-points for simple RISPs</a></li>
-</ul>
-</li>
-<li class="link"><a href="sec-morex.html" data-scroll="sec-morex"><span class="codenumber">5</span> <span class="title">Further examples</span></a></li>
-<li class="link backmatter"><a href="backmatter-1.html" data-scroll="backmatter-1"><span class="title">Back Matter</span></a></li>
-<li class="link"><a href="references-1.html" data-scroll="references-1"><span class="title">References</span></a></li>
 </ul></nav><div class="extras"><nav><a class="mathbook-link" href="https://pretextbook.org">Authored in PreTeXt</a><a href="https://www.mathjax.org"><img title="Powered by MathJax" src="https://www.mathjax.org/badge/badge.gif" alt="Powered by MathJax"></a></nav></div>
 </div></div>
 <main class="main"><div id="content" class="pretext-content"><section xmlns:svg="http://www.w3.org/2000/svg" class="section" id="sec-Intro"><h2 class="heading hide-type">
 <span class="type">Section</span> <span class="codenumber">1</span> <span class="title">Introduction and overview</span>
 </h2>
-<p id="p-2">Iteration of a rational function \(R(z)=\frac{q(z)}{p(z)}\) on the Riemann sphere, that is, the study</p>
-<div class="displaymath">
-\begin{equation*}
-z\mapsto R^n(z)=(R\circ R \circ \cdots \circ R)(z) \quad (n=1,2,\ldots)
-\end{equation*}
-</div>
-<p data-braille="continuation">on \(\mathbb{C}_{\infty}=\mathbb{C}\cup\{\infty\}\text{,}\) is a well-known topic in mathematics, discussed in many textbooks (e.g. [<a class="xref" data-knowl="./knowl/BearBook.html" title="Bibliographic Entry 5">5</a>, <a class="xref" data-knowl="./knowl/CGBook.html" title="Bibliographic Entry 11">11</a>, <a class="xref" data-knowl="./knowl/MilBook.html" title="Bibliographic Entry 19">19</a>]) and illustrated in beautiful computer images. The theory is quite mature, but important new results are still being discovered. The higher-dimensional theory, addressing iteration of polynomial or rational mappings \(R\colon \mathbb{C}^n\to \mathbb{C}^n\) is of later date and perhaps less complete. See, for instance, [<a class="xref" data-knowl="./knowl/ForSurv.html" title="Bibliographic Entry 13">13</a>, <a class="xref" data-knowl="./knowl/SibSurv.html" title="Bibliographic Entry 25">25</a>, <a class="xref" data-knowl="./knowl/MilBook.html" title="Bibliographic Entry 19">19</a>], and the references therein, for basic overviews of dynamics in several complex variables.</p>
-<p id="p-3">In a different direction, considering self-maps of special bounded domains in \(\mathbb{C}^n\) (the unit disk in the complex plane, the unit \(n\)-ball) allows for the study of iteration of functions that are not necessarily defined throughout \(\mathbb{C}^n\text{,}\) and leads to interesting boundary phenomena not observed in the unbounded setting. An important example in this latter direction is the classical Denjoy-Wolff theorem <a class="xref" data-knowl="./knowl/CGBook.html" title="Bibliographic Entry 11">[11]</a> concerning fixed points of analytic self-maps of the unit disk; there are many subsequent extensions of the original result to different settings.</p>
-<p id="p-4">Our investigation concerns the study of the dynamics certain self-maps of the unit bidisk</p>
-<div class="displaymath">
-\begin{equation*}
-\mathbb{D}^2=\{(z_1,z_2)\in \mathbb{C}^2\colon |z_j|\lt 1, j=1,2\}
-\end{equation*}
-</div>
-<p data-braille="continuation">and seeks to establish some basic facts about their iteration theory. There are many works addressing iteration of analytic self-maps of the bidisk and higher-dimensional polydisks (see, for instance, the papers [<a class="xref" data-knowl="./knowl/Aba98.html" title="Bibliographic Entry 1">1</a>, <a class="xref" data-knowl="./knowl/AG16.html" title="Bibliographic Entry 4">4</a>, <a class="xref" data-knowl="./knowl/C32.html" title="Bibliographic Entry 12">12</a>, <a class="xref" data-knowl="./knowl/F05.html" title="Bibliographic Entry 14">14</a>, <a class="xref" data-knowl="./knowl/H54.html" title="Bibliographic Entry 15">15</a>] and the thesis <a class="xref" data-knowl="./knowl/NThesis.html" title="Bibliographic Entry 20">[20]</a> for some background). Our focus is on obtaining detailed results for a restricted class of rational mappings by using elementary means.</p>
-<p id="p-5">We say that a mapping of the form</p>
-<div class="displaymath">
-\begin{equation*}
-\Phi\colon \mathbb{D}^2\to \mathbb{D}^2
-\end{equation*}
-</div>
-<div class="displaymath">
-\begin{equation*}
-(z_1,z_2)\mapsto (\phi_1(z_1,z_2), \phi_2(z_1,z_2))
-\end{equation*}
-</div>
-<p data-braille="continuation">is a <dfn class="terminology">rational inner mapping</dfn> (RIM) if each component \(\phi_j\) is a <dfn class="terminology">rational inner function</dfn> on \(\mathbb{D}^2\text{.}\) A rational inner function in turn is an analytic function of the form</p>
-<div class="displaymath">
-\begin{equation*}
-\psi(z_1,z_2)=\frac{q(z_1,z_2)}{p(z_1,z_2)},
-\end{equation*}
-</div>
-<p data-braille="continuation">with \(q,p\in \mathbb{C}[z_1,z_2]\) and \(p(z)\neq 0\) in \(\mathbb{D}^2\text{,}\) which is bounded in \(\mathbb{D}^2\) and has unimodular non-tangential boundary values at almost every point \(\zeta \in \mathbb{T}^2=\{(\zeta_1, \zeta_2)\in \mathbb{C}^2\colon |\zeta_j|=1, j=1,2\}\text{.}\) We recall the basic fact that \(\mathbb{T}^2\) is the <dfn class="terminology">distinguished boundary</dfn> of the bidisk, the subset of the boundary \(\partial \mathbb{D}^2\) where most interesting function-theoretic phenomena on \(\mathbb{D}^2\) are observed and the maximum modulus principle is supported. By a theorem of Knese <a class="xref" data-knowl="./knowl/Kne15.html" title="Bibliographic Entry 18">[18]</a>, if \(\phi_j\) is rational inner then the boundary values \(\phi_j^*(\zeta)\) exist as unimodular numbers at <em class="emphasis">every</em> point of \(\mathbb{T}^2\text{,}\) and so we can view a rational inner mapping \(\Phi\) as inducing a map \(\Phi\colon \overline{\mathbb{D}^2}\to \overline{\mathbb{D}^2}\text{,}\) with \(\Phi\) sending \(\mathbb{T}^2\) to \(\mathbb{T}^2\text{.}\) In the same way, the \(n\)th iterate of \(\Phi\)</p>
-<div class="displaymath">
-\begin{equation*}
-\Phi^n(z_1,z_2)=(\Phi\circ \Phi\circ\cdots  \circ\Phi)(z_1,z_2)
-\end{equation*}
-</div>
-<p data-braille="continuation">can be viewed as a mapping of the closure of the bidisk into itself that fixes the distinguished boundary.</p>
-<p id="p-6">Iteration of certain classes of rational inner functions on the bidisk and on \(\mathbb{T}^2\) has been considered in several papers, for instance in [<a class="xref" data-knowl="./knowl/PS08.html" title="Bibliographic Entry 23">23</a>, <a class="xref" data-knowl="./knowl/PR10.html" title="Bibliographic Entry 22">22</a>]; see also <a class="xref" data-knowl="./knowl/SBJ17.html" title="Bibliographic Entry 26">[26]</a> for some applications. In those works, the component maps \(\phi_j\) are assumed to be of the special type</p>
-<div class="displaymath">
-\begin{equation*}
-\psi_j(z_1,z_2)=B_{j,1}(z_1)\cdot B_{j,2}(z_2)
-\end{equation*}
-</div>
-<p data-braille="continuation">where \(B_{j,k}\) are one-variable <dfn class="terminology">finite Blaschke products</dfn>. Recall that these are functions \(B\colon \mathbb{D}\to\mathbb{D}\) of the form</p>
-<div class="displaymath">
-\begin{equation*}
-B(z)=e^{i\alpha}z^m\prod_{k=1}^n\frac{z-a_k}{1-\overline{a}_kz},
-\end{equation*}
-</div>
-<p data-braille="continuation">where \(\{a_1,\ldots, a_n\}\subset \mathbb{D}\text{,}\) \(\alpha\in \mathbb{R}\text{,}\) and \(m,n\in \mathbb{N}\text{.}\) It is apparent that a finite Blaschke product extends continuously to the unit circle \(\mathbb{T}\text{,}\) but the dynamics of one-variable Blaschke products nevertheless exhibit complicated features; see for instance <a class="xref" data-knowl="./knowl/MilBook.html" title="Bibliographic Entry 19">[19]</a> Chapter 15. Similarly, the works [<a class="xref" data-knowl="./knowl/PS08.html" title="Bibliographic Entry 23">23</a>, <a class="xref" data-knowl="./knowl/PR10.html" title="Bibliographic Entry 22">22</a>] uncover a rich dynamical structure associated with two-dimensional Blaschke products.</p>
-<p id="p-7">In contrast with one-variable Blaschke products, a general rational inner function \(\psi=q/p\) in \(\mathbb{D}^2\) can have boundary singularities: these occur at points \(\tau=(\tau_1,\tau_2)\in \mathbb{T}^2\) where \(q(\tau_1,\tau_2)=p(\tau_1,\tau_2)=0\text{,}\) and represent a genuinely new higher-dimensional phenomenon. The function \(\psi\) is in general discontinuous at \(\tau \in \mathbb{T}^2\text{,}\) even though \(\psi^{*}(\tau)\) always exists, meaning that a RISP \(\Phi\) need not be a continuous self-map of \(\overline{\mathbb{D}^2}\text{.}\)  This fact will be the source of several interesting phenomena that we observe in this paper.</p>
-<p id="p-8">Apart from some preliminary observations concerning RIMs, we mostly restrict our attention to <dfn class="terminology">rational inner skew-products</dfn> (RISPs). These are rational inner mappings of the special form</p>
-<div class="displaymath">
-\begin{equation*}
-\Phi(z_1,z_2)=(\phi_1(z_1,z_2), \phi_2(z_2)),
-\end{equation*}
-</div>
-<p data-braille="continuation">with \(\phi_1\) rational inner in \(\mathbb{D}^2\text{,}\) and \(\phi_2\) a rational inner function in one variable, viewed as a function on \(\mathbb{D}^2\) in the obvious way. Skew-products have been studied extensively in the polynomial setting, see e.g. [<a class="xref" data-knowl="./knowl/J99.html" title="Bibliographic Entry 16">16</a>, <a class="xref" data-knowl="./knowl/PR19.html" title="Bibliographic Entry 21">21</a>] and the references therein. In fact, we focus on the very simplest case of skew-mappings</p>
-<div class="displaymath">
-\begin{equation}
-(z_1,z_2)\mapsto (\phi(z_1,z_2), z_2),\label{eq-RISPdef}\tag{1.1}
-\end{equation}
-</div>
-<p data-braille="continuation">where \(\phi\) is a rational inner function in \(\mathbb{D}^2\) having <dfn class="terminology">bidegree</dfn> \((1,n)\text{,}\) that is, degree \(1\) in \(z_1\) and degree \(n\in \mathbb{N}\) in \(z_2\text{.}\)  (We drop the subscript in the first component to lighten notation.) Skew-products of the form <a class="xref" data-knowl="./knowl/eq-RISPdef.html" title="Equation 1.1">(1.1)</a> fix horizontal lines so that the main dynamics take place along one-dimensional sets, but even this apparently very simple case gives rise to interesting behavior, as is suggested in the images below. The advantage in working with such low-degree RISPs is that the extremely simple classification of fiber dynamics (discussed below) allows us to focus in detail on the global features of iteration on \(\mathbb{T}^2\text{.}\)</p>
-<p id="p-9">We proceed to describe the contents of our paper. We begin by examining three elementary examples of RISPs in Section <a href="sec-Ex.html" class="internal" title="Section 2: Three examples">Section 2</a>. These examples serve as guides for our general investigations and illustrate most of the features we uncover in a more general setting. In Section <a href="sec-Prelim.html" class="internal" title="Section 3: Preliminaries">Section 3</a> we introduce basic definitions for RIMs and RISPs, record some facts about RIFs and their numerator and denominator polynomials, and discuss iteration of Möbius transformations in the unit disk. Section <a href="sec-main.html" class="internal" title="Section 4: RISP dynamics on the boundary">Section 4</a> contains the main results of our paper. After some preliminary remarks about general RIMs and certain associated essentially \(\mathbb{T}^2\)-symmetric polynomials, we focus on degree \((1,n)\) RISPs. We then introduce and study rotation belts associated with a RISP, strips on which the dynamical actions on fibers are conjugate to rotations, and give an estimate on their number. We investigate how different components of the fixed point set of a RISPs can come together at a singular fixed point, and give criteria for different configurations to be present. The main tool we use is a one-variable polynomial \(Q_{\alpha}\) built from the numerator and denominator polynomials of the first-component map \(\phi\text{.}\) We conclude in <a href="sec-morex.html" class="internal" title="Section 5: Further examples">Section 5</a> by exhibiting further examples of RISPs having more intricate dynamical behavior, and serving as illustrations of our main results.</p></section></div></main>
+<figure class="figure figure-like" id="faveplots"><div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;">
+<div class="sbspanel" style="width:50%;justify-content:flex-start;"><figure class="figure figure-like" id="figure-2"><img src="images/vertparacurves.svg" style="width: 100%; height: auto;" alt=""><figcaption><span class="codenumber">(a)</span><span class="space"> </span>Vertical lines before mapping</figcaption></figure></div>
+<div class="sbspanel" style="width:50%;justify-content:flex-start;"><figure class="figure figure-like" id="figure-3"><img src="images/vfave1iter.svg" style="width: 100%; height: auto;" alt=""><figcaption><span class="codenumber">(b)</span><span class="space"> </span>\(\Phi^n\) for \(n=1\)</figcaption></figure></div>
+</div></div>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;">
+<div class="sbspanel" style="width:50%;justify-content:flex-start;"><figure class="figure figure-like" id="figure-4"><img src="images/vfave2iter.svg" style="width: 100%; height: auto;" alt=""><figcaption><span class="codenumber">(c)</span><span class="space"> </span>\(\Phi^n\) for \(n=2\)</figcaption></figure></div>
+<div class="sbspanel" style="width:50%;justify-content:flex-start;"><figure class="figure figure-like" id="figure-5"><img src="images/vfave3iter.svg" style="width: 100%; height: auto;" alt=""><figcaption><span class="codenumber">(d)</span><span class="space"> </span>\(\Phi^n\) for \(n=3\)</figcaption></figure></div>
+</div></div>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;">
+<div class="sbspanel" style="width:50%;justify-content:flex-start;"><figure class="figure figure-like" id="figure-6"><img src="images/vfave4iter.svg" style="width: 100%; height: auto;" alt=""><figcaption><span class="codenumber">(e)</span><span class="space"> </span>\(\Phi^n\) for \(n=4\)</figcaption></figure></div>
+<div class="sbspanel" style="width:50%;justify-content:flex-start;"><figure class="figure figure-like" id="figure-7"><img src="images/vfave5iter.svg" style="width: 100%; height: auto;" alt=""><figcaption><span class="codenumber">(f)</span><span class="space"> </span>\(\Phi^n\) for \(n=5\)</figcaption></figure></div>
+</div></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">1.1<span class="period">.</span></span><span class="space"> </span>Iteration of \(\Phi=(-\frac{2z_1z_2-z_1-z_2}{2-z_1-z_2},z_2)\)</figcaption></figure><article class="example example-like" id="ex-para"><a data-knowl="" class="id-ref example-knowl original" data-refid="hk-ex-para"><h6 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">1.2</span><span class="period">.</span>
+</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-ex-para"><article class="example example-like"><figure class="figure figure-like" id="parabplots"><div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;">
+<div class="sbspanel" style="width:50%;justify-content:flex-start;"><figure class="figure figure-like" id="figure-9"><img src="images/vertparacurves.svg" style="width: 100%; height: auto;" alt=""><figcaption><span class="codenumber">(a)</span><span class="space"> </span>Vertical lines before mapping</figcaption></figure></div>
+<div class="sbspanel" style="width:50%;justify-content:flex-start;"><figure class="figure figure-like" id="figure-10"><img src="images/3zwparaviter1.svg" style="width: 100%; height: auto;" alt=""><figcaption><span class="codenumber">(b)</span><span class="space"> </span>\(\Phi^n\) for \(n=1\)</figcaption></figure></div>
+</div></div>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;">
+<div class="sbspanel" style="width:50%;justify-content:flex-start;"><figure class="figure figure-like" id="figure-11"><img src="images/3zwparaviter2.svg" style="width: 100%; height: auto;" alt=""><figcaption><span class="codenumber">(c)</span><span class="space"> </span>\(\Phi^n\) for \(n=2\)</figcaption></figure></div>
+<div class="sbspanel" style="width:50%;justify-content:flex-start;"><figure class="figure figure-like" id="figure-12"><img src="images/3zwparaviter3.svg" style="width: 100%; height: auto;" alt=""><figcaption><span class="codenumber">(d)</span><span class="space"> </span>\(\Phi^n\) for \(n=3\)</figcaption></figure></div>
+</div></div>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;">
+<div class="sbspanel" style="width:50%;justify-content:flex-start;"><figure class="figure figure-like" id="figure-13"><img src="images/3zwparaviter4.svg" style="width: 100%; height: auto;" alt=""><figcaption><span class="codenumber">(e)</span><span class="space"> </span>\(\Phi^n\) for \(n=4\)</figcaption></figure></div>
+<div class="sbspanel" style="width:50%;justify-content:flex-start;"><figure class="figure figure-like" id="para5"><img src="images/3zwparaviter5.svg" style="width: 100%; height: auto;" alt=""><figcaption><span class="codenumber">(f)</span><span class="space"> </span>\(\Phi^n\) for \(n=5\)</figcaption></figure></div>
+</div></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">1.3<span class="period">.</span></span><span class="space"> </span>Iteration of \(\Phi=(-\frac{3z_1z_2-z_1-z_2-1}{3-z_1-z_2-z_1z_2},z_2)\)</figcaption></figure><figure class="figure figure-like" id="rotaplots"><div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;">
+<div class="sbspanel" style="width:50%;justify-content:flex-start;"><figure class="figure figure-like" id="figure-16"><img src="images/vertparacurves.svg" style="width: 100%; height: auto;" alt=""><figcaption><span class="codenumber">(a)</span><span class="space"> </span>Vertical lines before mapping</figcaption></figure></div>
+<div class="sbspanel" style="width:50%;justify-content:flex-start;"><figure class="figure figure-like" id="figure-17"><img src="images/threefaveviter1.svg" style="width: 100%; height: auto;" alt=""><figcaption><span class="codenumber">(b)</span><span class="space"> </span>\(\Phi^n\) for \(n=1\)</figcaption></figure></div>
+</div></div>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;">
+<div class="sbspanel" style="width:50%;justify-content:flex-start;"><figure class="figure figure-like" id="figure-18"><img src="images/threefaveviter2.svg" style="width: 100%; height: auto;" alt=""><figcaption><span class="codenumber">(c)</span><span class="space"> </span>\(\Phi^n\) for \(n=2\)</figcaption></figure></div>
+<div class="sbspanel" style="width:50%;justify-content:flex-start;"><figure class="figure figure-like" id="figure-19"><img src="images/threefaveviter3.svg" style="width: 100%; height: auto;" alt=""><figcaption><span class="codenumber">(d)</span><span class="space"> </span>\(\Phi^n\) for \(n=3\)</figcaption></figure></div>
+</div></div>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;">
+<div class="sbspanel" style="width:50%;justify-content:flex-start;"><figure class="figure figure-like" id="figure-20"><img src="images/threefaveviter4.svg" style="width: 100%; height: auto;" alt=""><figcaption><span class="codenumber">(e)</span><span class="space"> </span>\(\Phi^n\) for \(n=4\)</figcaption></figure></div>
+<div class="sbspanel" style="width:50%;justify-content:flex-start;"><figure class="figure figure-like" id="rotaf"><img src="images/threefaveviter5.svg" style="width: 100%; height: auto;" alt=""><figcaption><span class="codenumber">(f)</span><span class="space"> </span>\(\Phi^n\) for \(n=5\)</figcaption></figure></div>
+</div></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">1.4<span class="period">.</span></span><span class="space"> </span>Iteration of the RISP \(\Phi=(-\frac{2z_1z_2-z_1-z_2}{2-z_1-z_2},z_2)\) on \(\mathbb{T}^2\)</figcaption></figure></article></div></section></div></main>
 </div>
 </body>
 </html>
