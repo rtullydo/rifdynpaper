@@ -258,6 +258,43 @@
                 <me>4 (w+1)^2 ((1+2 i) w+(-1+2 i))^2 \left((7-12 i) w^4+(12-8 i) w^3+26 w^2+(12+8 i) w+(7+12 i)\right)</me>, exhibiting the normal crossings visible in the images.</p>
         </example>
 
+        <example><title>Two variable Blaschke products</title>
+
+        <p>Let
+        <me> B_a(z) = \frac{z - a}{ 1 - \cc{a}z}.</me>
+        Let <m>\Phi</m> be the RIM given by
+        <me>
+            \Phi(z,w) = (B_{1/2}(z)B_{i/3 }(w), B_{i/3 }(z) B_{-i/4 }(w))
+        </me>
+        </p>
+
+        <p>Here, unlike the <m>(1, n)</m> RISP case, we see chaotic behavior. In particular, we do not get curves of fixed points. The dynamical behavior for several iterations of <m>\Phi</m> is
+                <figure>
+                <sbsgroup>
+                <sidebyside>
+                <figure> <caption>Vertical lines before mapping</caption>
+                    <image source="images/initialinput.png"/>
+                </figure>
+                <figure> <caption><m>\Phi^n</m> for <m>n=1</m></caption>
+                    <image source="images/twovarblaschkeiter1.png"/>
+                </figure>
+                </sidebyside>
+                <sidebyside>
+                <figure> <caption><m>\Phi^n</m> for <m>n=2</m></caption>
+                    <image source="images/twovarblaschkeiter2.png"/>
+                </figure>
+                <figure> <caption><m>\Phi^n</m> for <m>n=3</m></caption>
+                    <image source="images/twovarblaschkeiter5.png"/>
+                </figure>
+                </sidebyside>
+                </sbsgroup>
+                <caption>Iteration of <m>\Phi</m></caption>
+                </figure></p>
+
+       
+
+    </example>
+
 
     </section>
 
