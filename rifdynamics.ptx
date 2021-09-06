@@ -133,6 +133,36 @@
     </frontmatter>
 
     <section><title>Function gallery</title>
+
+<!--         <example xml:id="fave"><title>A favorite function</title>
+
+        <p>Consider the function <m>\Phi</m> given by
+        <me>
+            \Phi(z,w) = \left(-\frac{2 w z-w-z}{-w-z+2}, w\right)
+        </me></p>
+
+        <figure>
+        <sbsgroup>
+        <sidebyside>
+        <figure> <caption>Vertical lines before mapping</caption>
+            <image source="images/vertparacurves.svg"/>
+        </figure>
+        <figure> <caption><m>\Phi^n</m> for <m>n=1</m></caption>
+            <image source="images/vfave1iter.svg"/>
+        </figure>
+        </sidebyside>
+        <sidebyside>
+        <figure> <caption><m>\Phi^n</m> for <m>n=2</m></caption>
+            <image source="images/vfave2iter.svg"/>
+        </figure>
+        <figure> <caption><m>\Phi^n</m> for <m>n=3</m></caption>
+            <image source="images/vfave3iter.svg"/>
+        </figure>
+        </sidebyside>
+        </sbsgroup>
+        <caption>Iteration of <m>\Phi</m></caption>
+        </figure>
+        </example> -->
    
         <example><title>Stacked rotation belts</title>
 
@@ -182,35 +212,7 @@
 
 
 
-        <!--<figure xml:id = "faveplots">
-        <sbsgroup>
-        <sidebyside>
-        <figure> <caption>Vertical lines before mapping</caption>
-            <image source="images/vertparacurves.svg"/>
-        </figure>
-        <figure> <caption><m>\Phi^n</m> for <m>n=1</m></caption>
-            <image source="images/vfave1iter.svg"/>
-        </figure>
-        </sidebyside>
-        <sidebyside>
-        <figure> <caption><m>\Phi^n</m> for <m>n=2</m></caption>
-            <image source="images/vfave2iter.svg"/>
-        </figure>
-        <figure> <caption><m>\Phi^n</m> for <m>n=3</m></caption>
-            <image source="images/vfave3iter.svg"/>
-        </figure>
-        </sidebyside>
-        <sidebyside>
-        <figure> <caption><m>\Phi^n</m> for <m>n=4</m></caption>
-            <image source="images/vfave4iter.svg"/>
-        </figure>
-        <figure> <caption><m>\Phi^n</m> for <m>n=5</m></caption>
-            <image source="images/vfave5iter.svg"/>
-        </figure>
-        </sidebyside>
-        </sbsgroup>
-        <caption>Iteration of <m>\Phi=(-\frac{2z_1z_2-z_1-z_2}{2-z_1-z_2},z_2)</m></caption>
-        </figure>-->
+
         </example>
 
         <example><title>Multiple crossings</title>
@@ -292,6 +294,113 @@
                 </figure></p>
 
     </example>
+
+    <example><title>A degree <m>(2, 4)</m> RISP</title>
+
+        <p>Consider the function given by
+        <me>
+            \Phi(z, w) = \left(-\frac{-32 w^4 z^2+38 w^4 z-10 w^4+34 w^3 z^2-32 w^3 z+2 w^3-30 w^2 z^2+36 w^2 z-2 w^2+10 w z^2-8 w z-6 w-6 z^2+14 z-8}{8 w^4 z^2-14 w^4 z+6 w^4+6 w^3 z^2+8 w^3 z-10 w^3+2 w^2 z^2-36 w^2 z+30 w^2-2 w z^2+32 w z-34 w+10 z^2-38 z+32}, w\right),
+        </me>
+        which has bidegree <m>(2, 4)</m> as a RISP.</p>
+
+        <p>Unlike the <m>(1, n)</m> case, invariant curves can now sweep through rotating fibers.
+                <sidebyside>
+                <figure> <caption>Invariant curves for <m>\phi</m></caption>
+                    <image source="images/twofourinv.png"/>
+                </figure>
+                <figure> <caption>Level curves for <m>\phi</m></caption>
+                    <image  source="images/twofourlevel.png"/>
+                </figure>
+                </sidebyside>
+        Notice that the level curves indicate that <m>\Phi</m> has singular fixed point at <m>(z, w) = (1, 1)</m> and <m>(z, w) = (1, -1)</m>.</p>
+
+                <p>One detail to note in the iteration portraits below is that the rotations are constrained by the fixed point structure of the initial vertical lines.</p>
+                <figure>
+                <sbsgroup>
+                <sidebyside>
+                <figure> <caption>Vertical lines before mapping</caption>
+                    <image source="images/twofourinitial.png"/>
+                </figure>
+                <figure> <caption><m>\Phi^n</m> for <m>n=1</m></caption>
+                    <image source="images/twofouriter1.png"/>
+                </figure>
+                </sidebyside>
+                <sidebyside>
+                <figure> <caption><m>\Phi^n</m> for <m>n=2</m></caption>
+                    <image source="images/twofouriter2.png"/>
+                </figure>
+                <figure> <caption><m>\Phi^n</m> for <m>n=5</m></caption>
+                    <image source="images/twofouriter5.png"/>
+                </figure>
+                </sidebyside>
+                </sbsgroup>
+                <caption>Iteration of <m>\Phi</m></caption>
+                </figure>
+            </example>
+
+            <example><title>Singular inner function</title>
+
+            <p>Consider the function 
+                <me>\Phi(z, w) = \left(\exp \left(-\frac{w z+1}{1-w z}\right), w\right),</me>
+            with a so-called singular inner function in the first slot.</p>
+
+            <p><m>\Phi</m> fixes the point <m>(1, -1)</m>.</p>
+
+                <figure>
+                <sbsgroup>
+                <sidebyside>
+                <figure> <caption>Vertical lines before mapping</caption>
+                    <image source="images/initialinput.png"/>
+                </figure>
+                <figure> <caption><m>\Phi^n</m> for <m>n=1</m></caption>
+                    <image source="images/singinneriter1.png"/>
+                </figure>
+                </sidebyside>
+                <sidebyside>
+                <figure> <caption><m>\Phi^n</m> for <m>n=2</m></caption>
+                    <image source="images/singinneriter2.png"/>
+                </figure>
+                <figure> <caption><m>\Phi^n</m> for <m>n=5</m></caption>
+                    <image source="images/singinneriter5.png"/>
+                </figure>
+                </sidebyside>
+                </sbsgroup>
+                <caption>Iteration of <m>\Phi</m></caption>
+                </figure>
+            </example>
+
+            <example><title>RISP with <m>\Phi = (\phi, w^2)</m></title>
+
+            <p>Consider the function <m>\Phi</m> with 
+            <me>
+            \Phi(z, w) = \left(-\frac{2 w z-w-z}{-w-z+2},w^2\right),
+            </me>
+            where we have <m>\phi_2(w) = w^2</m> in the second slot.</p>
+
+            <p>Even in this simple case, the behavior of <m>\Phi</m> is quite different from the related Example 2.1.
+            <figure>
+                <sbsgroup>
+                <sidebyside>
+                <figure> <caption>Vertical lines before mapping</caption>
+                    <image source="images/initialinput.png"/>
+                </figure>
+                <figure> <caption><m>\Phi^n</m> for <m>n=1</m></caption>
+                    <image source="images/deg2rispiter1.png"/>
+                </figure>
+                </sidebyside>
+                <sidebyside>
+                <figure> <caption><m>\Phi^n</m> for <m>n=2</m></caption>
+                    <image source="images/deg2rispiter2.png"/>
+                </figure>
+                <figure> <caption><m>\Phi^n</m> for <m>n=3</m></caption>
+                    <image source="images/deg2rispiter3.png"/>
+                </figure>
+                </sidebyside>
+                </sbsgroup>
+                <caption>Iteration of <m>\Phi</m></caption>
+                </figure></p>
+            </example>
+
 
 
     </section>
