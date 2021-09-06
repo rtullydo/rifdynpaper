@@ -344,7 +344,7 @@
                 <me>\Phi(z, w) = \left(\exp \left(-\frac{w z+1}{1-w z}\right), w\right),</me>
             with a so-called singular inner function in the first slot.</p>
 
-            <p><m>\Phi</m> fixes the point <m>(1, -1)</m>.</p>
+        
 
                 <figure>
                 <sbsgroup>
