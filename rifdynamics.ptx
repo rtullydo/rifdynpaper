@@ -404,6 +404,39 @@
 
 
     </section>
+    <section><title>Reading</title>
+            <references><title>References</title>
+            <biblio type="raw" xml:id="Aba98">M. Abate, The Julia-Wolff-Carathéodory theorem in polydisks, <em>J. Anal. Math.</em> <b>74</b> (1998), 275-306.</biblio>
+            <biblio type="raw" xml:id="AMS06">J. Agler, J.E. M\McC Carthy, and M. Stankus, Toral algebraic sets and function theory on polydisks, <em>J. Geom. Anal.</em> <b>16</b> (2006), 551-562.</biblio>
+            <biblio type="raw" xml:id="AMY12"> J. Agler, J.E. M\McC Carthy, and N.J. Young, A Carathéodory theorem for the bidisk via Hilbert space methods, <em>Math. Ann.</em> <b>352</b> (2012), 581-624.</biblio>
+            <biblio type="raw" xml:id="AG16">L. Arosio and P. Gumenyuk, Valiron and Abel equations for holomorphic self-maps of the polydisc, <em>Internat. J. Math.</em> <b>27</b> (2016), 1650034.</biblio>
+            <biblio type="raw" xml:id="BearBook">A. Beardon, <em>Iteration of rational functions.</em> Graduate Texts in Mathematics 132, Springer-Verlag, New York. 1991.</biblio>
+            <biblio type="raw" xml:id="BCSprep">K. Bickel, J.A. Cima, and A.A. Sola, Clark measures for rational inner functions, preprint, available at <url href="https://arxiv.org/abs/2101.00508"/></biblio>
+            <biblio type="raw" xml:id="BKPSprep">K. Bickel, G. Knese, J.E. Pascoe, and A. Sola, Local theory of stable polynomials and bounded rational functions of several variables, preprint 2021.</biblio>
+            <biblio type="raw" xml:id="BPS18">K. Bickel, J.E. Pascoe, and A. Sola, Derivatives of rational inner functions: geometry of singularities and integrability at the boundary, <em>Proc. London Math. Soc.</em> <b>116</b> (2018), 281-329.</biblio>
+            <biblio type="raw" xml:id="BPS20">K. Bickel, J. E. Pascoe, and A. Sola, Level curve portraits of rational inner functions, <em>Ann. Sc. Norm. Sup. Pisa Cl. Sc.</em> <b> XXI</b> (2020), 451-494.</biblio>
+            <biblio type="raw" xml:id="BPSajm">K. Bickel, J. E. Pascoe, and A. Sola, Singularities of rational inner functions in higher dimensions, <em>Amer. J. Math.</em>, to appear.</biblio>
+            <biblio type="raw" xml:id="CGBook">L. Carleson and T.W.  Gamelin, <em> Complex dynamics</em>, Universitext: Tracts in Mathematics, Springer-Verlag, New York, 1993.</biblio>
+            <biblio type="raw" xml:id="C32">H. Cartan, Les fonctions de deux variables complexes. L'itération des transformations intérieures d'un domaine borné (French), Math. Z. <b>35</b> (1932), 760-773.</biblio>
+            <biblio type="raw" xml:id="ForSurv">J.E. Fornaess, <em>Dynamics in several complex variables</em>. CBMS Regional Conference Series in Mathematics, 87. Providence, RI, 1996.</biblio>
+            <biblio type="raw" xml:id="F05">C. Frosini, Dynamics on bounded domains, in: <em> The <m>p</m>-harmonic equation and recent advances in analysis</em>, 99-117, Contemp. Math. <b>370</b> Amer. Math. Soc., Providence, RI, 2005.</biblio>
+            <biblio type="raw" xml:id="H54">M. Hervé, Sur l'itération des transformations analytiques dans le bicercle unité, <em>Ann. Sci. Ecole Norm. Sup.</em> (3) <b> 71</b> (1954), 1-28.</biblio>
+            <biblio type="raw" xml:id="J99">M. Jonsson, Dynamics of polynomials skew-products on <m>\mathbb{C}^2</m>, <em>Math. Ann.</em> <b>314</b> (1999), 403-447.</biblio>
+            <biblio type="raw" xml:id="Kne10">G. Knese, Polynomials defining distinguished varieties, <em>Trans. Amer. Math. Soc.</em> <b> 362</b> (2010), 5635-5655.</biblio>
+            <biblio type="raw" xml:id="Kne15">G. Knese, Integrability and regularity of rational functions, <em>Proc. London. Math. Soc.</em> <b> 111</b> (2015), 1261-1306.</biblio>
+            <biblio type="raw" xml:id="MilBook">J. Milnor, <em> Dynamics in one complex variable</em>. Annals of Mathematics Studies 160, Princeton Univ. Press, Princeton, NJ, 2006. </biblio>
+            <biblio type="raw" xml:id="NThesis">J. Nowell, Denjoy-Wolff sets for analytic maps on the polydisk, PhD Thesis, University of Florida, 2019.</biblio>
+            <biblio type="raw" xml:id="PR19">H. Peters and J. Raissy, Fatou components of elliptic polynomial skew-products, <em>Ergodic Theory Dynam. Systems</em> <b> 39</b> (2019), 2235-2247.</biblio>
+            <biblio type="raw" xml:id="PR10">E.R. Pujals and R.K.W. Roeder, Two-dimensional Blaschke products: degree growth and ergodic consequences, <em>Indiana Univ. Math. J.</em> <b> 59</b> (2010), 301-325.</biblio>
+            <biblio type="raw" xml:id="PS08">E.R. Pujals and M. Shub, Dynamics of two-dimensional Blaschke products, <em> Ergodic Theory Dynam. Systems</em> <b> 28</b> (2008), 575-585.</biblio>
+            <biblio type="raw" xml:id="Rud69"> W. Rudin, <em>Function Theory in polydisks</em>,
+            W. A. Benjamin, Inc., New York-Amsterdam, 1969.</biblio>
+            <biblio type="raw" xml:id="SibSurv">N. Sibony, Dynamique des applications rationelles de <m>\mathbf{P}^k</m>. (French) <em> Dynamique et géométrie complexes (Lyon, 1997)</em>, Panor. Synthéses <b> 8</b>, Soc. Math. France, Paris, 1999.</biblio>
+            <biblio type="raw" xml:id="SBJ17">J. Slipantschuk, O.F. Bandtlow, and W. Just, Complete spectral data for analytic Anosov maps of the torus, <em>Nonlinearity</em> <b> 30</b> (2017), 2667-2686.</biblio>
+            <biblio type="raw" xml:id="TD17">R. Tully-Doyle, Analytic functions on the bidisk at boundary singularities via Hilbert space methods, <em>Oper. Matrices</em> <b> 11</b> (2017), 55-70.</biblio>
+             <biblio type="raw" xml:id="TDpage">R. Tully-Doyle, Personal webpage <url href="https://github.com/rtullydo/RISP-dynamics"/> </biblio>
+        </references>
+    </section>
 
 
 
